@@ -147,55 +147,96 @@
 
   function respondTo(query) {
     const typing = showTyping();
-    const delay = 500 + Math.min(900, query.length * 22);
-    setTimeout(() => {
-      typing.remove();
-      const reply = answer(query);
-      appendMessage("bot", reply.text, reply.links, { typewriter: true, persist: true });
-    }, delay);
+
+    // Build OpenAI-shaped message history (last 10 turns; the new user query
+    // was just persisted by handleSend()).
+    const history = loadHistory().slice(-10);
+    const messages = history.map((m) => ({
+      role: m.role === "bot" ? "assistant" : "user",
+      content: stripMd(m.text),
+    }));
+
+    fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages }),
+    })
+      .then((resp) => {
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        return streamReply(resp, typing);
+      })
+      .catch((err) => {
+        typing.remove();
+        appendMessage(
+          "bot",
+          "Sorry, I can't reach the assistant right now (" + err.message + "). Please email **info@gwm-eu.com** in the meantime.",
+          [],
+          { persist: true }
+        );
+      });
   }
 
-  /* ---------- Matching engine ---------- */
+  /* ---------- SSE streaming reader ---------- */
 
-  function tokenize(s) {
-    return (s || "")
-      .toLowerCase()
-      .replace(/[^\p{L}\p{N}\s]+/gu, " ")
-      .split(/\s+/)
-      .filter(Boolean);
-  }
+  async function streamReply(resp, typingEl) {
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    let text = "";
+    let msgEl = null;
+    let typingRemoved = false;
+    let errored = null;
 
-  function answer(query) {
-    if (!kb) {
-      return { text: "Loading knowledge base, please try again in a moment.", links: [] };
-    }
-    const qTokens = tokenize(query);
-    const qStr = " " + qTokens.join(" ") + " ";
-    let best = null;
-    let bestScore = 0;
-    for (const item of kb.qa) {
-      let score = 0;
-      for (const kw of item.keywords) {
-        const kwLower = kw.toLowerCase();
-        // multi-word keywords: substring match weighted higher
-        if (kwLower.includes(" ")) {
-          if (qStr.includes(" " + kwLower + " ") || query.toLowerCase().includes(kwLower)) {
-            score += 3;
-          }
-        } else {
-          if (qTokens.includes(kwLower)) score += 2;
-          else if (qStr.includes(kwLower)) score += 1;
+    const ensureMsgEl = () => {
+      if (!typingRemoved) { typingEl.remove(); typingRemoved = true; }
+      if (!msgEl) {
+        msgEl = document.createElement("div");
+        msgEl.className = "gwm-chatbot__msg gwm-chatbot__msg--bot";
+        body.appendChild(msgEl);
+      }
+    };
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const events = buffer.split("\n\n");
+      buffer = events.pop();
+      for (const ev of events) {
+        const line = ev.trim();
+        if (!line.startsWith("data:")) continue;
+        const payload = line.slice(5).trim();
+        if (!payload) continue;
+        let parsed;
+        try { parsed = JSON.parse(payload); } catch (e) { continue; }
+        if (parsed.error) { errored = parsed.error; continue; }
+        if (parsed.token) {
+          ensureMsgEl();
+          text += parsed.token;
+          msgEl.innerHTML = formatMd(text);
+          scrollBottom();
         }
       }
-      if (score > bestScore) {
-        bestScore = score;
-        best = item;
+    }
+
+    if (!typingRemoved) typingEl.remove();
+
+    if (errored) {
+      const errMsg = "_Assistant error: " + errored + "_";
+      if (msgEl) {
+        msgEl.innerHTML = formatMd(text + (text ? "\n\n" : "") + errMsg);
+      } else {
+        appendMessage("bot", errMsg, [], { persist: true });
       }
+      return;
     }
-    if (best && bestScore >= 2) {
-      return { text: best.answer, links: best.links || [] };
+
+    if (msgEl && text) {
+      const h = loadHistory();
+      h.push({ role: "bot", text: text, links: [] });
+      if (h.length > 40) h.splice(0, h.length - 40);
+      saveHistory(h);
     }
-    return { text: kb.fallback, links: [] };
   }
 
   /* ---------- Rendering ---------- */
@@ -282,6 +323,11 @@
     let s = escapeHtml(text);
     s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     s = s.replace(/\*([^*]+)\*/g, "<em>$1</em>");
+    // Markdown links [label](url) → <a target=_blank>
+    s = s.replace(
+      /\[([^\]]+)\]\(((?:https?:)?\/\/[^\s)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
     s = s.replace(/\n/g, "<br>");
     return s;
   }

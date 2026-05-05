@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
-# Local preview server for the scraped GWM EU homepage demo.
+# Local server for the GWM demo.
+# Starts FastAPI (serves the scraped site at /, exposes /api/chat backed by OpenAI).
+#
 # Usage:  ./run.sh           (defaults to port 8000)
 #         ./run.sh 9000      (custom port)
+#
+# Requires:
+#   pip install -r server/requirements.txt
+#   cp .env.example .env  &&  edit OPENAI_API_KEY
 
 set -e
 PORT="${1:-8000}"
@@ -14,6 +20,11 @@ if [ ! -f "$HERE/site/index.html" ]; then
   exit 1
 fi
 
-cd "$HERE/site"
-echo "Serving $HERE/site on http://localhost:$PORT  (Ctrl+C to stop)"
-exec python3 -m http.server "$PORT"
+if [ ! -f "$HERE/.env" ]; then
+  echo "warning: .env missing — /api/chat will return 500 until OPENAI_API_KEY is set."
+  echo "  cp .env.example .env  &&  edit it"
+fi
+
+cd "$HERE"
+echo "Serving GWM demo on http://localhost:$PORT  (Ctrl+C to stop)"
+exec python3 -m uvicorn server.main:app --host 0.0.0.0 --port "$PORT"
