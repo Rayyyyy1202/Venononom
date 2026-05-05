@@ -56,6 +56,43 @@ TRACKING_DOMAINS = {
     "linkedin.com",
 }
 
+# Patterns to match inside <noscript> fallback blocks (e.g. GTM iframe).
+TRACKING_NOSCRIPT_PATTERNS = ("googletagmanager", "google-analytics", "doubleclick", "facebook.net")
+
+# Assets that JavaScript builds at runtime (Vue :src bindings, template
+# string-built swiper paths) — never appear as string literals in the HTML.
+# Listed as ORIGIN-relative paths.
+EXTRA_ASSETS = [
+    # Hero car-swiper sequence PNGs (built by JS template at runtime)
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/1.png",
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/2.png",
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/1.png",
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/2.png",
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/1.png",
+    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/2.png",
+    # Header logos (Vue :src bindings against a JS data dict)
+    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-pc.svg",
+    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-pc.svg",
+    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-mob.svg",
+    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-mob.svg",
+    "/content/dam/gwm/pages/eu/eu/home/logo/phone-white.svg",
+    "/content/dam/gwm/components-assets/content/tools-bar/phone.svg",
+]
+
+# Lazy-load attributes used by AEM video / image clientlibs.
+LAZY_ATTRS = (
+    "data-src", "data-src-pc", "data-src-mob",
+    "data-poster", "data-poster-pc", "data-poster-mob", "data-special-poster",
+    "data-bg", "data-lazy-src",
+)
+
+# Pattern to find /content/dam/gwm/... asset paths inside JS/CSS source.
+DAM_URL_RE = re.compile(
+    r"""["'](\/content\/dam\/gwm\/[^"'\s<>()]+?"""
+    r"""\.(?:webp|png|jpe?g|gif|svg|mp4|webm|woff2?|ttf|otf|eot|mp3))["']""",
+    re.IGNORECASE,
+)
+
 REQUEST_TIMEOUT = 15
 ASSET_RETRY = 1
 
@@ -310,6 +347,12 @@ def remove_tracking(soup: BeautifulSoup) -> int:
         if any(t in text for t in ("googletagmanager", "google-analytics", "gtag(", "fbq(")):
             s.decompose()
             removed += 1
+    # <noscript> fallback frames (GTM ships an <iframe> inside <noscript>)
+    for ns in list(soup.find_all("noscript")):
+        snippet = str(ns).lower()
+        if any(p in snippet for p in TRACKING_NOSCRIPT_PATTERNS):
+            ns.decompose()
+            removed += 1
     return removed
 
 
@@ -346,6 +389,12 @@ def process_homepage(html: str) -> str:
     for tag in soup.find_all(style=True):
         rewrite_inline_style(tag, ENTRY_URL)
 
+    # 2b. AEM lazy-load data-* attributes (videos, lazy images)
+    for tag in soup.find_all(True):
+        for attr in LAZY_ATTRS:
+            if tag.has_attr(attr):
+                rewrite_attr(tag, attr, ENTRY_URL)
+
     # 3. Inline <style> blocks
     for style_tag in soup.find_all("style"):
         if style_tag.string:
@@ -367,6 +416,39 @@ def process_homepage(html: str) -> str:
 
 
 # -------- Main ----------------------------------------------------------------
+
+def scan_clientlibs_for_extras() -> int:
+    """Scan downloaded JS/CSS for /content/dam/gwm/... asset paths and download
+    them. Catches assets referenced via Vue :src bindings, JS template strings,
+    or anything else not visible to the HTML parser."""
+    discovered: set[str] = set()
+    for pattern in ("*.js", "*.css", "*.html"):
+        for f in SITE_DIR.rglob(pattern):
+            try:
+                text = f.read_text(encoding="utf-8", errors="ignore")
+            except Exception:
+                continue
+            for m in DAM_URL_RE.finditer(text):
+                discovered.add(ORIGIN + m.group(1))
+    n = 0
+    for url in sorted(discovered):
+        if url in downloaded or url in failed:
+            continue
+        if download_asset(url) is not None:
+            n += 1
+    return n
+
+
+def download_extra_manifest() -> int:
+    n = 0
+    for path in EXTRA_ASSETS:
+        url = ORIGIN + path
+        if url in downloaded:
+            continue
+        if download_asset(url) is not None:
+            n += 1
+    return n
+
 
 def copy_chatbot_assets() -> None:
     target = SITE_DIR / "chatbot"
@@ -396,6 +478,18 @@ def main() -> int:
     index_path = SITE_DIR / "index.html"
     index_path.write_text(new_html, encoding="utf-8")
     log("OK", f"wrote {index_path.relative_to(REPO_ROOT)}  ({len(new_html):,} bytes)")
+
+    # Phase 2: scan downloaded JS/CSS for /content/dam/gwm/... paths that the
+    # parser couldn't see (Vue :src bindings, template-built URLs, etc.)
+    log("INFO", "scanning JS/CSS for additional /content/dam refs…")
+    n_scan = scan_clientlibs_for_extras()
+    log("INFO", f"second pass: downloaded {n_scan} extra assets from JS/CSS scan")
+
+    # Phase 3: known runtime-only assets (paths JS builds from variables and
+    # never appear as a complete string anywhere)
+    log("INFO", f"downloading {len(EXTRA_ASSETS)} known runtime-only assets…")
+    n_extra = download_extra_manifest()
+    log("INFO", f"manifest pass: downloaded {n_extra} new assets")
 
     # Copy chatbot widget
     copy_chatbot_assets()
