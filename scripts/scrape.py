@@ -40,7 +40,7 @@ HEADERS = {
 }
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SITE_DIR = REPO_ROOT / "site"
+SITE_DIR = REPO_ROOT / "public"
 CHATBOT_SRC = REPO_ROOT / "chatbot"
 
 # Third-party domains whose <script> tags we strip (cleaner local console)

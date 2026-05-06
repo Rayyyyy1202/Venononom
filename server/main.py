@@ -21,7 +21,7 @@ from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_DIR = ROOT / "site"
+SITE_DIR = ROOT / "public"
 KB_PATH = ROOT / "chatbot" / "knowledge.json"
 
 load_dotenv(ROOT / ".env")

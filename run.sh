@@ -13,8 +13,8 @@ set -e
 PORT="${1:-8000}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 
-if [ ! -f "$HERE/site/index.html" ]; then
-  echo "site/index.html not found. Run the scraper first:"
+if [ ! -f "$HERE/public/index.html" ]; then
+  echo "public/index.html not found. Run the scraper first:"
   echo "  pip install requests beautifulsoup4"
   echo "  python3 scripts/scrape.py"
   exit 1
