@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+images/
+.chrome_profile/
+.DS_Store
+*.log
+debug_slider/
