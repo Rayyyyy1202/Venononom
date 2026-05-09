@@ -8,6 +8,14 @@ backend that proxies to OpenAI (default model: `gpt-5.4`, configurable).
 > Great Wall Motor. This repository scrapes the public homepage for an internal
 > demo only. Do not redistribute or use commercially.
 
+## 客户对接文档（中文）
+
+| 文档 | 适合谁看 |
+|---|---|
+| [`docs/architecture.md`](docs/architecture.md) — 产品技术支撑说明 | 客户技术 / IT / 信息安全 |
+| [`docs/scope-of-work.md`](docs/scope-of-work.md) — 甲方乙方协同工作说明 | 项目经理 / 接口人 |
+| [`docs/admin-operations.md`](docs/admin-operations.md) — 后台运营功能与日常操作 | 业务 / 内容运营 / 销售 / 客服 |
+
 ## Project layout
 
 ```

@@ -12,6 +12,10 @@
 | **甲方（Client）** | GWM Europe / 长城汽车欧洲区 |
 | **乙方（Vendor）** | 我方（产品 + 工程团队） |
 
+> **配套文档**：
+> - [`architecture.md`](./architecture.md) — 技术架构与实现思路
+> - [`admin-operations.md`](./admin-operations.md) — 后台运营功能与日常操作（业务团队必读）
+
 ---
 
 ## 1. 项目阶段总览
