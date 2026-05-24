@@ -27,10 +27,69 @@ from urllib.parse import urljoin, urlparse, urldefrag
 import requests
 from bs4 import BeautifulSoup
 
-# -------- Configuration -------------------------------------------------------
+# -------- Multi-site configuration --------------------------------------------
 
-ENTRY_URL = "https://www.gwm-eu.com/eu"
-ORIGIN = "https://www.gwm-eu.com"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+CHATBOT_SRC = REPO_ROOT / "chatbot"
+
+# Per-site config. Both gwm-eu.com and gwm.co.th run the same Adobe AEM
+# platform, so all the scraping logic is shared — only entry point, origin,
+# output folder and the runtime-only asset manifest differ.
+SITES = {
+    "eu": {
+        "entry_url": "https://www.gwm-eu.com/eu",
+        "origin": "https://www.gwm-eu.com",
+        "output": REPO_ROOT / "public",
+        "accept_language": "en-GB,en;q=0.9",
+        "knowledge": "knowledge.json",
+        # Assets JS builds at runtime (Vue :src, template-built swiper paths)
+        "extra_assets": [
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/1.png",
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/2.png",
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/1.png",
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/2.png",
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/1.png",
+            "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/2.png",
+            "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-pc.svg",
+            "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-pc.svg",
+            "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-mob.svg",
+            "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-mob.svg",
+            "/content/dam/gwm/pages/eu/eu/home/logo/phone-white.svg",
+            "/content/dam/gwm/components-assets/content/tools-bar/phone.svg",
+        ],
+    },
+    "th": {
+        "entry_url": "https://www.gwm.co.th/th",
+        "origin": "https://www.gwm.co.th",
+        "output": REPO_ROOT / "public-th",
+        "accept_language": "th-TH,th;q=0.9,en;q=0.8",
+        "knowledge": "knowledge.th.json",
+        # Hero car-swiper sequence PNGs (JS template-built, not in DOM).
+        # Discovered via diff-check.mjs.
+        "extra_assets": [
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/ora-5-ev/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/ora-5-ev/2.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-300/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-300/2.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-500/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-500/2.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-500-diesel/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/tank-500-diesel/2.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/haval-h6/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/haval-h6/2.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/poer-sahar-1/1.png",
+            "/content/dam/gwm/pages/th/en/car-swiper/pc/poer-sahar-1/2.png",
+        ],
+    },
+}
+
+# These module globals are populated by configure() before any work runs.
+ENTRY_URL = SITES["eu"]["entry_url"]
+ORIGIN = SITES["eu"]["origin"]
+SITE_DIR = SITES["eu"]["output"]
+EXTRA_ASSETS = SITES["eu"]["extra_assets"]
+KNOWLEDGE_FILE = SITES["eu"]["knowledge"]
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -39,9 +98,18 @@ HEADERS = {
     "Accept-Language": "en-GB,en;q=0.9",
 }
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SITE_DIR = REPO_ROOT / "public"
-CHATBOT_SRC = REPO_ROOT / "chatbot"
+
+def configure(site: str) -> None:
+    """Point the module globals at the chosen site's config."""
+    global ENTRY_URL, ORIGIN, SITE_DIR, EXTRA_ASSETS, KNOWLEDGE_FILE
+    cfg = SITES[site]
+    ENTRY_URL = cfg["entry_url"]
+    ORIGIN = cfg["origin"]
+    SITE_DIR = cfg["output"]
+    EXTRA_ASSETS = cfg["extra_assets"]
+    KNOWLEDGE_FILE = cfg["knowledge"]
+    HEADERS["Accept-Language"] = cfg["accept_language"]
+
 
 # Third-party domains whose <script> tags we strip (cleaner local console)
 TRACKING_DOMAINS = {
@@ -58,26 +126,6 @@ TRACKING_DOMAINS = {
 
 # Patterns to match inside <noscript> fallback blocks (e.g. GTM iframe).
 TRACKING_NOSCRIPT_PATTERNS = ("googletagmanager", "google-analytics", "doubleclick", "facebook.net")
-
-# Assets that JavaScript builds at runtime (Vue :src bindings, template
-# string-built swiper paths) — never appear as string literals in the HTML.
-# Listed as ORIGIN-relative paths.
-EXTRA_ASSETS = [
-    # Hero car-swiper sequence PNGs (built by JS template at runtime)
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/1.png",
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/ora-5-0424/2.png",
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/1.png",
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/h7/2.png",
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/1.png",
-    "/content/dam/gwm/pages/eu/eu/home/car-swiper/pc/jolion-max/2.png",
-    # Header logos (Vue :src bindings against a JS data dict)
-    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-pc.svg",
-    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-pc.svg",
-    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-white-mob.svg",
-    "/content/dam/gwm/pages/eu/eu/home/logo/gwm-black-mob.svg",
-    "/content/dam/gwm/pages/eu/eu/home/logo/phone-white.svg",
-    "/content/dam/gwm/components-assets/content/tools-bar/phone.svg",
-]
 
 # Lazy-load attributes used by AEM video / image clientlibs.
 LAZY_ATTRS = (
@@ -455,10 +503,25 @@ def copy_chatbot_assets() -> None:
     if target.exists():
         shutil.rmtree(target)
     shutil.copytree(CHATBOT_SRC, target)
-    log("OK", f"copied chatbot assets -> {target.relative_to(SITE_DIR)}")
+    # The widget always loads /chatbot/knowledge.json — make that the chosen
+    # site's knowledge file, and drop any other sites' knowledge files so they
+    # aren't shipped to the wrong deployment.
+    chosen = target / KNOWLEDGE_FILE
+    canonical = target / "knowledge.json"
+    if chosen.exists() and chosen != canonical:
+        shutil.copyfile(chosen, canonical)
+    for kb in target.glob("knowledge.*.json"):
+        kb.unlink()
+    log("OK", f"copied chatbot assets (knowledge: {KNOWLEDGE_FILE}) -> {target.relative_to(SITE_DIR)}")
 
 
-def main() -> int:
+def main(site: str = "eu") -> int:
+    if site not in SITES:
+        log("FAIL", f"unknown site '{site}'. Choose from: {', '.join(SITES)}")
+        return 2
+    configure(site)
+    log("INFO", f"site = {site}  →  output {SITE_DIR.relative_to(REPO_ROOT)}/")
+
     SITE_DIR.mkdir(parents=True, exist_ok=True)
 
     log("INFO", f"fetching homepage: {ENTRY_URL}")
@@ -501,4 +564,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    target = sys.argv[1] if len(sys.argv) > 1 else "eu"
+    sys.exit(main(target))

@@ -1,4 +1,11 @@
 {
+  "ui": {
+    "title": "GWM Assistant",
+    "subtitle": "Online · Demo",
+    "avatar": "GW",
+    "greeting": "Hi! I'm the **GWM Assistant** — a demo bot for this site. I can help with our upcoming models (**ORA 5**, **H7**, **JOLION MAX**), dealership opportunities, warranty and contact info. What would you like to know?",
+    "placeholder": "Ask about GWM models, dealers, contact…"
+  },
   "company": {
     "name": "GWM (Great Wall Motor)",
     "users_worldwide": "16,000,000+",

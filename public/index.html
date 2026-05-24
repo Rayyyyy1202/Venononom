@@ -108,8 +108,8 @@ Through continuous expansion of its R&amp;D, manufacturing and supply networks, 
 </div>
 <!-- testDrive可配置图片 -->
 <div class="testDrive-icon-box" style="display: none;">
-<input class="white-icon" type="hidden" value="/content/dam/gwm/pages/eu/eu/home/logo/phone-white.svg"/>
-<input class="black-icon" type="hidden" value="/content/dam/gwm/components-assets/content/tools-bar/phone.svg"/>
+<input class="white-icon" type="hidden"/>
+<input class="black-icon" type="hidden"/>
 </div>
 <div class="header__layout">
 <div class="header__layout-pc">
@@ -276,16 +276,6 @@ Through continuous expansion of its R&amp;D, manufacturing and supply networks, 
 </div>
 </div>
 <div class="nav-feature">
-<a class="nav-btn--secondary fs-button-s fw-medium feature-link gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/contact-us" href="#" title="(demo: page not scraped)" tm-action="buttonclick" tm-button_name="Contact Us" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
-<!-- 默认svg -->
-<svg class="svg-icon" v-if="!ifTestDriveIcon">
-<use xlink:href="#icon-testDrive"></use>
-</svg>
-<!-- 可配置logo -->
-<img :src="testDriveIcons.testDriveWhiteLogo" alt="" class="svg-icon light-icon" v-if="ifTestDriveIcon"/>
-<img :src="testDriveIcons.testDriveBlackLogo" alt="" class="svg-icon dark-icon" v-if="ifTestDriveIcon"/>
-<span>Contact Us</span>
-</a>
 <a class="nav-btn--secondary fs-button-s fw-medium feature-link gwm-trk-event no-text" href="javascript:openSiteModal();" tm-action="buttonclick" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
 <img class="svg-icon light-icon" src="/content/dam/gwm/pages/th/en/icon/country-white.png"/>
 <img class="svg-icon dark-icon" src="/content/dam/gwm/pages/th/en/icon/country-black.png"/>
@@ -495,15 +485,6 @@ Through continuous expansion of its R&amp;D, manufacturing and supply networks, 
 </div>
 </div>
 <div class="nav-feature-btn">
-<a class="nav-btn--secondary fs-text-body fw-medium gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/contact-us" href="#" title="(demo: page not scraped)" tm-action="buttonclick" tm-button_name="Contact Us" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
-<!-- 默认svg -->
-<svg class="svg-icon" v-if="!ifTestDriveIcon">
-<use xlink:href="#icon-testDrive"></use>
-</svg>
-<!-- 可配置logo -->
-<img :src="testDriveIcons.testDriveWhiteLogo" alt="" class="svg-icon light-icon" v-if="ifTestDriveIcon"/>
-<span>Contact Us</span>
-</a>
 <a class="nav-btn--secondary fs-text-body fw-medium gwm-trk-event no-text" href="javascript:openSiteModal();" tm-action="buttonclick" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
 <img class="svg-icon light-icon" src="/content/dam/gwm/pages/th/en/icon/country-white.png"/>
 </a>
@@ -523,14 +504,6 @@ Through continuous expansion of its R&amp;D, manufacturing and supply networks, 
 </a>
 </div>
 <div class="nav-feature">
-<a class="square-btn light no-follow gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/contact-us" href="#" title="Contact Us (demo: page not scraped)" tm-action="buttonclick" tm-button_name="Contact Us" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
-<svg class="svg-icon" v-if="!ifTestDriveIcon">
-<use xlink:href="#icon-testDrive"></use>
-</svg>
-<!-- 可配置logo -->
-<img :src="testDriveIcons.testDriveWhiteLogo" alt="" class="svg-icon light-icon" v-if="ifTestDriveIcon"/>
-<img :src="testDriveIcons.testDriveBlackLogo" alt="" class="svg-icon dark-icon" v-if="ifTestDriveIcon"/>
-</a>
 <a class="square-btn light no-follow gwm-trk-event" href="javascript:openSiteModal();" tm-action="buttonclick" tm-event_name="Navigation_Click_Event" tm-module="Header+0">
 <img class="svg-icon light-icon" src="/content/dam/gwm/pages/th/en/icon/country-white.png"/>
 <img class="svg-icon dark-icon" src="/content/dam/gwm/pages/th/en/icon/country-black.png"/>
@@ -994,17 +967,17 @@ Through continuous expansion of its R&amp;D, manufacturing and supply networks, 
 </div>
 <div :class="['cardL',animationRFlag ? 'animationImg':'']">
 <div class="textL">
-<div class="fs-title-h2 fw-bold"><br/>Contact US
+<div class="fs-title-h2 fw-bold"><br/>GWM Cooperation
                     </div>
 <div class="fs-subtitle fw-extrabold">
-                        Come and talk to our experts
+                        Collaboration for sustainable growth.
                     </div>
 <div class="card-btn">
-<a class="button--tertiary red-arrow fs-button-m fw-bold simple-b-text-btn gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/contact-us" href="#" title="(demo: page not scraped)" tm-action="buttonclick" tm-button_name=" Contact US+Learn More" tm-event_name="Button_Click_Event" tm-module="Simple Card A+1">Learn More</a>
+<a class="button--tertiary red-arrow fs-button-m fw-bold simple-b-text-btn gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/cooperation" href="#" title="(demo: page not scraped)" tm-action="buttonclick" tm-button_name=" GWM Cooperation+Learn More" tm-event_name="Button_Click_Event" tm-module="Simple Card A+1">Learn More</a>
 </div>
 </div>
 <div class="imgL">
-<picture :class="animationRFlag ? 'img100' :'img0' " class="lozad simple-img" data-alt="&lt;br /&gt;Contact US">
+<picture :class="animationRFlag ? 'img100' :'img0' " class="lozad simple-img" data-alt="&lt;br /&gt;GWM Cooperation">
 <source media="(max-width: 480px)" srcset="/content/dam/gwm/pages/eu/eu/home/card-right.png"/>
 <source media="(min-width: 481px)" srcset="/content/dam/gwm/pages/eu/eu/home/card-right.png"/>
 </picture>
@@ -1225,11 +1198,6 @@ font-weight: 700;
                                         Cooperation
                                     </a>
 </div>
-<div class="menu-dd fs-button-m fw-bold">
-<a class="gwm-trk-event" data-original-href="https://www.gwm-eu.com/eu/contact-us" href="#" title="(demo: page not scraped)" tm-action="buttonclick" tm-button_name="Contact Us" tm-event_name="Navigation_Click_Event" tm-module="Footer+0">
-                                        Contact Us
-                                    </a>
-</div>
 <div class="dropdown-btns">
 <svg class="svg-icon">
 <use xlink:href="#icon-down"></use>
@@ -1281,7 +1249,6 @@ font-weight: 700;
 </div>
 </div>
 <div class="footer-desc fs-text-mentions">
-<b>EMAIL : <a href="mailto:info@gwm-eu.com">info@gwm-eu.com</a></b>
 </div>
 </div>
 </footer>
@@ -1316,7 +1283,7 @@ font-weight: 700;
 <script src="/etc.clientlibs/gwm/clientlibs/ui.frontend/clientlib-home.lc-095cc6b8c19f00ada0bdbda5bb5fb734-lc.min.js"></script>
 <script src="/etc.clientlibs/gwm/clientlibs/ui.frontend/clientlib-content.lc-ccf883e0bac6c456592a98f56cb284f2-lc.min.js"></script>
 <script src="/etc.clientlibs/gwm/clientlibs/ui.frontend/clientlib-atom.lc-cd6d03a53341a721bf5ab462cc29c93f-lc.min.js"></script>
-<script src="/etc.clientlibs/gwm/clientlibs/ui.frontend/clientlib-contact-us.lc-514b0e04ce843e2c60b9ff7d8bdfd5d9-lc.min.js"></script>
+<script src="/etc.clientlibs/gwm/clientlibs/ui.frontend/clientlib-contact-us.lc-6122de8b7d9fb4d05389a823a6f21af7-lc.min.js"></script>
 <script charset="UTF-8" data-document-language="true" data-domain-script="12f9d56b-7dc2-4c77-afbb-36ac692070ee" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript"></script>
 <script defer="" src="/chatbot/chatbot.js"></script></body>
 </html>

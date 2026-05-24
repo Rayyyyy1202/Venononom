@@ -21,10 +21,19 @@ from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_DIR = ROOT / "public"
-KB_PATH = ROOT / "chatbot" / "knowledge.json"
 
 load_dotenv(ROOT / ".env")
+
+# Which market this instance serves. Each Vercel project sets GWM_SITE;
+# default "eu" keeps the original deployment unchanged.
+GWM_SITE = os.getenv("GWM_SITE", "eu").strip().lower()
+
+if GWM_SITE == "th":
+    SITE_DIR = ROOT / "public-th"
+    KB_PATH = ROOT / "chatbot" / "knowledge.th.json"
+else:
+    SITE_DIR = ROOT / "public"
+    KB_PATH = ROOT / "chatbot" / "knowledge.json"
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4").strip()
@@ -70,11 +79,30 @@ def kb_text() -> str:
     return _kb_text
 
 
-SYSTEM_PROMPT_TEMPLATE = """You are the GWM Europe assistant — a friendly, concise demo chatbot embedded in the GWM Europe homepage (https://www.gwm-eu.com/eu).
+_SITE_PROMPT = {
+    "eu": {
+        "brand": "GWM Europe",
+        "home": "https://www.gwm-eu.com/eu",
+        "contact": "emailing info@gwm-eu.com or visiting the contact page",
+        "language_rule": "",
+    },
+    "th": {
+        "brand": "GWM Thailand (เกรท วอลล์ มอเตอร์)",
+        "home": "https://www.gwm.co.th/th",
+        "contact": "calling 02-668-8888 or visiting a GWM Store",
+        "language_rule": (
+            "\nIMPORTANT: Reply in the SAME language the user writes in — "
+            "Thai (ภาษาไทย) if they write Thai, English if they write English. "
+            "Default to Thai if unsure. Use Thai Baht (฿) for prices."
+        ),
+    },
+}
 
-Use the JSON knowledge base below as your source of truth for product names, taglines, contact info and section URLs. If a question can't be answered from the knowledge base, say so briefly and suggest emailing info@gwm-eu.com or visiting the contact page.
+SYSTEM_PROMPT_TEMPLATE = """You are the {brand} assistant — a friendly, concise demo chatbot embedded in the {brand} homepage ({home}).
 
-Tone: warm, professional, brief (2-4 sentences unless asked for detail). Use **bold** for product names and key facts. When relevant, include a link in markdown form like [Models](https://www.gwm-eu.com/eu/models).
+Use the JSON knowledge base below as your source of truth for product names, prices, contact info and section URLs. If a question can't be answered from the knowledge base, say so briefly and suggest {contact}.
+
+Tone: warm, professional, brief (2-4 sentences unless asked for detail). Use **bold** for product names and key facts. When relevant, include a link in markdown form.{language_rule}
 
 KNOWLEDGE BASE:
 {kb}
@@ -82,7 +110,14 @@ KNOWLEDGE BASE:
 
 
 def system_prompt() -> str:
-    return SYSTEM_PROMPT_TEMPLATE.format(kb=kb_text())
+    cfg = _SITE_PROMPT.get(GWM_SITE, _SITE_PROMPT["eu"])
+    return SYSTEM_PROMPT_TEMPLATE.format(
+        brand=cfg["brand"],
+        home=cfg["home"],
+        contact=cfg["contact"],
+        language_rule=cfg["language_rule"],
+        kb=kb_text(),
+    )
 
 
 # -- Chat endpoint -----------------------------------------------------------
@@ -149,6 +184,7 @@ async def chat(req: ChatRequest):
 async def health():
     return {
         "ok": True,
+        "site": GWM_SITE,
         "model": OPENAI_MODEL,
         "has_key": bool(OPENAI_API_KEY),
         "kb_loaded": KB_PATH.exists(),

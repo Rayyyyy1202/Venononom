@@ -2,8 +2,9 @@
 # Local server for the GWM demo.
 # Starts FastAPI (serves the scraped site at /, exposes /api/chat backed by OpenAI).
 #
-# Usage:  ./run.sh           (defaults to port 8000)
-#         ./run.sh 9000      (custom port)
+# Usage:  ./run.sh                  (EU site, port 8000)
+#         ./run.sh 9000             (EU site, custom port)
+#         GWM_SITE=th ./run.sh      (Thailand site)
 #
 # Requires:
 #   pip install -r server/requirements.txt
@@ -12,11 +13,18 @@
 set -e
 PORT="${1:-8000}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
+SITE="${GWM_SITE:-eu}"
 
-if [ ! -f "$HERE/public/index.html" ]; then
-  echo "public/index.html not found. Run the scraper first:"
+if [ "$SITE" = "th" ]; then
+  STATIC_DIR="public-th"
+else
+  STATIC_DIR="public"
+fi
+
+if [ ! -f "$HERE/$STATIC_DIR/index.html" ]; then
+  echo "$STATIC_DIR/index.html not found. Run the scraper first:"
   echo "  pip install requests beautifulsoup4"
-  echo "  python3 scripts/scrape.py"
+  echo "  python3 scripts/scrape.py $SITE"
   exit 1
 fi
 
@@ -26,5 +34,5 @@ if [ ! -f "$HERE/.env" ]; then
 fi
 
 cd "$HERE"
-echo "Serving GWM demo on http://localhost:$PORT  (Ctrl+C to stop)"
-exec python3 -m uvicorn server.main:app --host 0.0.0.0 --port "$PORT"
+echo "Serving GWM demo [$SITE] on http://localhost:$PORT  (Ctrl+C to stop)"
+exec env GWM_SITE="$SITE" python3 -m uvicorn server.main:app --host 0.0.0.0 --port "$PORT"

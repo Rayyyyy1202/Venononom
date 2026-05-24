@@ -104,12 +104,33 @@
     } catch (e) { /* ignore quota */ }
   }
 
+  function applyUiConfig() {
+    const ui = (kb && kb.ui) || {};
+    if (ui.title) {
+      const el = root.querySelector(".gwm-chatbot__title-main");
+      if (el) el.textContent = ui.title;
+    }
+    if (ui.subtitle) {
+      const el = root.querySelector(".gwm-chatbot__title-sub");
+      if (el) el.textContent = ui.subtitle;
+    }
+    if (ui.avatar) {
+      const el = root.querySelector(".gwm-chatbot__avatar");
+      if (el) el.textContent = ui.avatar;
+    }
+    if (ui.placeholder && input) {
+      input.setAttribute("placeholder", ui.placeholder);
+    }
+  }
+
   function renderInitial() {
+    applyUiConfig();
     const history = loadHistory();
     if (history.length) {
       history.forEach((m) => appendMessage(m.role, m.text, m.links || [], { animate: false }));
     } else {
-      const greeting = "Hi! I'm the **GWM Assistant** — a demo bot for this site. I can help with our upcoming models (**ORA 5**, **H7**, **JOLION MAX**), dealership opportunities, warranty and contact info. What would you like to know?";
+      const greeting = (kb && kb.ui && kb.ui.greeting) ||
+        "Hi! I'm the **GWM Assistant** — a demo bot for this site. What would you like to know?";
       appendMessage("bot", greeting, [], { animate: false, persist: true });
     }
     renderSuggestions();
