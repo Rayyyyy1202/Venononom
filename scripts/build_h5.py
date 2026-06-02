@@ -30,19 +30,27 @@ CHATBOT = ROOT / "chatbot"
 EU_LOCALES = [
     {
         "subpath": "",
-        "lang": "en",
+        # Empty lang lets pickLocale() in chatbot.js fall through to
+        # navigator.languages — i.e. the root URL auto-adapts to the
+        # visitor's browser language (en, es, it, ...).
+        "lang": "",
         "title": "GWM Assistant · Great Wall Motor",
         "tag": "GWM EUROPE · AI DEMO",
         "base_kb": "knowledge.json",
         "override_kb": None,
     },
+    # `/es` and `/it` are kept as explicit force-locale URLs (shareable, for
+    # when you want to send a Spanish or Italian native speaker straight to
+    # their language regardless of browser). The widget detects `<html lang>`
+    # and uses it as the locale; merged localizations live in knowledge.json
+    # so no per-locale override files are needed.
     {
         "subpath": "es",
         "lang": "es",
         "title": "GWM Assistant · Great Wall Motor (España)",
         "tag": "GWM ESPAÑA · DEMO IA",
         "base_kb": "knowledge.json",
-        "override_kb": "knowledge.es.json",
+        "override_kb": None,
     },
     {
         "subpath": "it",
@@ -50,7 +58,7 @@ EU_LOCALES = [
         "title": "GWM Assistant · Great Wall Motor (Italia)",
         "tag": "GWM ITALIA · DEMO IA",
         "base_kb": "knowledge.json",
-        "override_kb": "knowledge.it.json",
+        "override_kb": None,
     },
 ]
 

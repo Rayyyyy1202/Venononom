@@ -107,8 +107,51 @@
     } catch (e) { /* ignore quota */ }
   }
 
+  /* ---------- Locale auto-detect ---------- */
+
+  let localizedKb = null;
+  let locale = "en";
+
+  function pickLocale() {
+    const supported = ["en"];
+    if (kb && kb.localizations) {
+      for (const k of Object.keys(kb.localizations)) supported.push(k);
+    }
+    // 1. URL ?lang= override (shareable links like /?lang=es)
+    try {
+      const q = new URLSearchParams(window.location.search).get("lang");
+      if (q) {
+        const code = q.slice(0, 2).toLowerCase();
+        if (supported.includes(code)) return code;
+      }
+    } catch (e) {}
+    // 2. Static <html lang> (forces a locale for the whole page, e.g. /es/)
+    const htmlLang = (document.documentElement.lang || "").slice(0, 2).toLowerCase();
+    if (htmlLang && supported.includes(htmlLang)) return htmlLang;
+    // 3. Browser preference (navigator.languages is ordered)
+    const browser = navigator.languages || [navigator.language || "en"];
+    for (const l of browser) {
+      const code = (l || "").slice(0, 2).toLowerCase();
+      if (supported.includes(code)) return code;
+    }
+    return "en";
+  }
+
+  function applyLocale() {
+    if (!kb) return;
+    locale = pickLocale();
+    const loc = (kb.localizations && kb.localizations[locale]) || {};
+    localizedKb = {
+      ui: Object.assign({}, kb.ui || {}, loc.ui || {}),
+      suggestions: loc.suggestions || kb.suggestions || [],
+      fallback: loc.fallback || kb.fallback || "",
+    };
+    // Sync <html lang> so the lang_hint we send to /api/chat matches.
+    document.documentElement.lang = locale;
+  }
+
   function applyUiConfig() {
-    const ui = (kb && kb.ui) || {};
+    const ui = (localizedKb && localizedKb.ui) || (kb && kb.ui) || {};
     if (ui.title) {
       const el = root.querySelector(".gwm-chatbot__title-main");
       if (el) el.textContent = ui.title;
@@ -127,12 +170,15 @@
   }
 
   function renderInitial() {
+    applyLocale();
     applyUiConfig();
     const history = loadHistory();
     if (history.length) {
       history.forEach((m) => appendMessage(m.role, m.text, m.links || [], { animate: false }));
     } else {
-      const greeting = (kb && kb.ui && kb.ui.greeting) ||
+      const greeting =
+        (localizedKb && localizedKb.ui && localizedKb.ui.greeting) ||
+        (kb && kb.ui && kb.ui.greeting) ||
         "Hi! I'm the **GWM Assistant** — a demo bot for this site. What would you like to know?";
       appendMessage("bot", greeting, [], { animate: false, persist: true });
     }
@@ -141,10 +187,11 @@
 
   function renderSuggestions() {
     if (suggestionsEl) suggestionsEl.remove();
-    if (!kb || !kb.suggestions || !kb.suggestions.length) return;
+    const sugg = (localizedKb && localizedKb.suggestions) || (kb && kb.suggestions) || [];
+    if (!sugg.length) return;
     suggestionsEl = document.createElement("div");
     suggestionsEl.className = "gwm-chatbot__suggestions";
-    kb.suggestions.forEach((s) => {
+    sugg.forEach((s) => {
       const chip = document.createElement("button");
       chip.type = "button";
       chip.className = "gwm-chatbot__chip";

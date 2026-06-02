@@ -3,8 +3,38 @@
     "title": "GWM Assistant",
     "subtitle": "Online · Demo",
     "avatar": "GW",
-    "greeting": "Ciao! 👋 Sono **GWM Assistant** — un bot demo per questo sito. Posso aiutarti con i nostri prossimi modelli (**ORA 5**, **H7**, **JOLION MAX**), opportunità di concessionari, garanzia e informazioni di contatto. Cosa vorresti sapere?",
-    "placeholder": "Chiedi sui modelli GWM, concessionari, contatti…"
+    "greeting": "Hi! I'm the **GWM Assistant** — a demo bot for this site. I can help with our upcoming models (**ORA 5**, **H7**, **JOLION MAX**), dealership opportunities, warranty and contact info. What would you like to know?",
+    "placeholder": "Ask about GWM models, dealers, contact…"
+  },
+  "localizations": {
+    "es": {
+      "ui": {
+        "subtitle": "En línea · Demo",
+        "greeting": "¡Hola! 👋 Soy el **GWM Assistant** — un bot demo para este sitio. Puedo ayudarte con nuestros próximos modelos (**ORA 5**, **H7**, **JOLION MAX**), oportunidades de concesionario, garantía e información de contacto. ¿Qué te gustaría saber?",
+        "placeholder": "Pregunta sobre modelos GWM, concesionarios, contacto…"
+      },
+      "fallback": "Lo siento, soy un asistente demo de GWM Europa. Puedo responder sobre **modelos** (ORA 5, H7, JOLION MAX), **concesionarios**, **garantía/servicio**, **tecnología** y **contacto**. Para cualquier otra cosa, escribe a **info@gwm-eu.com**.",
+      "suggestions": [
+        "Háblame del GWM ORA 5",
+        "¿Qué modelos vienen a Europa?",
+        "¿Cómo puedo ser concesionario?",
+        "¿Cómo contacto con GWM?"
+      ]
+    },
+    "it": {
+      "ui": {
+        "subtitle": "Online · Demo",
+        "greeting": "Ciao! 👋 Sono **GWM Assistant** — un bot demo per questo sito. Posso aiutarti con i nostri prossimi modelli (**ORA 5**, **H7**, **JOLION MAX**), opportunità di concessionari, garanzia e informazioni di contatto. Cosa vorresti sapere?",
+        "placeholder": "Chiedi sui modelli GWM, concessionari, contatti…"
+      },
+      "fallback": "Mi dispiace, sono un assistente demo di GWM Europa. Posso rispondere su **modelli** (ORA 5, H7, JOLION MAX), **concessionari**, **garanzia/servizio**, **tecnologia** e **contatti**. Per qualsiasi altra cosa, scrivi a **info@gwm-eu.com**.",
+      "suggestions": [
+        "Parlami della GWM ORA 5",
+        "Quali modelli arrivano in Europa?",
+        "Come posso diventare concessionario?",
+        "Come contatto GWM?"
+      ]
+    }
   },
   "company": {
     "name": "GWM (Great Wall Motor)",
@@ -295,11 +325,11 @@
       "links": []
     }
   ],
-  "fallback": "Mi dispiace, sono un assistente demo di GWM Europa. Posso rispondere su **modelli** (ORA 5, H7, JOLION MAX), **concessionari**, **garanzia/servizio**, **tecnologia** e **contatti**. Per qualsiasi altra cosa, scrivi a **info@gwm-eu.com**.",
+  "fallback": "I'm a demo assistant focused on GWM Europe. I can answer questions about our **models** (ORA 5, H7, JOLION MAX), **dealership** opportunities, **warranty/service**, **technology** and **contact info**. For anything else, please reach out at **info@gwm-eu.com**.",
   "suggestions": [
-    "Parlami della GWM ORA 5",
-    "Quali modelli arrivano in Europa?",
-    "Come posso diventare concessionario?",
-    "Come contatto GWM?"
+    "Tell me about GWM ORA 5",
+    "What models are coming to Europe?",
+    "How can I become a dealer?",
+    "How do I contact GWM?"
   ]
 }
