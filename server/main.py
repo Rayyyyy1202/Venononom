@@ -119,13 +119,25 @@ KNOWLEDGE BASE:
 """
 
 
-def system_prompt() -> str:
+_LANG_NAMES = {"en": "English", "es": "Spanish", "it": "Italian",
+               "th": "Thai", "de": "German", "fr": "French", "pt": "Portuguese"}
+
+
+def system_prompt(lang_hint: str | None = None) -> str:
     cfg = _SITE_PROMPT.get(GWM_SITE, _SITE_PROMPT["eu"])
+    language_rule = cfg["language_rule"]
+    if lang_hint and lang_hint in _LANG_NAMES:
+        name = _LANG_NAMES[lang_hint]
+        language_rule += (
+            f"\nIMPORTANT: The user is viewing the {name} UI. Reply in {name} "
+            f"by default. If the user clearly writes in another language, "
+            f"reply in that language instead."
+        )
     return SYSTEM_PROMPT_TEMPLATE.format(
         brand=cfg["brand"],
         home=cfg["home"],
         contact=cfg["contact"],
-        language_rule=cfg["language_rule"],
+        language_rule=language_rule,
         kb=kb_text(),
     )
 
@@ -140,6 +152,7 @@ class ChatMessage(BaseModel):
 
 class ChatRequest(BaseModel):
     messages: list[ChatMessage]
+    lang_hint: str | None = None
 
 
 def _normalise_role(role: str) -> str:
@@ -156,7 +169,7 @@ async def chat(req: ChatRequest):
         raise HTTPException(status_code=400, detail="messages must not be empty")
     client = get_client()
 
-    full_messages = [{"role": "system", "content": system_prompt()}]
+    full_messages = [{"role": "system", "content": system_prompt(req.lang_hint)}]
     for m in req.messages:
         full_messages.append({"role": _normalise_role(m.role), "content": m.content})
 

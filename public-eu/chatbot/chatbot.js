@@ -179,11 +179,17 @@
       role: m.role === "bot" ? "assistant" : "user",
       content: stripMd(m.text),
     }));
+    // Tell the backend which locale UI the user is on so it can hint the
+    // model to default to that language (the model still adapts if the
+    // user actually writes in a different language).
+    const langHint = (document.documentElement.lang || "").slice(0, 2).toLowerCase();
+    const reqBody = { messages };
+    if (langHint) reqBody.lang_hint = langHint;
 
     fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages }),
+      body: JSON.stringify(reqBody),
     })
       .then((resp) => {
         if (!resp.ok) throw new Error("HTTP " + resp.status);

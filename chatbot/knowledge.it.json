@@ -1,0 +1,16 @@
+{
+  "ui": {
+    "title": "GWM Assistant",
+    "subtitle": "Online · Demo",
+    "avatar": "GW",
+    "greeting": "Ciao! 👋 Sono **GWM Assistant** — un bot demo per questo sito. Posso aiutarti con i nostri prossimi modelli (**ORA 5**, **H7**, **JOLION MAX**), opportunità di concessionari, garanzia e informazioni di contatto. Cosa vorresti sapere?",
+    "placeholder": "Chiedi sui modelli GWM, concessionari, contatti…"
+  },
+  "fallback": "Mi dispiace, sono un assistente demo di GWM Europa. Posso rispondere su **modelli** (ORA 5, H7, JOLION MAX), **concessionari**, **garanzia/servizio**, **tecnologia** e **contatti**. Per qualsiasi altra cosa, scrivi a **info@gwm-eu.com**.",
+  "suggestions": [
+    "Parlami della GWM ORA 5",
+    "Quali modelli arrivano in Europa?",
+    "Come posso diventare concessionario?",
+    "Come contatto GWM?"
+  ]
+}
