@@ -346,3 +346,45 @@
     bottom: 72px;
   }
 }
+
+/* ───────── H5 Fullscreen mode ─────────
+   Triggered by the page setting window.GWM_CHATBOT_FULLSCREEN = true.
+   The widget mounts into a host container, takes its full size, hides the
+   launcher and close button, and stays open. */
+.gwm-chatbot--fullscreen {
+  position: static;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.gwm-chatbot--fullscreen .gwm-chatbot__launcher,
+.gwm-chatbot--fullscreen .gwm-chatbot__close { display: none !important; }
+.gwm-chatbot--fullscreen .gwm-chatbot__panel {
+  position: static;
+  display: flex !important;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  border-radius: inherit;
+  box-shadow: none;
+  animation: none;
+}
+.gwm-chatbot--fullscreen .gwm-chatbot__header {
+  padding: 16px 18px;
+  /* iOS notch safe area */
+  padding-top: max(16px, env(safe-area-inset-top));
+}
+.gwm-chatbot--fullscreen .gwm-chatbot__title-main { font-size: 15px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__title-sub  { font-size: 12px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__avatar { width: 40px; height: 40px; font-size: 15px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__body { font-size: 14px; padding: 18px; gap: 12px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__msg { font-size: 14px; padding: 11px 14px; max-width: 88%; }
+.gwm-chatbot--fullscreen .gwm-chatbot__input-wrap {
+  padding: 12px 14px;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+.gwm-chatbot--fullscreen .gwm-chatbot__input { font-size: 15px; min-height: 44px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__send { width: 44px; height: 44px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__chip { padding: 8px 14px; font-size: 13px; }
+.gwm-chatbot--fullscreen .gwm-chatbot__footer { font-size: 11px; }

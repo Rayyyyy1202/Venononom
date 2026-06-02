@@ -16,6 +16,7 @@ Driven by the GWM_SITE env var:
 
 import os
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -28,10 +29,19 @@ def main() -> int:
         print(f"[build] GWM_SITE={SITE!r}: serving public/ as-is, nothing to do.")
         return 0
 
+    # Always (re)build the H5 source so deploys are deterministic even if
+    # public-th/ in git is stale.
+    h5 = ROOT / "scripts" / "build_h5.py"
+    if h5.exists():
+        rc = subprocess.run([sys.executable, str(h5)], check=False).returncode
+        if rc != 0:
+            print(f"[build] build_h5.py exited {rc}")
+            return rc
+
     src = ROOT / "public-th"
     dst = ROOT / "public"
     if not (src / "index.html").exists():
-        print(f"[build] ERROR: {src}/index.html missing. Run scripts/scrape.py th first.")
+        print(f"[build] ERROR: {src}/index.html missing.")
         return 1
 
     print(f"[build] GWM_SITE=th: replacing {dst}/ with {src}/ contents…")

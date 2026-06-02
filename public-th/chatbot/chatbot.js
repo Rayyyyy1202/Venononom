@@ -27,8 +27,9 @@
 
   function mount() {
     if (document.querySelector(".gwm-chatbot")) return;
+    const fullscreen = !!window.GWM_CHATBOT_FULLSCREEN;
     root = document.createElement("div");
-    root.className = "gwm-chatbot";
+    root.className = "gwm-chatbot" + (fullscreen ? " gwm-chatbot--fullscreen is-open" : "");
     root.innerHTML = `
       <button class="gwm-chatbot__launcher" type="button" aria-label="Open chat">
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -57,7 +58,9 @@
         <div class="gwm-chatbot__footer">Demo assistant · answers come from public website content</div>
       </div>
     `;
-    document.body.appendChild(root);
+    const hostSel = window.GWM_CHATBOT_MOUNT;
+    const host = (hostSel && document.querySelector(hostSel)) || document.body;
+    host.appendChild(root);
 
     panel = root.querySelector(".gwm-chatbot__panel");
     body = root.querySelector(".gwm-chatbot__body");
