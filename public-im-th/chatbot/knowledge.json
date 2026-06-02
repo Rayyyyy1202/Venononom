@@ -1,0 +1,218 @@
+{
+  "ui": {
+    "title": "IM Assistant",
+    "subtitle": "ออนไลน์ · เดโม",
+    "avatar": "IM",
+    "greeting": "สวัสดีค่ะ! 🌌 ฉันคือผู้ช่วยอัจฉริยะของ **IM Motors Thailand** (เดโม) ถามได้เลยเรื่อง **IM6** (รุ่น Premium / Performance), ราคา, ระยะทาง, การชาร์จ, เทคโนโลยี หรือการทดลองขับ — พิมพ์ภาษาไทยหรืออังกฤษก็ได้ค่ะ",
+    "placeholder": "ถามเรื่อง IM6, ราคา, ทดลองขับ..."
+  },
+  "company": {
+    "name": "IM Motors (智己汽车 / Zhiji Motors)",
+    "tagline": "Intelligence in Motion",
+    "jv": "บริษัทร่วมทุน SAIC Motor + Alibaba + Zhangjiang Hi-Tech",
+    "thailand_launch": "18 มีนาคม 2025 (เปิดตัวที่งาน Bangkok International Motor Show)",
+    "global_site": "https://www.immotors.com/global/en/",
+    "distribution_note": "ในประเทศไทย IM Motors จำหน่ายและให้บริการผ่านเครือข่ายของ SAIC Motor / MG"
+  },
+  "models": [
+    {
+      "name": "IM6 Premium",
+      "type": "Intelligent Mid-large SUV (BEV)",
+      "price_thb": 1399900,
+      "battery_kwh": 75,
+      "range_km": 550,
+      "platform": "800V High-Voltage SiC"
+    },
+    {
+      "name": "IM6 Performance",
+      "type": "Intelligent Mid-large SUV (BEV) · twin-motor AWD",
+      "price_thb": 1799900,
+      "battery_kwh": 100,
+      "range_km": 634,
+      "platform": "800V High-Voltage SiC"
+    }
+  ],
+  "tech_highlights": [
+    "**IM Digital Chassis** — แชสซีดิจิทัล พร้อมระบบ Intelligent Four-Wheel Steering (พวงมาลัยสี่ล้อ)",
+    "**VMC (Vehicle Motion Control)** — 'สมองน้อย' ควบคุมการเคลื่อนที่ของรถแบบไดนามิก",
+    "**800V High-Voltage SiC Platform** — แพลตฟอร์มไฟฟ้าแรงสูง ชาร์จเร็ว",
+    "**One Touch iAD (AI Chauffeur)** — ระบบช่วยขับขั้นสูง รวมถึง **Rainy Night Mode** สำหรับขับกลางคืน/ฝนตก",
+    "**IM AI Cabin** — ห้องโดยสารอัจฉริยะ รองรับ Wireless Apple CarPlay & Android Auto",
+    "**Stellar Super Extended Range System** — ระบบเพิ่มระยะทางในรุ่นที่รองรับ"
+  ],
+  "qa": [
+    {
+      "id": "im6_overview",
+      "keywords": [
+        "im6",
+        "ls6",
+        "what is im6",
+        "รุ่นอะไร",
+        "ดู im6"
+      ],
+      "answer": "**IM6** เป็น Intelligent Mid-large SUV ไฟฟ้า 100% รุ่นเรือธงของ IM Motors สำหรับตลาดต่างประเทศ (เป็น **LS6** ในจีน) เปิดตัวในไทยเมื่อ **18 มีนาคม 2025** มีให้เลือก 2 รุ่น: **Premium** (฿1,399,900, แบต 75 kWh, ระยะ 550 กม.) และ **Performance** (฿1,799,900, แบต 100 kWh, ระยะ 634 กม., มอเตอร์คู่ AWD)",
+      "links": [
+        {
+          "label": "IM6 (immotors.com)",
+          "url": "https://www.immotors.com/global/en/ls6_detail"
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "keywords": [
+        "price",
+        "ราคา",
+        "เท่าไหร่",
+        "กี่บาท",
+        "cost"
+      ],
+      "answer": "**IM6 Premium** ราคา **฿1,399,900** | **IM6 Performance** ราคา **฿1,799,900** (ราคาเปิดตัวสำหรับตลาดไทย)\n\nสำหรับโปรโมชั่นและราคาออนโรดล่าสุด ติดต่อตัวแทนจำหน่าย IM / SAIC-MG ใกล้บ้านค่ะ",
+      "links": []
+    },
+    {
+      "id": "range",
+      "keywords": [
+        "range",
+        "ระยะ",
+        "วิ่งได้ไกล",
+        "battery",
+        "แบตเตอรี่"
+      ],
+      "answer": "**IM6 Premium**: แบตเตอรี่ **75 kWh** ระยะทางต่อการชาร์จ **550 กม.** | **IM6 Performance**: แบตเตอรี่ **100 kWh** ระยะ **634 กม.** ทั้งคู่ใช้แพลตฟอร์ม **800V SiC** ที่รองรับการชาร์จเร็วระดับสูง",
+      "links": []
+    },
+    {
+      "id": "charging",
+      "keywords": [
+        "charging",
+        "charge",
+        "ชาร์จ",
+        "ไฟ",
+        "800v"
+      ],
+      "answer": "IM6 ใช้แพลตฟอร์ม **800V High-Voltage SiC** รองรับการชาร์จเร็ว DC กำลังสูง ช่วยลดเวลาชาร์จได้อย่างมีนัยสำคัญเทียบกับระบบ 400V ทั่วไป รายละเอียดเวลาชาร์จ 10–80% สามารถสอบถามได้ที่ตัวแทนจำหน่ายค่ะ",
+      "links": []
+    },
+    {
+      "id": "tech",
+      "keywords": [
+        "tech",
+        "เทคโนโลยี",
+        "ฟีเจอร์",
+        "feature",
+        "smart"
+      ],
+      "answer": "ฟีเจอร์เด่นของ IM6:\n• **IM Digital Chassis** + **Intelligent Four-Wheel Steering** (พวงมาลัยสี่ล้อ)\n• **VMC** ระบบควบคุมการเคลื่อนที่อัจฉริยะ\n• **One Touch iAD** ระบบช่วยขับ AI พร้อม **Rainy Night Mode**\n• **IM AI Cabin** + Wireless Apple CarPlay / Android Auto\n• **800V SiC platform** ชาร์จเร็ว",
+      "links": []
+    },
+    {
+      "id": "premium_vs_performance",
+      "keywords": [
+        "premium",
+        "performance",
+        "เปรียบเทียบ",
+        "ต่างกัน",
+        "compare"
+      ],
+      "answer": "**Premium vs Performance**:\n• **Premium** (฿1,399,900): 75 kWh, 550 กม., ขับเคลื่อนล้อหลัง (RWD)\n• **Performance** (฿1,799,900): 100 kWh, 634 กม., ขับเคลื่อนสี่ล้อ (AWD) มอเตอร์คู่ อัตราเร่งแรงกว่า\n\nเลือก **Premium** ถ้าเน้นความคุ้มค่า/ใช้ในเมือง, **Performance** ถ้าเน้นสมรรถนะ/เดินทางไกล",
+      "links": []
+    },
+    {
+      "id": "test_drive",
+      "keywords": [
+        "test drive",
+        "ทดลองขับ",
+        "ลองขับ",
+        "book"
+      ],
+      "answer": "การทดลองขับ IM6 ติดต่อตัวแทนจำหน่าย **SAIC-MG / IM Motors** ในประเทศไทย หรือสอบถามผ่านศูนย์บริการ MG ใกล้บ้าน บอกรุ่นที่สนใจ (Premium / Performance) จะได้รับการนัดหมายค่ะ",
+      "links": []
+    },
+    {
+      "id": "dealer",
+      "keywords": [
+        "dealer",
+        "showroom",
+        "โชว์รูม",
+        "ตัวแทน",
+        "ที่ไหน",
+        "ซื้อ"
+      ],
+      "answer": "ในประเทศไทย IM Motors จำหน่ายและบริการผ่าน **เครือข่าย SAIC Motor / MG** ที่มีทั่วประเทศ ค้นหาโชว์รูม MG ใกล้บ้านเพื่อสอบถาม IM6 ได้เลยค่ะ",
+      "links": []
+    },
+    {
+      "id": "warranty",
+      "keywords": [
+        "warranty",
+        "service",
+        "ประกัน",
+        "บริการ",
+        "ดูแล"
+      ],
+      "answer": "IM6 ในประเทศไทยใช้บริการหลังการขายผ่าน **เครือข่าย SAIC-MG** มาตรฐานการรับประกันและบริการเป็นไปตามข้อกำหนดของผู้จัดจำหน่ายในประเทศ สอบถามรายละเอียดที่โชว์รูม",
+      "links": []
+    },
+    {
+      "id": "company",
+      "keywords": [
+        "company",
+        "im motors",
+        "intelligence in motion",
+        "zhiji",
+        "智己",
+        "saic"
+      ],
+      "answer": "**IM Motors (智己汽车 / Intelligence in Motion)** เป็นบริษัทร่วมทุนระหว่าง **SAIC Motor + Alibaba + Zhangjiang Hi-Tech** มุ่งเน้นรถยนต์ไฟฟ้าระดับ Premium ที่ใช้ AI และเทคโนโลยีดิจิทัลขั้นสูง ประเทศไทยเป็นตลาดต่างประเทศแห่งแรก",
+      "links": [
+        {
+          "label": "เว็บไซต์ทั่วโลก",
+          "url": "https://www.immotors.com/global/en/"
+        }
+      ]
+    },
+    {
+      "id": "other_models",
+      "keywords": [
+        "other model",
+        "รุ่นอื่น",
+        "im5",
+        "l6",
+        "l7",
+        "ls7"
+      ],
+      "answer": "ในตลาดโลก IM Motors มีรุ่น **IM5 / IM6 / IM L7 / IM LS7** แต่ในประเทศไทยตอนนี้เปิดตัวเฉพาะ **IM6** ก่อน รุ่นอื่นๆ อยู่ระหว่างพิจารณานำเข้าในอนาคต",
+      "links": []
+    },
+    {
+      "id": "greeting",
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "สวัสดี",
+        "หวัดดี"
+      ],
+      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **IM6** ของ IM Motors Thailand ได้ — ราคา, สเปก, การทดลองขับ, เทคโนโลยี อยากทราบอะไรดีคะ?",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "keywords": [
+        "thanks",
+        "thank you",
+        "ขอบคุณ"
+      ],
+      "answer": "ยินดีค่ะ! 😊 มีคำถามอื่นเกี่ยวกับ IM6 ไหมคะ?",
+      "links": []
+    }
+  ],
+  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **IM Motors Thailand** ตอบได้เรื่อง **IM6** (รุ่น Premium / Performance, ราคา, ระยะ, การชาร์จ), **เทคโนโลยี**, **การทดลองขับ** และ **เครือข่ายบริการ** สำหรับเรื่องอื่นๆ ลองค้นหาที่เว็บไซต์ทั่วโลก immotors.com หรือสอบถามตัวแทน SAIC-MG ใกล้บ้านค่ะ (I can also reply in English.)",
+  "suggestions": [
+    "IM6 ราคาเท่าไหร่?",
+    "Premium กับ Performance ต่างกันยังไง?",
+    "วิ่งได้ไกลแค่ไหน?",
+    "อยากทดลองขับ"
+  ]
+}

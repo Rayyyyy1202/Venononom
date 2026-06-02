@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{LANG}}">
+<html lang="th">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="{{BRAND_PRIMARY}}">
+<meta name="theme-color" content="#101828">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>{{TITLE}}</title>
+<title>IM Assistant · IM Motors Thailand</title>
 <link rel="stylesheet" href="chatbot/chatbot.css">
 <style>
   /* Brand override — higher specificity than .gwm-chatbot defaults */
   .gwm-chatbot {
-    --gwm-primary: {{BRAND_PRIMARY}};
-    --gwm-primary-dark: {{BRAND_PRIMARY_DARK}};
-    --gwm-user-bubble: {{BRAND_PRIMARY}};
+    --gwm-primary: #101828;
+    --gwm-primary-dark: #0a0f1a;
+    --gwm-user-bubble: #101828;
   }
 </style>
 <style>
   *,*::before,*::after { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0; height: 100%;
-    background: {{PAGE_BG}};
+    background: radial-gradient(120% 80% at 50% 0%, #1a2740 0%, #050810 70%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, "Sarabun", "Noto Sans Thai", "PingFang SC",
       "Microsoft YaHei", sans-serif;
@@ -50,7 +50,7 @@
       box-shadow:
         0 24px 80px rgba(0, 0, 0, 0.55),
         0 0 0 8px rgba(255, 255, 255, 0.04),
-        0 0 0 9px {{BRAND_GLOW}};
+        0 0 0 9px rgba(120, 160, 220, 0.18);
     }
   }
   /* Tiny brand strip above the frame on desktop, for "demo" feel */
@@ -71,7 +71,7 @@
 </style>
 </head>
 <body>
-<div class="gwm-h5-tag">{{TAG}}</div>
+<div class="gwm-h5-tag">IM MOTORS THAILAND · AI DEMO</div>
 <div class="gwm-h5-frame"></div>
 <script>
   window.GWM_CHATBOT_FULLSCREEN = true;

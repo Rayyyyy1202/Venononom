@@ -31,6 +31,9 @@ GWM_SITE = os.getenv("GWM_SITE", "eu").strip().lower()
 if GWM_SITE == "th":
     SITE_DIR = ROOT / "public-th"
     KB_PATH = ROOT / "chatbot" / "knowledge.th.json"
+elif GWM_SITE == "im-th":
+    SITE_DIR = ROOT / "public-im-th"
+    KB_PATH = ROOT / "chatbot" / "knowledge.im-th.json"
 else:
     SITE_DIR = ROOT / "public"
     KB_PATH = ROOT / "chatbot" / "knowledge.json"
@@ -104,6 +107,17 @@ _SITE_PROMPT = {
             "\nIMPORTANT: Reply in the SAME language the user writes in — "
             "Thai (ภาษาไทย) if they write Thai, English if they write English. "
             "Default to Thai if unsure. Use Thai Baht (฿) for prices."
+        ),
+    },
+    "im-th": {
+        "brand": "IM Motors Thailand (智己汽车 / Intelligence in Motion)",
+        "home": "https://www.immotors.com/global/en/",
+        "contact": "visiting a SAIC-MG showroom in Thailand (IM Motors is distributed via the MG network locally)",
+        "language_rule": (
+            "\nIMPORTANT: Reply in the SAME language the user writes in — "
+            "Thai (ภาษาไทย) if they write Thai, English if they write English. "
+            "Default to Thai if unsure. Use Thai Baht (฿) for prices. "
+            "Only IM6 (Premium / Performance variants) is sold in Thailand currently."
         ),
     },
 }

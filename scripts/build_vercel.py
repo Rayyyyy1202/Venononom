@@ -10,9 +10,10 @@ Set as the Vercel project's Build Command:
     python3 scripts/build_vercel.py
 
 Driven by the GWM_SITE env var:
-    GWM_SITE=eu   -> build public-eu/ then swap into public/
-    GWM_SITE=th   -> build public-th/ then swap into public/
-    (any other)   -> no-op (keep public/ as-is)
+    GWM_SITE=eu     -> build public-eu/    then swap into public/
+    GWM_SITE=th     -> build public-th/    then swap into public/
+    GWM_SITE=im-th  -> build public-im-th/ then swap into public/
+    (any other)     -> no-op (keep public/ as-is)
 """
 
 import os
@@ -23,10 +24,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = os.getenv("GWM_SITE", "").strip().lower()
+KNOWN_SITES = ("eu", "th", "im-th")
 
 
 def main() -> int:
-    if SITE not in ("eu", "th"):
+    if SITE not in KNOWN_SITES:
         print(f"[build] GWM_SITE={SITE!r}: serving public/ as-is, nothing to do.")
         return 0
 

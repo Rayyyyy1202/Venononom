@@ -62,10 +62,26 @@ EU_LOCALES = [
     },
 ]
 
+GWM_BRAND = {
+    "primary": "#c8102e",
+    "primary_dark": "#9a0c24",
+    "page_bg": "radial-gradient(120% 80% at 50% 0%, #2a0d12 0%, #0c0c0e 70%)",
+    "glow": "rgba(200, 16, 46, 0.25)",
+}
+
+# IM Motors brand: dark navy / metallic, very different from GWM red.
+IM_BRAND = {
+    "primary": "#101828",
+    "primary_dark": "#0a0f1a",
+    "page_bg": "radial-gradient(120% 80% at 50% 0%, #1a2740 0%, #050810 70%)",
+    "glow": "rgba(120, 160, 220, 0.18)",
+}
+
 SITES = {
-    "eu": {"output": ROOT / "public-eu", "locales": EU_LOCALES},
+    "eu": {"output": ROOT / "public-eu", "brand": GWM_BRAND, "locales": EU_LOCALES},
     "th": {
         "output": ROOT / "public-th",
+        "brand": GWM_BRAND,
         "locales": [
             {
                 "subpath": "",
@@ -77,10 +93,24 @@ SITES = {
             }
         ],
     },
+    "im-th": {
+        "output": ROOT / "public-im-th",
+        "brand": IM_BRAND,
+        "locales": [
+            {
+                "subpath": "",
+                "lang": "th",
+                "title": "IM Assistant · IM Motors Thailand",
+                "tag": "IM MOTORS THAILAND · AI DEMO",
+                "base_kb": "knowledge.im-th.json",
+                "override_kb": None,
+            }
+        ],
+    },
 }
 
 
-def build_locale(out_root: Path, locale: dict) -> None:
+def build_locale(out_root: Path, locale: dict, brand: dict) -> None:
     sub = out_root / locale["subpath"] if locale["subpath"] else out_root
     sub.mkdir(parents=True, exist_ok=True)
     (sub / "chatbot").mkdir(exist_ok=True)
@@ -99,12 +129,16 @@ def build_locale(out_root: Path, locale: dict) -> None:
         json.dumps(kb, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # H5 landing page
+    # H5 landing page (with site-specific brand colors injected)
     html = (CHATBOT / "h5.html").read_text(encoding="utf-8")
     for placeholder, value in (
         ("{{LANG}}", locale["lang"]),
         ("{{TITLE}}", locale["title"]),
         ("{{TAG}}", locale["tag"]),
+        ("{{BRAND_PRIMARY}}", brand["primary"]),
+        ("{{BRAND_PRIMARY_DARK}}", brand["primary_dark"]),
+        ("{{PAGE_BG}}", brand["page_bg"]),
+        ("{{BRAND_GLOW}}", brand["glow"]),
     ):
         html = html.replace(placeholder, value)
     (sub / "index.html").write_text(html, encoding="utf-8")
@@ -121,8 +155,9 @@ def build(site: str) -> int:
         shutil.rmtree(out)
     out.mkdir(parents=True)
 
+    brand = cfg.get("brand", GWM_BRAND)
     for loc in cfg["locales"]:
-        build_locale(out, loc)
+        build_locale(out, loc, brand)
         label = loc["subpath"] or "/"
         print(f"[build_h5] {site} :: {label} ({loc['lang']}) built")
 
