@@ -38,6 +38,16 @@ else:
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4").strip()
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "").strip() or None
+# Provider-specific extras passed as `extra_body` to the chat completions
+# request. Example for BytePlus Ark Seed reasoning models, to skip the
+# silent think phase and get true first-token streaming:
+#   OPENAI_EXTRA_BODY={"thinking":{"type":"disabled"}}
+try:
+    OPENAI_EXTRA_BODY = json.loads(os.getenv("OPENAI_EXTRA_BODY") or "{}")
+    if not isinstance(OPENAI_EXTRA_BODY, dict):
+        OPENAI_EXTRA_BODY = {}
+except Exception:
+    OPENAI_EXTRA_BODY = {}
 
 app = FastAPI(title="GWM Demo Chatbot Backend")
 
@@ -156,6 +166,7 @@ async def chat(req: ChatRequest):
                 model=OPENAI_MODEL,
                 messages=full_messages,
                 stream=True,
+                extra_body=OPENAI_EXTRA_BODY,
             )
             async for chunk in stream:
                 if not chunk.choices:
