@@ -3,8 +3,8 @@
     "title": "IM Assistant",
     "subtitle": "ออนไลน์ · เดโม",
     "avatar": "IM",
-    "greeting": "สวัสดีค่ะ! 🌌 ฉันคือผู้ช่วยอัจฉริยะของ **IM Motors Thailand** (เดโม) ถามได้เลยเรื่อง **IM6** (รุ่น Premium / Performance), ราคา, ระยะทาง, การชาร์จ, เทคโนโลยี หรือการทดลองขับ — พิมพ์ภาษาไทยหรืออังกฤษก็ได้ค่ะ",
-    "placeholder": "ถามเรื่อง IM6, ราคา, ทดลองขับ..."
+    "greeting": "สวัสดีค่ะ! 🌌 ฉันคือผู้ช่วยอัจฉริยะของ **IM Motors Thailand** (เดโม) ถามได้เลยเรื่อง **IM6** — ราคา, สเปก, ขนาด, ที่นั่ง, การชาร์จ, สมรรถนะ, เทคโนโลยี หรือการทดลองขับ — พิมพ์ภาษาไทย / อังกฤษ / 中文 ก็ได้ค่ะ",
+    "placeholder": "ถามเรื่อง IM6, ราคา, ขนาด, ทดลองขับ..."
   },
   "company": {
     "name": "IM Motors (智己汽车 / Zhiji Motors)",
@@ -17,114 +17,189 @@
   "models": [
     {
       "name": "IM6 Premium",
-      "type": "Intelligent Mid-large SUV (BEV)",
+      "type": "Intelligent Mid-large SUV (BEV, single-motor RWD)",
       "price_thb": 1399900,
       "battery_kwh": 75,
-      "range_km": 550,
-      "platform": "800V High-Voltage SiC"
+      "range_km_nedc": 550,
+      "motor_power_kw": 217,
+      "motor_power_hp": 295,
+      "torque_nm": 450,
+      "acceleration_0_100_s": 5.9,
+      "top_speed_kmh": 200,
+      "platform": "800V High-Voltage SiC",
+      "drive": "RWD (ขับเคลื่อนล้อหลัง)",
+      "trunk_litres": 665,
+      "trunk_seats_down_litres": 1640
     },
     {
       "name": "IM6 Performance",
-      "type": "Intelligent Mid-large SUV (BEV) · twin-motor AWD",
+      "type": "Intelligent Mid-large SUV (BEV, twin-motor AWD)",
       "price_thb": 1799900,
       "battery_kwh": 100,
-      "range_km": 634,
-      "platform": "800V High-Voltage SiC"
+      "range_km_nedc": 634,
+      "motor_power_kw": 579,
+      "motor_power_hp": 776,
+      "torque_nm": 800,
+      "acceleration_0_100_s": 3.5,
+      "platform": "800V High-Voltage SiC",
+      "drive": "AWD (ขับเคลื่อนสี่ล้อ มอเตอร์คู่)",
+      "trunk_litres": 646,
+      "trunk_seats_down_litres": 1621
     }
   ],
+  "dimensions": {
+    "length_mm": 4937,
+    "width_mm": 1988,
+    "height_mm": 1671,
+    "wheelbase_mm": 2960,
+    "seats": 5,
+    "rows": 2,
+    "frunk_litres": 32,
+    "segment": "Mid-large SUV (รถยนต์ SUV ขนาดกลาง-ใหญ่)"
+  },
+  "interior": {
+    "infotainment_chip": "Qualcomm Snapdragon 8295",
+    "os": "IM OS — ระบบโต้ตอบอัจฉริยะของ IM Motors",
+    "upholstery": "หนังสังเคราะห์ดีไซน์ 'POPO Sofa' (สไตล์โซฟา)",
+    "sunroof": "หลังคาแก้วพาโนรามา (panoramic glass roof) บางตลาดเป็นกระจกสองชั้นเคลือบเงินกันความร้อน",
+    "wireless_connectivity": "Apple CarPlay และ Android Auto แบบไร้สาย",
+    "magsafe_panel": "แผ่นชาร์จไร้สาย MagSafe (อุปกรณ์เสริม)"
+  },
+  "charging": {
+    "battery_arch": "แพลตฟอร์ม 800V High-Voltage SiC",
+    "dc_thailand_peak_kw": 153,
+    "dc_global_peak_kw": 396,
+    "dc_10_to_80_min": "ประมาณ 18-20 นาที (ที่หัวชาร์จ DC fast)"
+  },
   "tech_highlights": [
-    "**IM Digital Chassis** — แชสซีดิจิทัล พร้อมระบบ Intelligent Four-Wheel Steering (พวงมาลัยสี่ล้อ)",
+    "**IM Digital Chassis** — แชสซีดิจิทัล + ระบบ Intelligent Four-Wheel Steering (พวงมาลัยสี่ล้อ)",
     "**VMC (Vehicle Motion Control)** — 'สมองน้อย' ควบคุมการเคลื่อนที่ของรถแบบไดนามิก",
-    "**800V High-Voltage SiC Platform** — แพลตฟอร์มไฟฟ้าแรงสูง ชาร์จเร็ว",
-    "**One Touch iAD (AI Chauffeur)** — ระบบช่วยขับขั้นสูง รวมถึง **Rainy Night Mode** สำหรับขับกลางคืน/ฝนตก",
-    "**IM AI Cabin** — ห้องโดยสารอัจฉริยะ รองรับ Wireless Apple CarPlay & Android Auto",
-    "**Stellar Super Extended Range System** — ระบบเพิ่มระยะทางในรุ่นที่รองรับ"
+    "**800V High-Voltage SiC Platform** — ชาร์จ DC สูงสุดถึง 396 kW (ในไทยรองรับ 153 kW)",
+    "**One Touch iAD (AI Chauffeur)** + **Rainy Night Mode** — ระบบช่วยขับขั้นสูง",
+    "**IM AI Cabin** — ใช้ Qualcomm Snapdragon 8295, รองรับ Wireless CarPlay/Android Auto",
+    "**Panoramic glass roof** — หลังคากระจกพาโนรามา"
   ],
   "qa": [
     {
       "id": "im6_overview",
-      "keywords": ["im6", "ls6", "what is im6", "รุ่นอะไร", "ดู im6"],
-      "answer": "**IM6** เป็น Intelligent Mid-large SUV ไฟฟ้า 100% รุ่นเรือธงของ IM Motors สำหรับตลาดต่างประเทศ (เป็น **LS6** ในจีน) เปิดตัวในไทยเมื่อ **18 มีนาคม 2025** มีให้เลือก 2 รุ่น: **Premium** (฿1,399,900, แบต 75 kWh, ระยะ 550 กม.) และ **Performance** (฿1,799,900, แบต 100 kWh, ระยะ 634 กม., มอเตอร์คู่ AWD)",
+      "keywords": ["im6", "ls6", "what is im6", "รุ่นอะไร", "ดู im6", "亮点", "什么", "介绍"],
+      "answer": "**IM6** เป็น Intelligent Mid-large SUV ไฟฟ้า 100% รุ่นเรือธงของ IM Motors สำหรับตลาดต่างประเทศ (ในจีนคือ **LS6**) เปิดตัวในไทยเมื่อ **18 มีนาคม 2025** มีให้เลือก 2 รุ่น: **Premium** (฿1,399,900 / 75 kWh / 550 กม. / RWD / 0-100 ใน 5.9 วินาที) และ **Performance** (฿1,799,900 / 100 kWh / 634 กม. / AWD twin-motor / 0-100 ใน 3.5 วินาที)",
       "links": [{ "label": "IM6 (immotors.com)", "url": "https://www.immotors.com/global/en/ls6_detail" }]
     },
     {
       "id": "price",
-      "keywords": ["price", "ราคา", "เท่าไหร่", "กี่บาท", "cost"],
+      "keywords": ["price", "ราคา", "เท่าไหร่", "กี่บาท", "cost", "多少", "价格"],
       "answer": "**IM6 Premium** ราคา **฿1,399,900** | **IM6 Performance** ราคา **฿1,799,900** (ราคาเปิดตัวสำหรับตลาดไทย)\n\nสำหรับโปรโมชั่นและราคาออนโรดล่าสุด ติดต่อตัวแทนจำหน่าย IM / SAIC-MG ใกล้บ้านค่ะ",
       "links": []
     },
     {
-      "id": "range",
-      "keywords": ["range", "ระยะ", "วิ่งได้ไกล", "battery", "แบตเตอรี่"],
-      "answer": "**IM6 Premium**: แบตเตอรี่ **75 kWh** ระยะทางต่อการชาร์จ **550 กม.** | **IM6 Performance**: แบตเตอรี่ **100 kWh** ระยะ **634 กม.** ทั้งคู่ใช้แพลตฟอร์ม **800V SiC** ที่รองรับการชาร์จเร็วระดับสูง",
+      "id": "range_battery",
+      "keywords": ["range", "ระยะ", "วิ่งได้ไกล", "battery", "แบตเตอรี่", "续航", "电池"],
+      "answer": "**IM6 Premium**: แบต **75 kWh**, ระยะ **550 กม.** (NEDC) | **IM6 Performance**: แบต **100 kWh**, ระยะ **634 กม.** (NEDC) ทั้งคู่ใช้แพลตฟอร์ม **800V SiC**",
       "links": []
     },
     {
-      "id": "charging",
-      "keywords": ["charging", "charge", "ชาร์จ", "ไฟ", "800v"],
-      "answer": "IM6 ใช้แพลตฟอร์ม **800V High-Voltage SiC** รองรับการชาร์จเร็ว DC กำลังสูง ช่วยลดเวลาชาร์จได้อย่างมีนัยสำคัญเทียบกับระบบ 400V ทั่วไป รายละเอียดเวลาชาร์จ 10–80% สามารถสอบถามได้ที่ตัวแทนจำหน่ายค่ะ",
+      "id": "charging_speed",
+      "keywords": ["charging", "charge", "ชาร์จ", "เวลาชาร์จ", "fast charge", "充电", "快充"],
+      "answer": "IM6 รองรับการชาร์จเร็ว DC: **10–80% ภายใน ~18-20 นาที** ที่หัวชาร์จเร็ว แพลตฟอร์ม **800V SiC** รองรับสูงสุดถึง **396 kW** (ในไทยกำลังพีค **153 kW** ตามมาตรฐานหัวชาร์จที่มีในประเทศ)",
+      "links": []
+    },
+    {
+      "id": "performance_acceleration",
+      "keywords": ["acceleration", "0-100", "ความเร็ว", "แรงไหม", "สมรรถนะ", "speed", "加速", "性能"],
+      "answer": "สมรรถนะ:\n• **Premium** (RWD): มอเตอร์ **295 แรงม้า / 217 kW**, แรงบิด **450 Nm**, **0–100 กม./ชม. ใน 5.9 วินาที**, ความเร็วสูงสุด **200 กม./ชม.**\n• **Performance** (AWD twin-motor): **776 แรงม้า / 579 kW**, แรงบิด **800 Nm**, **0–100 กม./ชม. ใน 3.5 วินาที** — ระดับซูเปอร์คาร์",
+      "links": []
+    },
+    {
+      "id": "dimensions",
+      "keywords": ["dimension", "size", "ขนาด", "ความยาว", "กว้าง", "สูง", "wheelbase", "尺寸", "大小", "长宽高"],
+      "answer": "ขนาดตัวรถ IM6:\n• **ยาว 4,937 มม.**\n• **กว้าง 1,988 มม.**\n• **สูง 1,671 มม.**\n• **ระยะฐานล้อ 2,960 มม.** (เกือบ 3 เมตร → ห้องโดยสารกว้างขวาง)\n• **5 ที่นั่ง** 2 แถว\n\nจัดอยู่ในกลุ่ม **Mid-large SUV** ขนาดใกล้เคียงคู่แข่งระดับพรีเมียม",
+      "links": []
+    },
+    {
+      "id": "family_space_kids",
+      "keywords": ["family", "kids", "child", "children", "space", "ครอบครัว", "ลูก", "นั่งได้กี่คน", "孩子", "家庭", "空间", "宽敞", "三个", "几个"],
+      "answer": "IM6 เป็น **SUV 5 ที่นั่ง 2 แถว** (ไม่มีแถว 3) — เหมาะกับครอบครัวที่มีพ่อแม่ + ลูกได้ถึง **3 คน** (รวม 5 คน) ลงตัวพอดี\n\nจุดเด่นสำหรับครอบครัว:\n• **ระยะฐานล้อ 2,960 มม.** → พื้นที่วางขาแถวหลังกว้าง\n• **ที่เก็บของท้ายรถ 665 ลิตร** (Premium) เมื่อพับเบาะหลังลง **เพิ่มเป็น 1,640 ลิตร** → ใส่รถเข็นเด็ก + กระเป๋าได้สบาย\n• มี **frunk (ช่องเก็บของด้านหน้า) 32 ลิตร** สำหรับสายชาร์จ/ของจุกจิก\n• เบาะหุ้มหนังสังเคราะห์ดีไซน์ POPO Sofa → นั่งสบาย\n• หลังคากระจกพาโนรามา → โปร่ง สว่าง เด็กชอบ\n\nหากต้องนั่ง 6-7 คนเป็นประจำ อาจต้องพิจารณา SUV 3 แถว แต่ถ้า 5 คน IM6 เหมาะมากค่ะ",
+      "links": []
+    },
+    {
+      "id": "trunk_cargo",
+      "keywords": ["trunk", "cargo", "boot", "luggage", "ท้ายรถ", "เก็บของ", "กระเป๋า", "frunk", "后备箱", "行李"],
+      "answer": "พื้นที่เก็บของ:\n• **เบาะหลังตั้ง**: **665 ลิตร** (Premium/Platinum) / 646 ลิตร (Performance)\n• **เบาะหลังพับลง**: **1,640 ลิตร** (Premium) / 1,621 ลิตร (Performance)\n• **frunk (ฝากระโปรงหน้า)**: **32 ลิตร** — เหมาะใส่สายชาร์จและของจุกจิก",
       "links": []
     },
     {
       "id": "tech",
-      "keywords": ["tech", "เทคโนโลยี", "ฟีเจอร์", "feature", "smart"],
-      "answer": "ฟีเจอร์เด่นของ IM6:\n• **IM Digital Chassis** + **Intelligent Four-Wheel Steering** (พวงมาลัยสี่ล้อ)\n• **VMC** ระบบควบคุมการเคลื่อนที่อัจฉริยะ\n• **One Touch iAD** ระบบช่วยขับ AI พร้อม **Rainy Night Mode**\n• **IM AI Cabin** + Wireless Apple CarPlay / Android Auto\n• **800V SiC platform** ชาร์จเร็ว",
+      "keywords": ["tech", "เทคโนโลยี", "ฟีเจอร์", "feature", "smart", "ai", "技术", "智能"],
+      "answer": "ฟีเจอร์เด่นของ IM6:\n• **IM Digital Chassis** + **Intelligent Four-Wheel Steering** (พวงมาลัยสี่ล้อ)\n• **VMC** ระบบควบคุมการเคลื่อนที่อัจฉริยะ\n• **One Touch iAD** ระบบช่วยขับ AI พร้อม **Rainy Night Mode**\n• **IM AI Cabin** ใช้ Qualcomm **Snapdragon 8295** + IM OS\n• **Wireless Apple CarPlay / Android Auto**\n• **800V SiC platform** ชาร์จเร็ว",
+      "links": []
+    },
+    {
+      "id": "interior_infotainment",
+      "keywords": ["interior", "infotainment", "screen", "chip", "snapdragon", "carplay", "android auto", "ภายใน", "หน้าจอ", "ระบบ", "屏幕", "内饰"],
+      "answer": "ภายใน IM6:\n• **ระบบอินโฟเทนเมนต์** ใช้ชิป **Qualcomm Snapdragon 8295** (ตัวท็อปในตลาด)\n• **IM OS** ระบบโต้ตอบอัจฉริยะของ IM Motors\n• **Wireless Apple CarPlay & Android Auto**\n• เบาะหุ้ม **หนังสังเคราะห์ดีไซน์ POPO Sofa** (สไตล์โซฟานั่งสบาย)\n• **MagSafe wireless charger panel** (อุปกรณ์เสริม)",
+      "links": []
+    },
+    {
+      "id": "sunroof",
+      "keywords": ["sunroof", "moonroof", "panoramic", "หลังคา", "ซันรูฟ", "天窗"],
+      "answer": "IM6 มาพร้อม **หลังคากระจกพาโนรามา (panoramic glass roof)** บางตลาดเป็น **กระจก 2 ชั้นเคลือบเงิน กันความร้อน** ให้ความรู้สึกโปร่ง โล่ง สว่าง โดยไม่ร้อน",
       "links": []
     },
     {
       "id": "premium_vs_performance",
-      "keywords": ["premium", "performance", "เปรียบเทียบ", "ต่างกัน", "compare"],
-      "answer": "**Premium vs Performance**:\n• **Premium** (฿1,399,900): 75 kWh, 550 กม., ขับเคลื่อนล้อหลัง (RWD)\n• **Performance** (฿1,799,900): 100 kWh, 634 กม., ขับเคลื่อนสี่ล้อ (AWD) มอเตอร์คู่ อัตราเร่งแรงกว่า\n\nเลือก **Premium** ถ้าเน้นความคุ้มค่า/ใช้ในเมือง, **Performance** ถ้าเน้นสมรรถนะ/เดินทางไกล",
+      "keywords": ["premium", "performance", "เปรียบเทียบ", "ต่างกัน", "compare", "vs", "对比", "区别"],
+      "answer": "**Premium vs Performance**:\n\n| | Premium | Performance |\n|---|---|---|\n| ราคา | ฿1,399,900 | ฿1,799,900 |\n| แบต | 75 kWh | 100 kWh |\n| ระยะ | 550 กม. | 634 กม. |\n| มอเตอร์ | 295 hp RWD | 776 hp AWD twin-motor |\n| 0-100 | 5.9 วินาที | 3.5 วินาที |\n\nเลือก **Premium** ถ้าเน้นความคุ้มค่า/ใช้ในเมือง, **Performance** ถ้าเน้นสมรรถนะ/เดินทางไกล/AWD",
       "links": []
     },
     {
       "id": "test_drive",
-      "keywords": ["test drive", "ทดลองขับ", "ลองขับ", "book"],
-      "answer": "การทดลองขับ IM6 ติดต่อตัวแทนจำหน่าย **SAIC-MG / IM Motors** ในประเทศไทย หรือสอบถามผ่านศูนย์บริการ MG ใกล้บ้าน บอกรุ่นที่สนใจ (Premium / Performance) จะได้รับการนัดหมายค่ะ",
+      "keywords": ["test drive", "ทดลองขับ", "ลองขับ", "book", "นัด", "试驾", "预约"],
+      "answer": "การทดลองขับ IM6 ติดต่อตัวแทนจำหน่าย **SAIC-MG / IM Motors** ในประเทศไทย หรือสอบถามผ่านศูนย์บริการ MG ใกล้บ้าน บอกรุ่นที่สนใจ (Premium / Performance) เพื่อนัดหมายค่ะ",
       "links": []
     },
     {
       "id": "dealer",
-      "keywords": ["dealer", "showroom", "โชว์รูม", "ตัวแทน", "ที่ไหน", "ซื้อ"],
+      "keywords": ["dealer", "showroom", "โชว์รูม", "ตัวแทน", "ที่ไหน", "ซื้อ", "经销商", "门店"],
       "answer": "ในประเทศไทย IM Motors จำหน่ายและบริการผ่าน **เครือข่าย SAIC Motor / MG** ที่มีทั่วประเทศ ค้นหาโชว์รูม MG ใกล้บ้านเพื่อสอบถาม IM6 ได้เลยค่ะ",
       "links": []
     },
     {
       "id": "warranty",
-      "keywords": ["warranty", "service", "ประกัน", "บริการ", "ดูแล"],
+      "keywords": ["warranty", "service", "ประกัน", "บริการ", "ดูแล", "保修"],
       "answer": "IM6 ในประเทศไทยใช้บริการหลังการขายผ่าน **เครือข่าย SAIC-MG** มาตรฐานการรับประกันและบริการเป็นไปตามข้อกำหนดของผู้จัดจำหน่ายในประเทศ สอบถามรายละเอียดที่โชว์รูม",
       "links": []
     },
     {
       "id": "company",
-      "keywords": ["company", "im motors", "intelligence in motion", "zhiji", "智己", "saic"],
+      "keywords": ["company", "im motors", "intelligence in motion", "zhiji", "智己", "saic", "公司"],
       "answer": "**IM Motors (智己汽车 / Intelligence in Motion)** เป็นบริษัทร่วมทุนระหว่าง **SAIC Motor + Alibaba + Zhangjiang Hi-Tech** มุ่งเน้นรถยนต์ไฟฟ้าระดับ Premium ที่ใช้ AI และเทคโนโลยีดิจิทัลขั้นสูง ประเทศไทยเป็นตลาดต่างประเทศแห่งแรก",
       "links": [{ "label": "เว็บไซต์ทั่วโลก", "url": "https://www.immotors.com/global/en/" }]
     },
     {
       "id": "other_models",
-      "keywords": ["other model", "รุ่นอื่น", "im5", "l6", "l7", "ls7"],
+      "keywords": ["other model", "รุ่นอื่น", "im5", "l6", "l7", "ls7", "其他"],
       "answer": "ในตลาดโลก IM Motors มีรุ่น **IM5 / IM6 / IM L7 / IM LS7** แต่ในประเทศไทยตอนนี้เปิดตัวเฉพาะ **IM6** ก่อน รุ่นอื่นๆ อยู่ระหว่างพิจารณานำเข้าในอนาคต",
       "links": []
     },
     {
       "id": "greeting",
-      "keywords": ["hi", "hello", "hey", "สวัสดี", "หวัดดี"],
-      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **IM6** ของ IM Motors Thailand ได้ — ราคา, สเปก, การทดลองขับ, เทคโนโลยี อยากทราบอะไรดีคะ?",
+      "keywords": ["hi", "hello", "hey", "สวัสดี", "หวัดดี", "你好", "您好"],
+      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **IM6** ของ IM Motors Thailand ได้ — ราคา, ขนาด, สเปก, การทดลองขับ, เทคโนโลยี อยากทราบอะไรดีคะ?",
       "links": []
     },
     {
       "id": "thanks",
-      "keywords": ["thanks", "thank you", "ขอบคุณ"],
+      "keywords": ["thanks", "thank you", "ขอบคุณ", "谢谢"],
       "answer": "ยินดีค่ะ! 😊 มีคำถามอื่นเกี่ยวกับ IM6 ไหมคะ?",
       "links": []
     }
   ],
-  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **IM Motors Thailand** ตอบได้เรื่อง **IM6** (รุ่น Premium / Performance, ราคา, ระยะ, การชาร์จ), **เทคโนโลยี**, **การทดลองขับ** และ **เครือข่ายบริการ** สำหรับเรื่องอื่นๆ ลองค้นหาที่เว็บไซต์ทั่วโลก immotors.com หรือสอบถามตัวแทน SAIC-MG ใกล้บ้านค่ะ (I can also reply in English.)",
+  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **IM Motors Thailand** ตอบได้เรื่อง **IM6** (Premium / Performance), **ราคา**, **สเปก/ขนาด**, **แบต/ระยะ**, **การชาร์จ**, **สมรรถนะ**, **ห้องโดยสาร**, **การทดลองขับ** สำหรับเรื่องอื่นๆ ลองค้นหาที่ immotors.com หรือสอบถามตัวแทน SAIC-MG ใกล้บ้านค่ะ (I can also reply in English or 中文.)",
   "suggestions": [
     "IM6 ราคาเท่าไหร่?",
     "Premium กับ Performance ต่างกันยังไง?",
-    "วิ่งได้ไกลแค่ไหน?",
-    "อยากทดลองขับ"
+    "ขนาดเท่าไหร่ ครอบครัว 5 คนพอไหม?",
+    "ชาร์จเร็วแค่ไหน?"
   ]
 }
