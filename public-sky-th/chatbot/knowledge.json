@@ -3,14 +3,14 @@
     "title": "SKYWORTH Assistant",
     "subtitle": "ออนไลน์ · เดโม",
     "avatar": "SW",
-    "greeting": "สวัสดีค่ะ! 📺 ฉันคือผู้ช่วยอัจฉริยะของ **SKYWORTH Thailand** (เดโม) ถามได้เลยเรื่อง **ทีวี** ของ Skyworth — ขนาดหน้าจอ, เทคโนโลยี (QLED / Mini-LED / UHD), ระบบสมาร์ททีวี (Google TV / Android TV), การรับประกัน, โปรโมชั่น, หรือเรื่องอื่นๆ — พิมพ์ภาษาไทย / อังกฤษ / 中文 ก็ได้ค่ะ",
-    "placeholder": "ถามเรื่องทีวี Skyworth, ขนาด, รุ่น, ประกัน..."
+    "greeting": "สวัสดีค่ะ! 📺 ฉันคือผู้ช่วยอัจฉริยะของ **SKYWORTH Thailand** (เดโม) ถามได้เลยเรื่องทีวี Skyworth — **รุ่น/ซีรีส์** (QD-Mini LED, QLED, FHD), **ขนาด/ราคา**, **ฟีเจอร์เกม/HDR/Dolby Atmos**, **รับประกัน 3 ปี**, หรือเรื่องอื่นๆ — พิมพ์ภาษาไทย/อังกฤษ/中文 ก็ได้ค่ะ",
+    "placeholder": "ถามเรื่องรุ่น Skyworth, ขนาด, ราคา, เกม..."
   },
   "company": {
     "name": "SKYWORTH Thailand (创维)",
     "tagline": "LEAD THE FUTURE",
     "founded": "1988 (เซินเจิ้น ประเทศจีน)",
-    "global_presence": "พนักงาน 40,000+ คน · เป็นผู้ผลิตทีวีและอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะระดับชั้นนำของโลก",
+    "global_presence": "พนักงาน 40,000+ คน · ผู้ผลิตทีวีและอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะระดับชั้นนำของโลก",
     "website": "https://www.skyworth-thailand.com",
     "hotline_thailand": "02-248-1615",
     "warranty_registration": "https://www.skyworth-thailand.com/service/register-warranty"
@@ -24,19 +24,71 @@
       "เครื่องซักผ้า (Washing Machine)"
     ]
   },
+  "tv_series": [
+    {
+      "model": "V75",
+      "tier": "เรือธง 2026 NEW",
+      "tech": "QD-Mini LED",
+      "sizes": "55\", 65\", 75\"",
+      "os": "Google TV",
+      "highlights": "Local Dimming · 120Hz MEMC (ยกเว้น 55\") · Eye Care 5.0 · Dolby Vision + HDR10+ · Dolby Atmos + TotalSonic · HDMI 2.1 · Game Hub",
+      "page": "https://www.skyworth-thailand.com/product/699547f891e429b73005a38a"
+    },
+    {
+      "model": "X66H",
+      "tier": "เรือธง QD-Mini LED",
+      "tech": "QD-Mini LED",
+      "sizes": "55\", 65\", 75\"",
+      "price_known": "55\" ฿16,990",
+      "os": "Google TV",
+      "highlights": "Local Dimming · 120Hz MEMC (ยกเว้น 55\") · Eye Care 5.0 · Dolby Vision + HDR10+ · Dolby Atmos + dbx-TV · HDMI 2.1 · Game Hub",
+      "page": "https://www.skyworth-thailand.com/product/690075cf67383a2b8832fdf3"
+    },
+    {
+      "model": "SUE9500",
+      "tier": "QLED 4K UHD ระดับสูง",
+      "tech": "QLED 4K",
+      "sizes": "55\"",
+      "os": "Google TV",
+      "highlights": "Dual Picture Quality Enhancer · Chameleon Extreme 2.0 · Dolby Vision + HDR10+ · Dolby Atmos"
+    },
+    {
+      "model": "SUE8000",
+      "tier": "QLED+ Eye Care Series",
+      "tech": "QLED 4K",
+      "sizes": "50\", 55\", 65\"",
+      "os": "Google TV",
+      "highlights": "Eye Care Mode · QLED Quantum Dot · Google TV ใช้งานง่าย"
+    },
+    {
+      "model": "Q6500A",
+      "tier": "QLED+ 4K UHD คุ้มค่า",
+      "tech": "QLED 4K",
+      "sizes": "50\", 55\", 65\"",
+      "os": "Google TV"
+    },
+    {
+      "model": "E5000G",
+      "tier": "Coolita ระดับเริ่มต้น",
+      "tech": "FHD (1920×1080)",
+      "sizes": "32\", 40\", 43\"",
+      "os": "Coolita TV (ระบบของ Skyworth)",
+      "highlights": "Dolby Audio · Flicker-Free · HDR10 · **Karaoke Boomer** (เครื่องร้องคาราโอเกะในตัว) · Coolink App · ดีไซน์เมทัลบาง"
+    }
+  ],
   "tv_lineup": {
     "display_technologies": [
       {
         "tech": "QD-Mini LED",
-        "note": "เทคโนโลยีระดับเรือธง — ความสว่างสูง คอนทราสต์ดี HDR สมจริง"
+        "note": "เรือธง — Mini-LED + Quantum Dot คอนทราสต์/ความสว่างระดับสูง เหมาะดู HDR/เกม"
       },
       {
         "tech": "4K QLED",
-        "note": "Quantum Dot สีกว้าง อิ่ม คมชัด เหมาะดูหนัง/เล่นเกม"
+        "note": "Quantum Dot สีกว้างอิ่ม คมชัด คุ้มค่า"
       },
       {
         "tech": "4K UHD",
-        "note": "ความละเอียด 3840×2160 ภาพคมระดับ 4K มาตรฐาน"
+        "note": "3840×2160 ภาพคมระดับ 4K มาตรฐาน"
       },
       {
         "tech": "FULL HD",
@@ -50,19 +102,15 @@
     "smart_os": [
       {
         "os": "Google TV",
-        "note": "ระบบของ Google รุ่นล่าสุด — รวมเนื้อหา/แอปจากหลายแพลตฟอร์ม สั่งงานด้วยเสียง"
+        "note": "ระบบของ Google ล่าสุด — รวมแอป, Google Assistant, Cast, อัปเดตยาว"
       },
       {
         "os": "Android TV",
-        "note": "Android TV ดั้งเดิม — รองรับแอปจาก Play Store"
+        "note": "รุ่นก่อน Google TV — รองรับ Play Store"
       },
       {
         "os": "Coolita TV",
-        "note": "OS ของ Skyworth เอง — ใช้บนรุ่นเริ่มต้นบางรุ่น"
-      },
-      {
-        "os": "Smart TV",
-        "note": "ระบบสมาร์ทพื้นฐาน รองรับสตรีมมิ่ง/YouTube/Netflix"
+        "note": "OS ของ Skyworth — รุ่นเริ่มต้น, ใช้งานง่าย"
       }
     ],
     "sizes_available_inches": [
@@ -82,10 +130,23 @@
     ]
   },
   "size_guide": {
-    "bedroom": "24 - 43 นิ้ว — เหมาะกับห้องนอนหรือห้องครัวที่ระยะมอง 1-2 เมตร",
-    "living_small": "43 - 55 นิ้ว — ห้องนั่งเล่นขนาดเล็ก-กลาง ระยะมอง 2-3 เมตร",
-    "living_large": "55 - 75 นิ้ว — ห้องนั่งเล่นใหญ่ ระยะมอง 3-4 เมตร เป็นช่วงนิยมที่สุด",
-    "home_theater": "75 - 100 นิ้ว — โฮมเธียเตอร์ หรือห้องโถงใหญ่ ระยะมอง 4 เมตรขึ้นไป"
+    "bedroom": "24 - 43 นิ้ว — เหมาะกับห้องนอนหรือห้องครัว (ระยะมอง 1-2 ม.) แนะนำ E5000G",
+    "living_small": "43 - 55 นิ้ว — ห้องนั่งเล่นเล็ก-กลาง (ระยะ 2-3 ม.) แนะนำ Q6500A หรือ SUE8000",
+    "living_large": "55 - 75 นิ้ว — ห้องนั่งเล่นใหญ่ (ระยะ 3-4 ม.) **ช่วงนิยมที่สุด** แนะนำ X66H, V75, SUE9500",
+    "home_theater": "75 - 100 นิ้ว — โฮมเธียเตอร์/ห้องโถง (ระยะ 4 ม. ขึ้นไป) แนะนำ V75 75\""
+  },
+  "warranty": {
+    "duration_years": 3,
+    "effective_from": "1 กุมภาพันธ์ 2568 (2025) เป็นต้นไป",
+    "scope": "ครอบคลุมข้อบกพร่องจากการผลิตและฝีมือการผลิต (วัสดุ + workmanship)",
+    "exclusions": [
+      "ความเสียหายจากอุบัติเหตุ/ใช้งานผิดวิธี",
+      "หน้าจอแตก/ร้าว/ขึ้นรา/สนิม",
+      "รีโมท, อะแดปเตอร์",
+      "ความเสียหายจากสัตว์/แมลง",
+      "การซ่อมที่ทำโดยช่างที่ไม่ได้รับอนุญาต"
+    ],
+    "claim_process": "ลงทะเบียนรับประกันออนไลน์ → ติดต่อศูนย์บริการอย่างเป็นทางการพร้อมใบรับประกัน + หลักฐานการซื้อ"
   },
   "qa": [
     {
@@ -98,15 +159,49 @@
         "ทีวี",
         "มีอะไรบ้าง",
         "all",
+        "ซีรีส์",
         "电视",
         "型号",
         "有哪些"
       ],
-      "answer": "Skyworth Thailand มีทีวีให้เลือกครบ ตั้งแต่ **24 นิ้ว** ไปจนถึง **100 นิ้ว** แบ่งตามเทคโนโลยีจอ:\n• **QD-Mini LED** (เรือธง) → ความสว่าง/คอนทราสต์สูงสุด\n• **4K QLED** → สีอิ่ม Quantum Dot\n• **4K UHD** → ความละเอียด 4K มาตรฐาน\n• **FULL HD / HD** → รุ่นคุ้มค่าสำหรับห้องนอน\n\nรองรับ **Google TV** / Android TV / Coolita TV ค่ะ ดูทั้งหมดที่ [skyworth-thailand.com/tv](https://www.skyworth-thailand.com/tv)",
+      "answer": "Skyworth Thailand มี TV หลายซีรีส์ ตั้งแต่เรือธงถึงเริ่มต้น:\n\n**เรือธง (QD-Mini LED)**\n• **V75** (2026 NEW) — 55/65/75\" Google TV\n• **X66H** — 55/65/75\", **55\" ฿16,990**\n\n**QLED 4K (กลาง-สูง)**\n• **SUE9500** 55\"\n• **SUE8000** Eye Care 50/55/65\"\n• **Q6500A** 50/55/65\"\n\n**เริ่มต้น FHD**\n• **E5000G** Coolita 32/40/43\" (มี Karaoke Boomer)\n\nดูทั้งหมดที่ [skyworth-thailand.com/tv](https://www.skyworth-thailand.com/tv)",
       "links": [
         {
-          "label": "ดูทีวีทั้งหมด",
+          "label": "ทีวี Skyworth ทั้งหมด",
           "url": "https://www.skyworth-thailand.com/tv"
+        }
+      ]
+    },
+    {
+      "id": "x66h",
+      "keywords": [
+        "x66h",
+        "55 ราคา",
+        "16990",
+        "qd mini led ราคา",
+        "เรือธง ราคา"
+      ],
+      "answer": "**X66H** เป็นทีวีเรือธง QD-Mini LED ของ Skyworth Thailand:\n• ขนาด 55\", 65\", 75\"\n• **55\" ราคา ฿16,990** (ราคาเปิดตัว)\n• **Google TV**, Local Dimming, Eye Care 5.0\n• **Dolby Vision + HDR10+**, **Dolby Atmos + dbx-TV**\n• **HDMI 2.1** + **Game Hub** + **120Hz MEMC** (ยกเว้น 55\")\n\nสอบถามราคา 65\"/75\" ที่ฮอตไลน์ **02-248-1615**",
+      "links": [
+        {
+          "label": "หน้ารุ่น X66H",
+          "url": "https://www.skyworth-thailand.com/product/690075cf67383a2b8832fdf3"
+        }
+      ]
+    },
+    {
+      "id": "v75",
+      "keywords": [
+        "v75",
+        "2026 new",
+        "ใหม่ล่าสุด",
+        "totalsonic"
+      ],
+      "answer": "**V75** เป็นรุ่นใหม่ปี **2026** ของ Skyworth — **QD-Mini LED** เรือธงล่าสุด:\n• 55\", 65\", 75\" · Google TV\n• Local Dimming + **120Hz MEMC** (ยกเว้น 55\") + **Eye Care 5.0**\n• **Dolby Vision + HDR10+**\n• **Dolby Atmos + TotalSonic** (ระบบเสียงพรีเมียม)\n• **HDMI 2.1** + **Game Hub**\n\nสอบถามราคาที่ **02-248-1615**",
+      "links": [
+        {
+          "label": "หน้ารุ่น V75",
+          "url": "https://www.skyworth-thailand.com/product/699547f891e429b73005a38a"
         }
       ]
     },
@@ -123,7 +218,52 @@
         "区别",
         "对比"
       ],
-      "answer": "**QD-Mini LED vs 4K QLED**:\n• **QD-Mini LED** — แบ็คไลท์เป็น Mini-LED ขนาดเล็กจำนวนหลายพันดวง ควบคุมการสว่างเป็นโซน คอนทราสต์ดีมาก สีดำลึก เหมาะดูหนัง HDR / ห้องสว่าง\n• **4K QLED** — ใช้ Quantum Dot ขยายช่วงสี สีอิ่มคมชัด ราคาคุ้มกว่า\n\nถ้าเน้นภาพ HDR ระดับเรือธง → **Mini-LED**, ถ้าเน้นความคุ้มราคาแต่สีสันจัด → **QLED**",
+      "answer": "**QD-Mini LED vs 4K QLED**:\n• **QD-Mini LED** (X66H, V75) — แบ็คไลท์ Mini-LED ควบคุมแสงเป็นโซน → คอนทราสต์/สีดำลึก/HDR ดีเยี่ยม เหมาะดูหนัง HDR ในห้องสว่าง\n• **4K QLED** (SUE9500, SUE8000, Q6500A) — Quantum Dot สีอิ่ม คุ้มค่ามากกว่า แต่คอนทราสต์/แบ็คไลท์เป็นรอง Mini-LED\n\nงบถึง+ดูหนัง HDR → **Mini-LED**, งบจำกัด แต่อยากได้สีอิ่ม → **QLED**",
+      "links": []
+    },
+    {
+      "id": "gaming",
+      "keywords": [
+        "gaming",
+        "เกม",
+        "ps5",
+        "xbox",
+        "vrr",
+        "allm",
+        "120hz",
+        "game hub",
+        "游戏"
+      ],
+      "answer": "ฟีเจอร์เกมในทีวี Skyworth เรือธง (X66H, V75):\n• **HDMI 2.1** รองรับ 4K@120Hz, **VRR**, **ALLM** เหมาะกับ PS5 / Xbox Series X / Gaming PC\n• **120Hz MEMC** (ยกเว้นขนาด 55\")\n• **Game Hub** — แดชบอร์ดรวมเกมและ cloud gaming\n• Low input lag mode\n\nรุ่น QLED ระดับกลาง รองรับ HDMI 2.1 บางพอร์ตและ 60Hz ตามรุ่น (สอบถามตัวแทน)",
+      "links": []
+    },
+    {
+      "id": "audio",
+      "keywords": [
+        "audio",
+        "dolby atmos",
+        "เสียง",
+        "totalsonic",
+        "dbx",
+        "ลำโพง",
+        "音响",
+        "音质"
+      ],
+      "answer": "เสียงในทีวี Skyworth:\n• **V75**: **Dolby Atmos + TotalSonic** (ระบบเสียง premium ของ Skyworth)\n• **X66H**: **Dolby Atmos + dbx-TV**\n• **SUE9500 / SUE8000**: **Dolby Atmos**\n• **E5000G**: **Dolby Audio + Karaoke Boomer** (มีเครื่องร้องคาราโอเกะในตัว เหมาะปาร์ตี้ครอบครัว)",
+      "links": []
+    },
+    {
+      "id": "eye_care",
+      "keywords": [
+        "eye care",
+        "ถนอมสายตา",
+        "เด็ก",
+        "อ่าน",
+        "ปวดตา",
+        "ตา",
+        "护眼"
+      ],
+      "answer": "Skyworth มี **Eye Care 5.0** ในรุ่นเรือธง (X66H, V75, SUE8000):\n• ลดแสงสีฟ้า (Low Blue Light)\n• Flicker-Free (ไม่กระพริบ)\n• ปรับสีอัตโนมัติตามแสงห้อง\n• เหมาะกับครอบครัวที่มีเด็กหรือดูทีวีนานๆ\n\nรุ่นเริ่มต้น E5000G ก็มี **Flicker-Free** มาตรฐานเช่นกัน",
       "links": []
     },
     {
@@ -135,10 +275,24 @@
         "smart tv",
         "ระบบ",
         "os",
-        "เลือกระบบ",
+        "ระบบ ปฏิบัติการ",
         "系统"
       ],
-      "answer": "ระบบสมาร์ททีวี Skyworth:\n• **Google TV** (ล่าสุด) — รวมแนะนำเนื้อหาจากทุกแพลตฟอร์ม, Google Assistant, รองรับ Google Cast, แอปครบ\n• **Android TV** (รุ่นก่อน Google TV) — ใช้แอปจาก Play Store ได้เต็มที่\n• **Coolita TV** — OS ของ Skyworth เอง รุ่นเริ่มต้น ใช้งานง่ายแต่แอปน้อยกว่า\n\nถ้าซื้อใหม่ตอนนี้แนะนำ **Google TV** ใช้ง่ายสุด อัปเดตยาว",
+      "answer": "ระบบสมาร์ททีวี Skyworth:\n• **Google TV** (V75, X66H, SUE9500, SUE8000, Q6500A) — ล่าสุด รวมแอป, Google Assistant, Cast, อัปเดตยาว\n• **Android TV** — รุ่นก่อนหน้า รองรับ Play Store\n• **Coolita TV** (E5000G) — OS ของ Skyworth ใช้งานง่าย แอปน้อยกว่า แต่เริ่มต้นรวดเร็ว\n\nซื้อใหม่ตอนนี้แนะนำ **Google TV** หากงบถึง",
+      "links": []
+    },
+    {
+      "id": "karaoke",
+      "keywords": [
+        "karaoke",
+        "คาราโอเกะ",
+        "ร้องเพลง",
+        "ปาร์ตี้",
+        "boomer",
+        "ร้อง",
+        "卡拉ok"
+      ],
+      "answer": "Skyworth **E5000G** (32/40/43\") มาพร้อม **Karaoke Boomer** — เครื่องร้องคาราโอเกะในตัว เหมาะปาร์ตี้ครอบครัวหรือใช้ทดแทนเครื่องเสียง ไม่ต้องซื้อ DVD/เครื่องร้องเพลงแยก ฟีเจอร์นี้ยังไม่แพร่หลายในทีวียี่ห้อหลักอื่นๆ",
       "links": []
     },
     {
@@ -151,10 +305,10 @@
         "ห้องนั่งเล่น",
         "เลือกขนาด",
         "尺寸",
-        "多大",
-        "几寸"
+        "几寸",
+        "几英寸"
       ],
-      "answer": "เลือกขนาดทีวีตามระยะมอง:\n• **24-43 นิ้ว** → ห้องนอน / ห้องครัว (ระยะมอง 1-2 ม.)\n• **43-55 นิ้ว** → ห้องนั่งเล่นเล็ก (ระยะ 2-3 ม.)\n• **55-75 นิ้ว** → ห้องนั่งเล่นใหญ่ **ขนาดยอดนิยม** (ระยะ 3-4 ม.)\n• **75-100 นิ้ว** → โฮมเธียเตอร์ (ระยะ 4 ม. ขึ้นไป)\n\nSkyworth มีให้เลือกตั้งแต่ 24, 32, 40, 42, 43, 50, 55, 65, 70, 75, 85, 86 ถึง **100 นิ้ว**",
+      "answer": "เลือกขนาดตามระยะมอง:\n• **24-43\"** ห้องนอน/ครัว (1-2 ม.) → **E5000G** Coolita\n• **43-55\"** ห้องนั่งเล่นเล็ก (2-3 ม.) → **Q6500A / SUE8000**\n• **55-75\"** ห้องนั่งเล่นใหญ่ (3-4 ม.) **ช่วงนิยมที่สุด** → **X66H / V75 / SUE9500**\n• **75-100\"** โฮมเธียเตอร์ (4+ ม.) → **V75 75\"**\n\nSkyworth มีขนาด: 24, 32, 40, 42, 43, 50, 55, 65, 70, 75, 85, 86, **100\"**",
       "links": []
     },
     {
@@ -168,10 +322,10 @@
         "多少",
         "价格"
       ],
-      "answer": "ราคาขึ้นกับเทคโนโลยีจอและขนาด — HD/FHD 32-43\" เริ่มต้นหลักพันต้นๆ, 4K UHD 50-55\" หลักหมื่นต้นๆ, QLED 65\"+ หลายหมื่น, **QD-Mini LED รุ่นเรือธง** หลักแสนขึ้น สำหรับราคาล่าสุด+โปรโมชั่น ดูที่ [โปรโมชั่น Skyworth Thailand](https://www.skyworth-thailand.com/promotion) หรือโทร **02-248-1615**",
+      "answer": "ตัวอย่างราคาเปิดตัวที่ทราบ:\n• **X66H 55\" (QD-Mini LED)**: **฿16,990**\n• E5000G Coolita 32/40/43\": หลักพัน (รุ่นเริ่มต้น)\n• Q6500A QLED 50/55/65\": หลักหมื่น\n• V75 (2026 NEW QD-Mini LED): สอบถามราคาเปิดตัวที่ฮอตไลน์\n\nโปรโมชั่นล่าสุด: [skyworth-thailand.com/promotion](https://www.skyworth-thailand.com/promotion) | ฮอตไลน์ **02-248-1615**",
       "links": [
         {
-          "label": "โปรโมชั่นล่าสุด",
+          "label": "โปรโมชั่น",
           "url": "https://www.skyworth-thailand.com/promotion"
         }
       ]
@@ -185,7 +339,7 @@
         "ลงทะเบียน",
         "保修"
       ],
-      "answer": "Skyworth Thailand มี **ระบบลงทะเบียนรับประกันออนไลน์** ผ่านหน้า Service ของเว็บไซต์ ระยะเวลารับประกันและเงื่อนไขขึ้นกับรุ่น ตรวจสอบ/ลงทะเบียนได้ที่ [ลงทะเบียนรับประกัน](https://www.skyworth-thailand.com/service/register-warranty) หรือสอบถามฮอตไลน์ **02-248-1615**",
+      "answer": "**รับประกัน 3 ปี** สำหรับทีวี Skyworth Thailand (มีผล 1 กุมภาพันธ์ 2568 / 2025 เป็นต้นไป)\n\n✅ ครอบคลุม: ข้อบกพร่องจากการผลิต/วัสดุ/ฝีมือ\n❌ ไม่ครอบคลุม: หน้าจอแตก-ร้าว, รีโมท, อะแดปเตอร์, ความเสียหายจากอุบัติเหตุ, สัตว์/แมลง, การซ่อมโดยช่างไม่ได้รับอนุญาต\n\n📝 **ลงทะเบียน** ออนไลน์: [register-warranty](https://www.skyworth-thailand.com/service/register-warranty)\n📞 สอบถาม: **02-248-1615**",
       "links": [
         {
           "label": "ลงทะเบียนรับประกัน",
@@ -205,11 +359,11 @@
         "店铺",
         "经销商"
       ],
-      "answer": "Skyworth Thailand มี **ตัวแทนจำหน่าย** ทั่วประเทศ ทั้งห้างค้าปลีกอิเล็กทรอนิกส์รายใหญ่และร้านค้าออนไลน์ — ดูรายชื่อตัวแทนที่ [skyworth-thailand.com/dealer](https://www.skyworth-thailand.com/) หรือโทร **02-248-1615** เพื่อสอบถามร้านใกล้บ้าน",
+      "answer": "Skyworth Thailand มี **ตัวแทนจำหน่าย** ทั่วประเทศ (ห้างค้าปลีกอิเล็กทรอนิกส์รายใหญ่ + ร้านค้าออนไลน์)\n\nค้นร้านใกล้บ้านที่ [skyworth-thailand.com](https://www.skyworth-thailand.com) หรือโทร **02-248-1615**",
       "links": [
         {
-          "label": "หน้าตัวแทนจำหน่าย",
-          "url": "https://www.skyworth-thailand.com/"
+          "label": "เว็บไซต์ Skyworth Thailand",
+          "url": "https://www.skyworth-thailand.com"
         }
       ]
     },
@@ -224,7 +378,7 @@
         "促销",
         "优惠"
       ],
-      "answer": "โปรโมชั่นปัจจุบันของ Skyworth Thailand สามารถดูได้ที่ [หน้าโปรโมชั่น](https://www.skyworth-thailand.com/promotion) ค่ะ อัปเดตใหม่เป็นระยะ เช่น ช่วง Mid-Year Sale, 11.11, ปีใหม่",
+      "answer": "โปรโมชั่นปัจจุบันของ Skyworth Thailand ดูที่ [หน้าโปรโมชั่น](https://www.skyworth-thailand.com/promotion) อัปเดตเป็นระยะ (Mid-Year, 11.11, ปีใหม่)",
       "links": [
         {
           "label": "โปรโมชั่น",
@@ -246,7 +400,7 @@
         "冰箱",
         "洗衣机"
       ],
-      "answer": "**ตู้เย็น (Refrigerator)** และ **เครื่องซักผ้า (Washing Machine)** ของ Skyworth กำลังจะเปิดตัวในประเทศไทยเร็วๆ นี้ — สถานะปัจจุบันคือ **Coming Soon** ติดตามได้ที่เว็บไซต์ หรือโทร **02-248-1615** เพื่อสอบถามวันเปิดตัวค่ะ",
+      "answer": "**ตู้เย็น** และ **เครื่องซักผ้า** ของ Skyworth ในประเทศไทยสถานะ **Coming Soon** ตามที่แสดงในเว็บไซต์ ติดตามวันเปิดตัวที่ [skyworth-thailand.com](https://www.skyworth-thailand.com) หรือฮอตไลน์ **02-248-1615**",
       "links": []
     },
     {
@@ -262,7 +416,19 @@
         "推荐",
         "买什么"
       ],
-      "answer": "สำหรับ **ห้องนั่งเล่นครอบครัว** แนะนำ:\n• ขนาด **55-65 นิ้ว** (ระยะมอง 2.5-3.5 ม.)\n• เทคโนโลยี **4K QLED** ความคุ้มค่าดีที่สุด หรือถ้างบถึง **QD-Mini LED** ภาพดีกว่ามาก\n• ระบบ **Google TV** ใช้ง่าย\n• ยี่ห้อ Skyworth ในระดับนี้คุ้มค่าเมื่อเทียบกับยี่ห้อยอดนิยมรายใหญ่\n\nสอบถามรุ่นเฉพาะและราคาที่ฮอตไลน์ **02-248-1615**",
+      "answer": "สำหรับ **ห้องนั่งเล่นครอบครัว** (ระยะมอง 2.5-3.5 ม.) แนะนำ:\n\n💰 **คุ้มที่สุด**: **X66H 55\" ฿16,990** — QD-Mini LED + Google TV + Dolby Vision/Atmos + HDMI 2.1\n🆕 **ใหม่ล่าสุด**: **V75 55-65\"** (2026 NEW) — เพิ่ม TotalSonic audio\n💵 **งบประหยัด**: **Q6500A QLED 55\"** หรือ **SUE8000** Eye Care\n\nรับประกัน **3 ปี** ทุกรุ่น สอบถาม **02-248-1615**",
+      "links": []
+    },
+    {
+      "id": "specs_compare",
+      "keywords": [
+        "compare",
+        "x66h vs v75",
+        "เปรียบเทียบรุ่น",
+        "ต่างกัน",
+        "vs"
+      ],
+      "answer": "**X66H vs V75** (ทั้งคู่ QD-Mini LED 55/65/75\" Google TV):\n\n| | X66H | V75 (2026 NEW) |\n|---|---|---|\n| ยุค | รุ่นเรือธง | รุ่นล่าสุด |\n| 55\" ราคา | **฿16,990** | สอบถาม |\n| HDR | Dolby Vision + HDR10+ | เหมือนกัน |\n| เสียง | Dolby Atmos + **dbx-TV** | Dolby Atmos + **TotalSonic** |\n| Eye Care | 5.0 | 5.0 |\n| HDMI 2.1 + Game Hub | ✓ | ✓ |\n\nงบคุ้มเลือก **X66H**, ใหม่ล่าสุด/เสียงดีกว่าเลือก **V75**",
       "links": []
     },
     {
@@ -276,10 +442,10 @@
         "公司",
         "创维"
       ],
-      "answer": "**Skyworth (创维)** ก่อตั้งปี **1988** ที่เซินเจิ้น ประเทศจีน เป็นผู้ผลิตทีวีและอุปกรณ์อัจฉริยะระดับโลก พนักงาน 40,000+ คน สโลแกน **\"Lead the Future\"** ในประเทศไทยจำหน่ายภายใต้ **SKYWORTH Thailand** ครอบคลุมทีวี (และอนาคต: ตู้เย็น, เครื่องซักผ้า)",
+      "answer": "**Skyworth (创维)** ก่อตั้งปี **1988** ที่เซินเจิ้น ประเทศจีน เป็นผู้ผลิตทีวีและอุปกรณ์อัจฉริยะระดับโลก พนักงาน **40,000+ คน** สโลแกน **\"Lead the Future\"** ในไทยจำหน่ายภายใต้ **SKYWORTH Thailand** ครอบคลุมทีวี (อนาคต: ตู้เย็น, เครื่องซักผ้า)",
       "links": [
         {
-          "label": "เว็บไซต์ Skyworth Thailand",
+          "label": "Skyworth Thailand",
           "url": "https://www.skyworth-thailand.com"
         }
       ]
@@ -295,7 +461,7 @@
         "联系",
         "电话"
       ],
-      "answer": "ติดต่อ Skyworth Thailand:\n• **ฮอตไลน์**: 02-248-1615\n• **เว็บไซต์**: skyworth-thailand.com\n• **ลงทะเบียนรับประกัน / บริการหลังการขาย**: ผ่านหน้า Service บนเว็บไซต์",
+      "answer": "ติดต่อ Skyworth Thailand:\n• **ฮอตไลน์**: **02-248-1615**\n• **เว็บไซต์**: skyworth-thailand.com\n• **ลงทะเบียนรับประกัน**: ผ่านหน้า Service บนเว็บไซต์",
       "links": [
         {
           "label": "หน้าติดต่อ",
@@ -314,7 +480,7 @@
         "你好",
         "您好"
       ],
-      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **ทีวี Skyworth** ในประเทศไทยได้ — เทคโนโลยี, ขนาด, ระบบสมาร์ท, ราคา, การรับประกัน อยากทราบอะไรดีคะ?",
+      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **ทีวี Skyworth** ในประเทศไทยได้ — รุ่น/ซีรีส์, ขนาด, ราคา, เกม, Dolby, ประกัน 3 ปี อยากทราบเรื่องอะไรดีคะ?",
       "links": []
     },
     {
@@ -329,11 +495,11 @@
       "links": []
     }
   ],
-  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **SKYWORTH Thailand** ตอบได้เรื่อง **ทีวี** (เทคโนโลยี, ขนาด, ระบบสมาร์ท), **ราคา/โปรโมชั่น**, **รับประกัน/บริการ**, **ตัวแทนจำหน่าย** และเรื่องบริษัท สำหรับเรื่องอื่นๆ ติดต่อฮอตไลน์ **02-248-1615** หรือดูเว็บไซต์ skyworth-thailand.com (I can also reply in English or 中文.)",
+  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **SKYWORTH Thailand** ตอบได้เรื่อง **ทีวี Skyworth** (รุ่น V75/X66H/SUE/E5000G), **ราคา**, **ฟีเจอร์เกม/HDR/Dolby Atmos**, **Eye Care**, **รับประกัน 3 ปี** สำหรับเรื่องอื่นๆ โทร **02-248-1615** หรือดู skyworth-thailand.com (I can also reply in English or 中文.)",
   "suggestions": [
-    "QLED กับ Mini-LED ต่างกันยังไง?",
-    "ห้องนั่งเล่นควรซื้อกี่นิ้ว?",
-    "Skyworth Thailand มีตู้เย็นไหม?",
-    "ติดต่อรับประกันยังไง?"
+    "X66H กับ V75 ต่างกันยังไง?",
+    "ห้องนั่งเล่นใหญ่ ควรซื้อกี่นิ้ว?",
+    "เล่นเกม PS5 รุ่นไหนเหมาะ?",
+    "รับประกันกี่ปี?"
   ]
 }
