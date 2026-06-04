@@ -1,0 +1,339 @@
+{
+  "ui": {
+    "title": "SKYWORTH Assistant",
+    "subtitle": "ออนไลน์ · เดโม",
+    "avatar": "SW",
+    "greeting": "สวัสดีค่ะ! 📺 ฉันคือผู้ช่วยอัจฉริยะของ **SKYWORTH Thailand** (เดโม) ถามได้เลยเรื่อง **ทีวี** ของ Skyworth — ขนาดหน้าจอ, เทคโนโลยี (QLED / Mini-LED / UHD), ระบบสมาร์ททีวี (Google TV / Android TV), การรับประกัน, โปรโมชั่น, หรือเรื่องอื่นๆ — พิมพ์ภาษาไทย / อังกฤษ / 中文 ก็ได้ค่ะ",
+    "placeholder": "ถามเรื่องทีวี Skyworth, ขนาด, รุ่น, ประกัน..."
+  },
+  "company": {
+    "name": "SKYWORTH Thailand (创维)",
+    "tagline": "LEAD THE FUTURE",
+    "founded": "1988 (เซินเจิ้น ประเทศจีน)",
+    "global_presence": "พนักงาน 40,000+ คน · เป็นผู้ผลิตทีวีและอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะระดับชั้นนำของโลก",
+    "website": "https://www.skyworth-thailand.com",
+    "hotline_thailand": "02-248-1615",
+    "warranty_registration": "https://www.skyworth-thailand.com/service/register-warranty"
+  },
+  "products": {
+    "available_now": [
+      "ทีวี (TV)"
+    ],
+    "coming_soon": [
+      "ตู้เย็น (Refrigerator)",
+      "เครื่องซักผ้า (Washing Machine)"
+    ]
+  },
+  "tv_lineup": {
+    "display_technologies": [
+      {
+        "tech": "QD-Mini LED",
+        "note": "เทคโนโลยีระดับเรือธง — ความสว่างสูง คอนทราสต์ดี HDR สมจริง"
+      },
+      {
+        "tech": "4K QLED",
+        "note": "Quantum Dot สีกว้าง อิ่ม คมชัด เหมาะดูหนัง/เล่นเกม"
+      },
+      {
+        "tech": "4K UHD",
+        "note": "ความละเอียด 3840×2160 ภาพคมระดับ 4K มาตรฐาน"
+      },
+      {
+        "tech": "FULL HD",
+        "note": "1920×1080 — รุ่นคุ้มค่าสำหรับห้องนอน/ห้องครัว"
+      },
+      {
+        "tech": "HD",
+        "note": "1366×768 — รุ่นเริ่มต้น ขนาดเล็ก เน้นราคา"
+      }
+    ],
+    "smart_os": [
+      {
+        "os": "Google TV",
+        "note": "ระบบของ Google รุ่นล่าสุด — รวมเนื้อหา/แอปจากหลายแพลตฟอร์ม สั่งงานด้วยเสียง"
+      },
+      {
+        "os": "Android TV",
+        "note": "Android TV ดั้งเดิม — รองรับแอปจาก Play Store"
+      },
+      {
+        "os": "Coolita TV",
+        "note": "OS ของ Skyworth เอง — ใช้บนรุ่นเริ่มต้นบางรุ่น"
+      },
+      {
+        "os": "Smart TV",
+        "note": "ระบบสมาร์ทพื้นฐาน รองรับสตรีมมิ่ง/YouTube/Netflix"
+      }
+    ],
+    "sizes_available_inches": [
+      24,
+      32,
+      40,
+      42,
+      43,
+      50,
+      55,
+      65,
+      70,
+      75,
+      85,
+      86,
+      100
+    ]
+  },
+  "size_guide": {
+    "bedroom": "24 - 43 นิ้ว — เหมาะกับห้องนอนหรือห้องครัวที่ระยะมอง 1-2 เมตร",
+    "living_small": "43 - 55 นิ้ว — ห้องนั่งเล่นขนาดเล็ก-กลาง ระยะมอง 2-3 เมตร",
+    "living_large": "55 - 75 นิ้ว — ห้องนั่งเล่นใหญ่ ระยะมอง 3-4 เมตร เป็นช่วงนิยมที่สุด",
+    "home_theater": "75 - 100 นิ้ว — โฮมเธียเตอร์ หรือห้องโถงใหญ่ ระยะมอง 4 เมตรขึ้นไป"
+  },
+  "qa": [
+    {
+      "id": "lineup_overview",
+      "keywords": [
+        "lineup",
+        "models",
+        "all tv",
+        "รุ่น",
+        "ทีวี",
+        "มีอะไรบ้าง",
+        "all",
+        "电视",
+        "型号",
+        "有哪些"
+      ],
+      "answer": "Skyworth Thailand มีทีวีให้เลือกครบ ตั้งแต่ **24 นิ้ว** ไปจนถึง **100 นิ้ว** แบ่งตามเทคโนโลยีจอ:\n• **QD-Mini LED** (เรือธง) → ความสว่าง/คอนทราสต์สูงสุด\n• **4K QLED** → สีอิ่ม Quantum Dot\n• **4K UHD** → ความละเอียด 4K มาตรฐาน\n• **FULL HD / HD** → รุ่นคุ้มค่าสำหรับห้องนอน\n\nรองรับ **Google TV** / Android TV / Coolita TV ค่ะ ดูทั้งหมดที่ [skyworth-thailand.com/tv](https://www.skyworth-thailand.com/tv)",
+      "links": [
+        {
+          "label": "ดูทีวีทั้งหมด",
+          "url": "https://www.skyworth-thailand.com/tv"
+        }
+      ]
+    },
+    {
+      "id": "qled_vs_minled",
+      "keywords": [
+        "qled",
+        "mini led",
+        "mini-led",
+        "oled",
+        "ต่างกัน",
+        "เลือก",
+        "compare",
+        "区别",
+        "对比"
+      ],
+      "answer": "**QD-Mini LED vs 4K QLED**:\n• **QD-Mini LED** — แบ็คไลท์เป็น Mini-LED ขนาดเล็กจำนวนหลายพันดวง ควบคุมการสว่างเป็นโซน คอนทราสต์ดีมาก สีดำลึก เหมาะดูหนัง HDR / ห้องสว่าง\n• **4K QLED** — ใช้ Quantum Dot ขยายช่วงสี สีอิ่มคมชัด ราคาคุ้มกว่า\n\nถ้าเน้นภาพ HDR ระดับเรือธง → **Mini-LED**, ถ้าเน้นความคุ้มราคาแต่สีสันจัด → **QLED**",
+      "links": []
+    },
+    {
+      "id": "google_vs_android_vs_coolita",
+      "keywords": [
+        "google tv",
+        "android tv",
+        "coolita",
+        "smart tv",
+        "ระบบ",
+        "os",
+        "เลือกระบบ",
+        "系统"
+      ],
+      "answer": "ระบบสมาร์ททีวี Skyworth:\n• **Google TV** (ล่าสุด) — รวมแนะนำเนื้อหาจากทุกแพลตฟอร์ม, Google Assistant, รองรับ Google Cast, แอปครบ\n• **Android TV** (รุ่นก่อน Google TV) — ใช้แอปจาก Play Store ได้เต็มที่\n• **Coolita TV** — OS ของ Skyworth เอง รุ่นเริ่มต้น ใช้งานง่ายแต่แอปน้อยกว่า\n\nถ้าซื้อใหม่ตอนนี้แนะนำ **Google TV** ใช้ง่ายสุด อัปเดตยาว",
+      "links": []
+    },
+    {
+      "id": "size_choice",
+      "keywords": [
+        "size",
+        "ขนาด",
+        "กี่นิ้ว",
+        "ห้องนอน",
+        "ห้องนั่งเล่น",
+        "เลือกขนาด",
+        "尺寸",
+        "多大",
+        "几寸"
+      ],
+      "answer": "เลือกขนาดทีวีตามระยะมอง:\n• **24-43 นิ้ว** → ห้องนอน / ห้องครัว (ระยะมอง 1-2 ม.)\n• **43-55 นิ้ว** → ห้องนั่งเล่นเล็ก (ระยะ 2-3 ม.)\n• **55-75 นิ้ว** → ห้องนั่งเล่นใหญ่ **ขนาดยอดนิยม** (ระยะ 3-4 ม.)\n• **75-100 นิ้ว** → โฮมเธียเตอร์ (ระยะ 4 ม. ขึ้นไป)\n\nSkyworth มีให้เลือกตั้งแต่ 24, 32, 40, 42, 43, 50, 55, 65, 70, 75, 85, 86 ถึง **100 นิ้ว**",
+      "links": []
+    },
+    {
+      "id": "price",
+      "keywords": [
+        "price",
+        "ราคา",
+        "เท่าไหร่",
+        "กี่บาท",
+        "cost",
+        "多少",
+        "价格"
+      ],
+      "answer": "ราคาขึ้นกับเทคโนโลยีจอและขนาด — HD/FHD 32-43\" เริ่มต้นหลักพันต้นๆ, 4K UHD 50-55\" หลักหมื่นต้นๆ, QLED 65\"+ หลายหมื่น, **QD-Mini LED รุ่นเรือธง** หลักแสนขึ้น สำหรับราคาล่าสุด+โปรโมชั่น ดูที่ [โปรโมชั่น Skyworth Thailand](https://www.skyworth-thailand.com/promotion) หรือโทร **02-248-1615**",
+      "links": [
+        {
+          "label": "โปรโมชั่นล่าสุด",
+          "url": "https://www.skyworth-thailand.com/promotion"
+        }
+      ]
+    },
+    {
+      "id": "warranty",
+      "keywords": [
+        "warranty",
+        "ประกัน",
+        "รับประกัน",
+        "ลงทะเบียน",
+        "保修"
+      ],
+      "answer": "Skyworth Thailand มี **ระบบลงทะเบียนรับประกันออนไลน์** ผ่านหน้า Service ของเว็บไซต์ ระยะเวลารับประกันและเงื่อนไขขึ้นกับรุ่น ตรวจสอบ/ลงทะเบียนได้ที่ [ลงทะเบียนรับประกัน](https://www.skyworth-thailand.com/service/register-warranty) หรือสอบถามฮอตไลน์ **02-248-1615**",
+      "links": [
+        {
+          "label": "ลงทะเบียนรับประกัน",
+          "url": "https://www.skyworth-thailand.com/service/register-warranty"
+        }
+      ]
+    },
+    {
+      "id": "dealer",
+      "keywords": [
+        "dealer",
+        "showroom",
+        "ตัวแทน",
+        "ซื้อ",
+        "ที่ไหน",
+        "ร้าน",
+        "店铺",
+        "经销商"
+      ],
+      "answer": "Skyworth Thailand มี **ตัวแทนจำหน่าย** ทั่วประเทศ ทั้งห้างค้าปลีกอิเล็กทรอนิกส์รายใหญ่และร้านค้าออนไลน์ — ดูรายชื่อตัวแทนที่ [skyworth-thailand.com/dealer](https://www.skyworth-thailand.com/) หรือโทร **02-248-1615** เพื่อสอบถามร้านใกล้บ้าน",
+      "links": [
+        {
+          "label": "หน้าตัวแทนจำหน่าย",
+          "url": "https://www.skyworth-thailand.com/"
+        }
+      ]
+    },
+    {
+      "id": "promotion",
+      "keywords": [
+        "promotion",
+        "โปร",
+        "ส่วนลด",
+        "discount",
+        "sale",
+        "促销",
+        "优惠"
+      ],
+      "answer": "โปรโมชั่นปัจจุบันของ Skyworth Thailand สามารถดูได้ที่ [หน้าโปรโมชั่น](https://www.skyworth-thailand.com/promotion) ค่ะ อัปเดตใหม่เป็นระยะ เช่น ช่วง Mid-Year Sale, 11.11, ปีใหม่",
+      "links": [
+        {
+          "label": "โปรโมชั่น",
+          "url": "https://www.skyworth-thailand.com/promotion"
+        }
+      ]
+    },
+    {
+      "id": "refrigerator_washing",
+      "keywords": [
+        "refrigerator",
+        "fridge",
+        "ตู้เย็น",
+        "washing machine",
+        "เครื่องซักผ้า",
+        "เครื่องซัก",
+        "appliance",
+        "เครื่องใช้ไฟฟ้า",
+        "冰箱",
+        "洗衣机"
+      ],
+      "answer": "**ตู้เย็น (Refrigerator)** และ **เครื่องซักผ้า (Washing Machine)** ของ Skyworth กำลังจะเปิดตัวในประเทศไทยเร็วๆ นี้ — สถานะปัจจุบันคือ **Coming Soon** ติดตามได้ที่เว็บไซต์ หรือโทร **02-248-1615** เพื่อสอบถามวันเปิดตัวค่ะ",
+      "links": []
+    },
+    {
+      "id": "best_living_room",
+      "keywords": [
+        "best",
+        "แนะนำ",
+        "ห้องนั่งเล่น",
+        "ครอบครัว",
+        "เลือก",
+        "should buy",
+        "recommend",
+        "推荐",
+        "买什么"
+      ],
+      "answer": "สำหรับ **ห้องนั่งเล่นครอบครัว** แนะนำ:\n• ขนาด **55-65 นิ้ว** (ระยะมอง 2.5-3.5 ม.)\n• เทคโนโลยี **4K QLED** ความคุ้มค่าดีที่สุด หรือถ้างบถึง **QD-Mini LED** ภาพดีกว่ามาก\n• ระบบ **Google TV** ใช้ง่าย\n• ยี่ห้อ Skyworth ในระดับนี้คุ้มค่าเมื่อเทียบกับยี่ห้อยอดนิยมรายใหญ่\n\nสอบถามรุ่นเฉพาะและราคาที่ฮอตไลน์ **02-248-1615**",
+      "links": []
+    },
+    {
+      "id": "company",
+      "keywords": [
+        "company",
+        "skyworth",
+        "lead the future",
+        "เกี่ยวกับ",
+        "ก่อตั้ง",
+        "公司",
+        "创维"
+      ],
+      "answer": "**Skyworth (创维)** ก่อตั้งปี **1988** ที่เซินเจิ้น ประเทศจีน เป็นผู้ผลิตทีวีและอุปกรณ์อัจฉริยะระดับโลก พนักงาน 40,000+ คน สโลแกน **\"Lead the Future\"** ในประเทศไทยจำหน่ายภายใต้ **SKYWORTH Thailand** ครอบคลุมทีวี (และอนาคต: ตู้เย็น, เครื่องซักผ้า)",
+      "links": [
+        {
+          "label": "เว็บไซต์ Skyworth Thailand",
+          "url": "https://www.skyworth-thailand.com"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "contact",
+        "ติดต่อ",
+        "เบอร์",
+        "โทร",
+        "phone",
+        "联系",
+        "电话"
+      ],
+      "answer": "ติดต่อ Skyworth Thailand:\n• **ฮอตไลน์**: 02-248-1615\n• **เว็บไซต์**: skyworth-thailand.com\n• **ลงทะเบียนรับประกัน / บริการหลังการขาย**: ผ่านหน้า Service บนเว็บไซต์",
+      "links": [
+        {
+          "label": "หน้าติดต่อ",
+          "url": "https://www.skyworth-thailand.com/contact"
+        }
+      ]
+    },
+    {
+      "id": "greeting",
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "สวัสดี",
+        "หวัดดี",
+        "你好",
+        "您好"
+      ],
+      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **ทีวี Skyworth** ในประเทศไทยได้ — เทคโนโลยี, ขนาด, ระบบสมาร์ท, ราคา, การรับประกัน อยากทราบอะไรดีคะ?",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "keywords": [
+        "thanks",
+        "thank you",
+        "ขอบคุณ",
+        "谢谢"
+      ],
+      "answer": "ยินดีค่ะ! 😊 มีคำถามอื่นเกี่ยวกับ Skyworth ไหมคะ?",
+      "links": []
+    }
+  ],
+  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **SKYWORTH Thailand** ตอบได้เรื่อง **ทีวี** (เทคโนโลยี, ขนาด, ระบบสมาร์ท), **ราคา/โปรโมชั่น**, **รับประกัน/บริการ**, **ตัวแทนจำหน่าย** และเรื่องบริษัท สำหรับเรื่องอื่นๆ ติดต่อฮอตไลน์ **02-248-1615** หรือดูเว็บไซต์ skyworth-thailand.com (I can also reply in English or 中文.)",
+  "suggestions": [
+    "QLED กับ Mini-LED ต่างกันยังไง?",
+    "ห้องนั่งเล่นควรซื้อกี่นิ้ว?",
+    "Skyworth Thailand มีตู้เย็นไหม?",
+    "ติดต่อรับประกันยังไง?"
+  ]
+}

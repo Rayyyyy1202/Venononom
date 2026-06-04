@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = os.getenv("GWM_SITE", "").strip().lower()
-KNOWN_SITES = ("eu", "th", "im-th")
+KNOWN_SITES = ("eu", "th", "im-th", "sky-th")
 
 
 def main() -> int:

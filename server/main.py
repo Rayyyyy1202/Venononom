@@ -34,6 +34,9 @@ if GWM_SITE == "th":
 elif GWM_SITE == "im-th":
     SITE_DIR = ROOT / "public-im-th"
     KB_PATH = ROOT / "chatbot" / "knowledge.im-th.json"
+elif GWM_SITE == "sky-th":
+    SITE_DIR = ROOT / "public-sky-th"
+    KB_PATH = ROOT / "chatbot" / "knowledge.sky-th.json"
 else:
     SITE_DIR = ROOT / "public"
     KB_PATH = ROOT / "chatbot" / "knowledge.json"
@@ -118,6 +121,18 @@ _SITE_PROMPT = {
             "Thai (ภาษาไทย) if they write Thai, English if they write English. "
             "Default to Thai if unsure. Use Thai Baht (฿) for prices. "
             "Only IM6 (Premium / Performance variants) is sold in Thailand currently."
+        ),
+    },
+    "sky-th": {
+        "brand": "SKYWORTH Thailand (创维 — Lead the Future)",
+        "home": "https://www.skyworth-thailand.com/",
+        "contact": "calling the Skyworth Thailand hotline 02-248-1615 or visiting an authorized dealer",
+        "language_rule": (
+            "\nIMPORTANT: Reply in the SAME language the user writes in — "
+            "Thai (ภาษาไทย) if they write Thai, English if they write English. "
+            "Default to Thai if unsure. Use Thai Baht (฿) for prices. "
+            "Currently only TVs are sold in Thailand; refrigerators and washing "
+            "machines are listed as 'Coming Soon'."
         ),
     },
 }

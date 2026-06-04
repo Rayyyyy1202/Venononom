@@ -77,6 +77,14 @@ IM_BRAND = {
     "glow": "rgba(120, 160, 220, 0.18)",
 }
 
+# Skyworth brand: heritage red (slightly warmer than GWM red).
+SKY_BRAND = {
+    "primary": "#C8161D",
+    "primary_dark": "#9c0d13",
+    "page_bg": "radial-gradient(120% 80% at 50% 0%, #2a0a0d 0%, #0a0708 70%)",
+    "glow": "rgba(200, 22, 29, 0.22)",
+}
+
 SITES = {
     "eu": {"output": ROOT / "public-eu", "brand": GWM_BRAND, "locales": EU_LOCALES},
     "th": {
@@ -103,6 +111,20 @@ SITES = {
                 "title": "IM Assistant · IM Motors Thailand",
                 "tag": "IM MOTORS THAILAND · AI DEMO",
                 "base_kb": "knowledge.im-th.json",
+                "override_kb": None,
+            }
+        ],
+    },
+    "sky-th": {
+        "output": ROOT / "public-sky-th",
+        "brand": SKY_BRAND,
+        "locales": [
+            {
+                "subpath": "",
+                "lang": "th",
+                "title": "SKYWORTH Assistant · ครีเอทีฟ ไลฟ์สไตล์",
+                "tag": "SKYWORTH THAILAND · AI DEMO",
+                "base_kb": "knowledge.sky-th.json",
                 "override_kb": None,
             }
         ],
