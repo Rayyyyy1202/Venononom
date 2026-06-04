@@ -1,0 +1,166 @@
+{
+  "ui": {
+    "title": "GWM Assistant",
+    "subtitle": "Online · Demo",
+    "avatar": "GW",
+    "greeting": "Hi! I'm the **GWM Assistant** — a demo bot for this site. I can help with our upcoming models (**ORA 5**, **H7**, **JOLION MAX**), dealership opportunities, warranty and contact info. What would you like to know?",
+    "placeholder": "Ask about GWM models, dealers, contact…"
+  },
+  "localizations": {
+    "es": {
+      "ui": {
+        "subtitle": "En línea · Demo",
+        "greeting": "¡Hola! 👋 Soy el **GWM Assistant** — un bot demo para este sitio. Puedo ayudarte con nuestros próximos modelos (**ORA 5**, **H7**, **JOLION MAX**), oportunidades de concesionario, garantía e información de contacto. ¿Qué te gustaría saber?",
+        "placeholder": "Pregunta sobre modelos GWM, concesionarios, contacto…"
+      },
+      "fallback": "Lo siento, soy un asistente demo de GWM Europa. Puedo responder sobre **modelos** (ORA 5, H7, JOLION MAX), **concesionarios**, **garantía/servicio**, **tecnología** y **contacto**. Para cualquier otra cosa, escribe a **info@gwm-eu.com**.",
+      "suggestions": [
+        "Háblame del GWM ORA 5",
+        "¿Qué modelos vienen a Europa?",
+        "¿Cómo puedo ser concesionario?",
+        "¿Cómo contacto con GWM?"
+      ]
+    },
+    "it": {
+      "ui": {
+        "subtitle": "Online · Demo",
+        "greeting": "Ciao! 👋 Sono **GWM Assistant** — un bot demo per questo sito. Posso aiutarti con i nostri prossimi modelli (**ORA 5**, **H7**, **JOLION MAX**), opportunità di concessionari, garanzia e informazioni di contatto. Cosa vorresti sapere?",
+        "placeholder": "Chiedi sui modelli GWM, concessionari, contatti…"
+      },
+      "fallback": "Mi dispiace, sono un assistente demo di GWM Europa. Posso rispondere su **modelli** (ORA 5, H7, JOLION MAX), **concessionari**, **garanzia/servizio**, **tecnologia** e **contatti**. Per qualsiasi altra cosa, scrivi a **info@gwm-eu.com**.",
+      "suggestions": [
+        "Parlami della GWM ORA 5",
+        "Quali modelli arrivano in Europa?",
+        "Come posso diventare concessionario?",
+        "Come contatto GWM?"
+      ]
+    }
+  },
+  "company": {
+    "name": "GWM (Great Wall Motor)",
+    "users_worldwide": "16,000,000+",
+    "tagline": "Go With More",
+    "contact_email": "info@gwm-eu.com",
+    "regions": ["EU (English)", "Spain (Spanish)", "Italy (Italian)"],
+    "social": {
+      "instagram": "https://www.instagram.com/gwm_europe/",
+      "facebook": "https://www.facebook.com/GWMEurope/"
+    }
+  },
+  "models": [
+    {
+      "name": "GWM ORA 5",
+      "category": "Stylish Premium SUV",
+      "status": "Coming Soon",
+      "url": "https://www.gwm-eu.com/eu/models/ora-5"
+    },
+    {
+      "name": "GWM H7",
+      "tagline": "Driven By Bold Intelligence",
+      "status": "Coming Soon",
+      "url": "https://www.gwm-eu.com/eu/models/h7"
+    },
+    {
+      "name": "GWM JOLION MAX",
+      "category": "The Versatile, Stylish, And Fun Urban SUV",
+      "status": "Coming Soon",
+      "url": "https://www.gwm-eu.com/eu/models/jolion-max"
+    }
+  ],
+  "qa": [
+    {
+      "id": "ora5",
+      "keywords": ["ora 5", "ora5", "ora-5", "ora", "premium suv", "stylish suv"],
+      "answer": "GWM ORA 5 is our Stylish Premium SUV — a refined, urban-friendly electric crossover designed for European drivers who want presence and comfort. It is **coming soon** to Europe. You can preview it on the official model page.",
+      "links": [{"label": "GWM ORA 5 page", "url": "https://www.gwm-eu.com/eu/models/ora-5"}]
+    },
+    {
+      "id": "h7",
+      "keywords": ["h7", "bold intelligence", "intelligent suv"],
+      "answer": "GWM H7 is *Driven By Bold Intelligence* — a flagship intelligent SUV combining advanced driver-assistance with a confident design. **Coming soon** to Europe.",
+      "links": [{"label": "GWM H7 page", "url": "https://www.gwm-eu.com/eu/models/h7"}]
+    },
+    {
+      "id": "jolion",
+      "keywords": ["jolion", "jolion max", "urban suv", "compact suv", "fun suv"],
+      "answer": "GWM JOLION MAX is our versatile, stylish and fun urban SUV — built for everyday city life with bold styling. **Coming soon** to Europe.",
+      "links": [{"label": "GWM JOLION MAX page", "url": "https://www.gwm-eu.com/eu/models/jolion-max"}]
+    },
+    {
+      "id": "models_overview",
+      "keywords": ["models", "lineup", "cars", "vehicles", "all models", "what cars", "which cars", "what models"],
+      "answer": "GWM is bringing **3 new models** to Europe:\n• **ORA 5** — Stylish Premium SUV\n• **H7** — Driven By Bold Intelligence\n• **JOLION MAX** — Versatile Urban SUV\n\nAll three are *Coming Soon*. Want details on any of them?",
+      "links": [{"label": "All models", "url": "https://www.gwm-eu.com/eu/models"}]
+    },
+    {
+      "id": "dealer",
+      "keywords": ["dealer", "dealership", "cooperation", "partner", "partnership", "become dealer", "fleet", "career", "jobs"],
+      "answer": "GWM is actively expanding its European dealer network. The **Cooperation** section covers dealership opportunities, fleet sales and careers. Send a partnership enquiry to **info@gwm-eu.com** with your company profile and target market.",
+      "links": [{"label": "Cooperation page", "url": "https://www.gwm-eu.com/eu/cooperation"}]
+    },
+    {
+      "id": "warranty",
+      "keywords": ["warranty", "guarantee", "service", "after-sales", "after sales", "maintenance", "repair"],
+      "answer": "GWM offers a comprehensive **warranty and service** programme across Europe, including genuine spare parts and certified service centres. See the warranty page for full terms.",
+      "links": [
+        {"label": "Warranty", "url": "https://www.gwm-eu.com/eu/warranty"},
+        {"label": "Genuine Parts", "url": "https://www.gwm-eu.com/eu/genuine-parts"}
+      ]
+    },
+    {
+      "id": "tech",
+      "keywords": ["technology", "tech", "innovation", "r&d", "research", "battery", "ev", "electric", "hybrid"],
+      "answer": "GWM invests heavily in R&D, with global tech centres covering electrification, intelligent driving and connected services. The **Technology** page details our platforms and innovation roadmap.",
+      "links": [{"label": "GWM Technology", "url": "https://www.gwm-eu.com/eu/technology"}]
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "email", "phone", "reach", "support", "talk", "speak", "help"],
+      "answer": "You can reach GWM Europe at **info@gwm-eu.com**, or follow us on Instagram and Facebook. For region-specific enquiries, visit the contact page.",
+      "links": [{"label": "Contact us", "url": "https://www.gwm-eu.com/eu/contact-us"}]
+    },
+    {
+      "id": "price",
+      "keywords": ["price", "cost", "buy", "purchase", "how much", "order", "pricing", "msrp"],
+      "answer": "Pricing for the upcoming European models hasn't been published yet — they're still labelled *Coming Soon*. Sign up via the official model pages or email **info@gwm-eu.com** to be notified when local pricing and orders open.",
+      "links": [{"label": "Models", "url": "https://www.gwm-eu.com/eu/models"}]
+    },
+    {
+      "id": "language",
+      "keywords": ["language", "spanish", "italian", "español", "italiano", "region", "country"],
+      "answer": "GWM Europe runs three localised sites: **EU (English)**, **Spain (Spanish)** and **Italy (Italian)**. You can switch in the top-right of the page header.",
+      "links": []
+    },
+    {
+      "id": "about",
+      "keywords": ["about", "company", "history", "who", "what is gwm", "great wall"],
+      "answer": "**Great Wall Motor (GWM)** is a global automotive manufacturer serving **16+ million users worldwide**. Our European arm is rolling out a new generation of SUVs under the brand promise *Go With More*.",
+      "links": [{"label": "About GWM", "url": "https://www.gwm-eu.com/eu/about-gwm"}]
+    },
+    {
+      "id": "news",
+      "keywords": ["news", "press", "announcement", "update", "latest", "blog"],
+      "answer": "Latest GWM Europe news — including the **All-new compact ORA 5 family kickstart** and the **GWM Europe Partner Day** — is published in the news section.",
+      "links": [{"label": "News", "url": "https://www.gwm-eu.com/eu/news-list"}]
+    },
+    {
+      "id": "greeting",
+      "keywords": ["hi", "hello", "hey", "hola", "ciao", "good morning", "good afternoon", "good evening"],
+      "answer": "Hi! I'm the GWM Europe assistant. I can help with our upcoming models (**ORA 5**, **H7**, **JOLION MAX**), dealership opportunities, warranty and contact info. What would you like to know?",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "keywords": ["thanks", "thank you", "thx", "cheers", "appreciated"],
+      "answer": "You're welcome! Anything else I can help with?",
+      "links": []
+    }
+  ],
+  "fallback": "I'm a demo assistant focused on GWM Europe. I can answer questions about our **models** (ORA 5, H7, JOLION MAX), **dealership** opportunities, **warranty/service**, **technology** and **contact info**. For anything else, please reach out at **info@gwm-eu.com**.",
+  "suggestions": [
+    "Tell me about GWM ORA 5",
+    "What models are coming to Europe?",
+    "How can I become a dealer?",
+    "How do I contact GWM?"
+  ]
+}

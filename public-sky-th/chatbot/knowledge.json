@@ -1,0 +1,458 @@
+{
+  "default_locale": "zh",
+  "ui": {
+    "title": "创维智能助手",
+    "subtitle": "在线 · 演示",
+    "avatar": "创维",
+    "greeting": "您好！👋 我是 **创维 SKYWORTH** 的智能助手（演示版）。可以帮您介绍**壁纸电视**（A7F Pro / A7E Pro 等）、Mini LED、智能家电（冰箱/洗衣机/空调）、AI+绿电生态、品牌信息等等。中文或英文提问都可以。",
+    "placeholder": "问壁纸电视、冰箱、洗衣机、价格…"
+  },
+  "localizations": {
+    "en": {
+      "ui": {
+        "subtitle": "Online · Demo",
+        "greeting": "Hi there! 👋 I'm the **SKYWORTH (创维)** demo assistant. I can walk you through **Wallpaper TVs** (A7F Pro / A7E Pro etc.), Mini LED line-up, smart appliances (refrigerator / washer / AC), the AI + Green-Energy ecosystem, brand background and more. Reply in English or 中文 either way.",
+        "placeholder": "Ask about Wallpaper TVs, appliances, price…"
+      },
+      "suggestions": [
+        "What is a Wallpaper TV?",
+        "How much is the A7E Pro 65\"?",
+        "How does the national trade-in subsidy work?",
+        "What's the after-sales hotline?"
+      ],
+      "fallback": "I'm the SKYWORTH demo assistant. I can cover **TVs** (Wallpaper / Mini LED / GLED), **appliances** (fridge, washer, AC), brand & ecosystem info. For anything else, please visit skyworth.com. (我也可以用中文回答。)"
+    }
+  },
+  "company": {
+    "name_cn": "创维集团 (SKYWORTH Group)",
+    "tagline_cn": "技术创维，敢创敢为",
+    "tagline_en": "Lead the Future",
+    "founded": "1988 年，深圳",
+    "global_rank": "全球电视品牌前 5 名，年销量 1,700 万台 +",
+    "listed_companies": [
+      "创维集团（HK 00751）— 港股",
+      "创维数字（SZ 000810）— 深市"
+    ],
+    "business_segments": [
+      "多媒体（智能电视 + 内容运营）",
+      "智能电器（冰箱 / 洗衣机 / 空调 / 厨电 / 净化）",
+      "智能系统技术",
+      "现代服务业",
+      "光伏（创维光伏）",
+      "新能源汽车（创维汽车）",
+      "XR（创维 XR）"
+    ],
+    "website": "https://www.skyworth.com",
+    "tv_official": "http://www.skyworth.net"
+  },
+  "tv_series": [
+    {
+      "model": "A7F Pro",
+      "category": "壁纸电视旗舰（Wallpaper TV Flagship）",
+      "tech": "QD-Mini LED",
+      "sizes": "65 / 75 / 85 英寸",
+      "highlights_cn": "85 英寸 3,840 个独立调光分区 · 峰值亮度 5,500 nits · Matte Display Pro 类纸屏（AG25 抗眩 + LR 低反 + STW 全视角补偿）· AI 原画显示 · 超薄贴墙",
+      "highlights_en": "85\" with 3,840 independent dimming zones · 5,500 nits peak · Matte Display Pro anti-glare paper-like screen · AI Original Image mode · ultra-thin wall-hug design"
+    },
+    {
+      "model": "A7E Pro",
+      "category": "MiniLED 壁纸电视",
+      "tech": "4K 288Hz Mini LED",
+      "sizes": "65 / 75 / 85 英寸",
+      "launch_prices_cn": "65\" 首发 ¥6,799（标准价 ¥7,499）· 75\" 首发 ¥8,799（标准价 ¥10,999）· 85\" 首发 ¥12,799（标准价 ¥13,999）",
+      "launch_date": "2024 年 8 月 14 日开售",
+      "highlights_cn": "壁纸电视形态 · 4K 288Hz 刷新率（电竞级）· Mini LED 全功率背光",
+      "highlights_en": "Wallpaper TV form-factor · 4K 288Hz refresh (e-sport grade) · Full-power Mini LED backlight"
+    },
+    {
+      "model": "A7E",
+      "category": "Mini LED 主流款",
+      "tech": "Mini LED",
+      "sizes": "65 / 75 英寸",
+      "current_price_cn": "65\" 日常 ¥4,999 · 75\" 日常 ¥5,999（实际成交价随平台补贴 / 活动而定）"
+    },
+    {
+      "model": "A7D / A7D Pro",
+      "category": "百英寸壁纸电视",
+      "tech": "Wallpaper LCD",
+      "sizes": "75 / 85 / 100 英寸",
+      "highlights_cn": "主打 100 寸 · 超薄无缝贴墙设计 · A7D Pro 首发 ¥6,399 起"
+    },
+    {
+      "model": "A5D / A5F Pro",
+      "category": "GLED 高端音画电视",
+      "tech": "GLED + 数百分区背光",
+      "highlights_cn": "像素级精准控光 · 4×15W 扬声器 · Dolby Atmos · 影音兼顾的高端定位"
+    },
+    {
+      "model": "A6E",
+      "category": "Mini LED 性价比款",
+      "tech": "Mini LED",
+      "highlights_cn": "面向 618 / 双 11 主力档位 · 价格亲民 · Mini LED 入门"
+    }
+  ],
+  "appliances": {
+    "refrigerator_cn": {
+      "tagline": "60cm 超薄平嵌",
+      "features": [
+        "底部散热技术 → 两侧仅 5mm 微缝嵌入，完美适配定制橱柜",
+        "ACE 动态粒子净味",
+        "−32℃ 深冷速冻",
+        "全空间杀菌"
+      ]
+    },
+    "washing_machine_cn": {
+      "highlights": [
+        "「超净洗」超薄全嵌滚筒洗衣机 — 一体式前门板 · DD 直驱变频电机 · 洗净比 1.18（艾普兰创新奖）",
+        "双驱分舱洗衣机 — 独立双 DD 直驱电机 · 同步分区洗护"
+      ]
+    },
+    "air_conditioner_cn": {
+      "flagship": "微风感 3.0 ultra",
+      "features": [
+        "紊流导风系统：冷风上行 / 暖风下行 → 告别直吹",
+        "离线语音智控",
+        "UVC 深紫外杀菌"
+      ]
+    },
+    "category_2025_goal": "白电 2025 年冲击 1,000 万台年销量"
+  },
+  "ecosystem": {
+    "dual_core_cn": "AI + 绿电（光伏）双核心生态",
+    "key_themes": [
+      "AI 智能：AI 原画、AI 助手、智能家居协同",
+      "绿电：创维光伏屋顶电站 · 与家电结合的能源自循环",
+      "全屋互联：电视 + 白电 + 光伏的家庭场景闭环"
+    ],
+    "expo": "AWE 2026 展现双核心生态突围"
+  },
+  "service": {
+    "hotline_24h": "400-866-5555",
+    "hotline_traditional": "9510-5555",
+    "warranty_full_machine": "整机 1 年",
+    "warranty_display_panel": "显示屏 3 年",
+    "scope": "全国联保 · 享受三包服务",
+    "channels": [
+      "电话：400-866-5555（24 小时）",
+      "微信公众号：创维服务 → 服务 → 安装维修",
+      "官网：skyworth.com → 售后服务 → 安装维修预约"
+    ],
+    "onsite_sla": "中心城区 24 小时内上门 · 其他地区预约上门时间"
+  },
+  "promotions": {
+    "national_subsidy_2025": {
+      "policy_cn": "国家消费品「以旧换新」补贴",
+      "rate_class_a": "一级能效补贴 20%",
+      "rate_class_b": "二级能效补贴 15%",
+      "cap": "最高单台 ¥2,000",
+      "deadline": "2025-12-31 24:00（额度用完即止，不设延期）",
+      "categories": [
+        "空调",
+        "冰箱",
+        "洗衣机",
+        "电视"
+      ]
+    },
+    "jd_entry": "京东 APP 搜「家电 900」即可领国补券",
+    "stack_rule_cn": "可叠加：国补 + 厂补 + 平台补（最多三补叠加，到手价可至 5 折）",
+    "example_real_deal_cn": "创维 65\" Mini LED 曾出现京东电视节 ¥3,799 含双补的实际成交价",
+    "skyworth_gift_pkg": "创维 A5F Pro 在京东国补 + 以旧换新基础上，额外赠免费安装 + 1 年延保至高 ¥1,299 大礼包"
+  },
+  "qa": [
+    {
+      "id": "what_is_wallpaper_tv",
+      "keywords": [
+        "壁纸电视",
+        "wallpaper tv",
+        "什么是壁纸",
+        "什么叫壁纸",
+        "wall paper",
+        "贴墙"
+      ],
+      "answer": "**壁纸电视（Wallpaper TV）** 是创维主打的电视品类 —— 机身**极致超薄**，可像画框一样**完全贴墙**安装，缝隙几乎为零。代表机型：\n• **A7F Pro**：Mini LED 旗舰壁纸 + 类纸屏（消反光）+ AI 原画模式，把电视当一幅会动的画\n• **A7E Pro**：4K 288Hz Mini LED 壁纸电视\n• **A7D / A7D Pro**：百英寸壁纸电视\n\n创维是壁纸电视品类的引领者，将科技与家居美学结合 → 不开机像挂画，开机像影院。",
+      "links": []
+    },
+    {
+      "id": "a7f_pro",
+      "keywords": [
+        "a7f pro",
+        "a7f",
+        "5500 nits",
+        "类纸屏",
+        "matte display",
+        "3840"
+      ],
+      "answer": "**A7F Pro 系列** —— 创维 2025 旗舰壁纸电视：\n• **QD-Mini LED** + 壁纸形态\n• **85 英寸 3,840 个独立调光分区**，峰值亮度 **5,500 nits**\n• **Matte Display Pro 类纸屏**：AG25 抗眩 + LR 低反 + STW 全视角补偿 → 0 反光 / 0 眩光 / 0 指纹\n• **AI 原画显示**：基于创维 AI 模型智能优化色彩层次、笔触质感、材质纹理 → 名画也能精准还原\n• 65 / 75 / 85 英寸\n\n定位：既要壁纸如画、又要旗舰画质。",
+      "links": []
+    },
+    {
+      "id": "a7e_pro_price",
+      "keywords": [
+        "a7e pro",
+        "a7e 价格",
+        "a7e pro 多少钱",
+        "a7e pro price",
+        "288hz"
+      ],
+      "answer": "**A7E Pro 系列 MiniLED 壁纸电视**（2024 年 8 月 14 日开售）：\n\n| 尺寸 | 首发价 | 标准价 |\n|---|---|---|\n| 65 英寸 | **¥6,799** | ¥7,499 |\n| 75 英寸 | **¥8,799** | ¥10,999 |\n| 85 英寸 | **¥12,799** | ¥13,999 |\n\n核心规格：**4K 288Hz Mini LED** + 壁纸形态。\n注：以上是发布价，实际成交价请以京东 / 天猫等平台当时活动 + 国家补贴为准。",
+      "links": []
+    },
+    {
+      "id": "a7e",
+      "keywords": [
+        "a7e 多少钱",
+        "a7e 价格",
+        "a7e price"
+      ],
+      "answer": "**A7E 系列 Mini LED 电视**（A7E Pro 的标准款）：\n• **65 英寸**：日常 **¥4,999**\n• **75 英寸**：日常 **¥5,999**\n\n参加京东电视节、双 11、国家以旧换新补贴时还可叠加优惠（创维 65\" Mini LED 曾出现 ¥3,799 含双补的成交价）。",
+      "links": []
+    },
+    {
+      "id": "mini_led_vs_oled",
+      "keywords": [
+        "mini led vs oled",
+        "miniled 对比 oled",
+        "miniled 还是 oled",
+        "mini led oled difference",
+        "选哪个"
+      ],
+      "answer": "**Mini LED vs OLED**：\n• **Mini LED**（创维 A7F Pro / A7E Pro / A6E）：高亮度（A7F Pro 85\" 达 **5,500 nits**），抗烧屏，价格更友好，亮室 HDR 体验好\n• **OLED**：自发光、对比度无限、超薄，色彩自然，但峰值亮度偏低、长期同画面有烧屏风险\n\n如果客厅光线强 / 用电视看比赛 / 玩 HDR 游戏 → **Mini LED 更稳**；如果是暗室影音房 + 追求极致黑位 → **OLED**。创维的旗舰策略偏 Mini LED（且做成壁纸形态）。",
+      "links": []
+    },
+    {
+      "id": "appliances_overview",
+      "keywords": [
+        "白电",
+        "家电",
+        "冰箱 洗衣机 空调",
+        "appliance",
+        "fridge washing machine"
+      ],
+      "answer": "创维不仅做电视，**智能家电（白电）** 也是核心业务，2025 目标冲击 **1,000 万台** 年销量：\n\n• **冰箱** — 60cm 超薄平嵌（5mm 微缝嵌入定制橱柜）+ ACE 动态粒子净味 + −32℃ 深冷速冻 + 全空间杀菌\n• **洗衣机** — 超净洗超薄全嵌滚筒（DD 直驱，洗净比 1.18，艾普兰创新奖）；双驱分舱洗衣机（双 DD 电机同步分区洗）\n• **空调** — 微风感 3.0 ultra：紊流导风（冷风上行 / 暖风下行）+ 离线语音 + UVC 紫外杀菌",
+      "links": []
+    },
+    {
+      "id": "refrigerator",
+      "keywords": [
+        "冰箱",
+        "fridge",
+        "refrigerator",
+        "60cm",
+        "平嵌",
+        "嵌入式"
+      ],
+      "answer": "创维冰箱主推 **60cm 超薄平嵌** 系列：\n• **底部散热** → 两侧仅留 **5mm 微缝** 即可嵌入定制橱柜，告别传统冰箱「凸出来一截」\n• **ACE 动态粒子净味** → 持续净化异味\n• **−32℃ 深冷速冻** → 食材新鲜度更好\n• **全空间杀菌** → 抑菌环境覆盖每个区间\n\n适合现代厨房 / 客餐厅整体定制需求。",
+      "links": []
+    },
+    {
+      "id": "washing_machine",
+      "keywords": [
+        "洗衣机",
+        "washing",
+        "washer",
+        "dd 直驱",
+        "分舱",
+        "超净洗"
+      ],
+      "answer": "创维洗衣机主推两大型号：\n• **「超净洗」超薄全嵌滚筒** — 一体式前门板与橱柜近乎零缝隙贴合 · **DD 直驱变频电机** · 洗净比 **1.18**（艾普兰创新奖）\n• **双驱分舱洗衣机** — 独立 **双 DD 直驱电机**，可**同步分区**洗护（深浅色 / 大人小孩衣物分开同时洗）",
+      "links": []
+    },
+    {
+      "id": "ac",
+      "keywords": [
+        "空调",
+        "ac",
+        "air conditioner",
+        "微风感",
+        "uvc"
+      ],
+      "answer": "创维空调旗舰 **微风感 3.0 ultra**：\n• **紊流导风系统** → 冷风上行、暖风下行 → 不直吹身体，更舒适\n• **离线语音智控** → 不联网也能语音操控\n• **UVC 深紫外线杀菌** → 内部和送风路径同时除菌",
+      "links": []
+    },
+    {
+      "id": "ecosystem",
+      "keywords": [
+        "生态",
+        "ai 绿电",
+        "ecosystem",
+        "ai green",
+        "光伏",
+        "ai+",
+        "智能家居"
+      ],
+      "answer": "创维 2026 年战略：**AI + 绿电 双核心生态**：\n• **AI 智能** —— AI 原画 / AI 助手 / 智能家居协同\n• **绿电** —— 创维光伏屋顶电站，自家用电自给自足，电器 + 太阳能形成家庭能源闭环\n• **全屋互联** —— 电视 + 白电 + 光伏 三位一体的家庭场景\n\nAWE 2026 上重点展示此战略。",
+      "links": []
+    },
+    {
+      "id": "company_overview",
+      "keywords": [
+        "创维",
+        "skyworth",
+        "公司",
+        "哪个国家",
+        "company",
+        "background",
+        "历史"
+      ],
+      "answer": "**创维（SKYWORTH）** —— 1988 年创立于深圳的中国家电科技集团：\n• 全球电视前 **5 大** 品牌，年销 **1,700 万台 +**\n• 业务覆盖：**多媒体（电视）· 智能电器（白电）· 智能系统 · 现代服务 · 光伏 · 新能源汽车 · XR**\n• 旗下两家上市公司：**创维集团 (HK 00751)**、**创维数字 (SZ 000810)**\n• 品牌口号：**「技术创维，敢创敢为」**（英文：Lead the Future）\n\n官网：[skyworth.com](https://www.skyworth.com)",
+      "links": [
+        {
+          "label": "创维集团官网",
+          "url": "https://www.skyworth.com"
+        },
+        {
+          "label": "创维电视",
+          "url": "http://www.skyworth.net"
+        }
+      ]
+    },
+    {
+      "id": "ev_or_other",
+      "keywords": [
+        "创维汽车",
+        "ev",
+        "光伏",
+        "xr",
+        "新能源",
+        "数字"
+      ],
+      "answer": "创维已不只是「电视厂」，多元布局：\n• **创维汽车** —— 新能源 SUV，主打「奋斗者的第三空间」（skyworthev.com）\n• **创维光伏** —— 户用屋顶光伏 / 工商业分布式（skyworthpv.com）\n• **创维 XR** —— 虚拟现实头显与生态（skyworthxr.com）\n• **创维数字** —— 智能终端 / 机顶盒 / 车载（skyworthdigital.com）\n\n这些与电视 / 白电 / AI / 绿电共同构成「创维大生态」。",
+      "links": []
+    },
+    {
+      "id": "buying_recommendation",
+      "keywords": [
+        "推荐",
+        "买哪个",
+        "选哪台",
+        "recommend",
+        "best tv",
+        "客厅"
+      ],
+      "answer": "按场景选型号：\n\n💎 **顶级影音房 / 装修讲究**：**A7F Pro**（QD-Mini LED 壁纸 + 类纸屏 + AI 原画）\n🏠 **客厅主力 + 性价比**：**A7E Pro 65\"（¥6,799 首发起）** 或 A7E 65\" 日常 ¥4,999\n🎮 **电竞 / 高刷新率**：**A7E Pro**（4K 288Hz）\n🏠 **百英寸宴会厅**：**A7D / A7D Pro** 100 寸壁纸\n🎵 **音画并重**：**A5D / A5F Pro** GLED + 4×15W + Dolby Atmos\n💰 **预算优先**：**A6E** Mini LED 入门款",
+      "links": []
+    },
+    {
+      "id": "service_hotline",
+      "keywords": [
+        "客服",
+        "电话",
+        "售后",
+        "热线",
+        "400",
+        "hotline",
+        "service phone"
+      ],
+      "answer": "**创维全国统一售后热线**：\n• **400-866-5555**（24 小时客服，免费长途）\n• **9510-5555**（传统全国售后）\n\n服务范围：全国联保 · 三包政策（**整机 1 年 / 显示屏 3 年**）\n\n中心城区 24 小时内上门，其他地区电话约定上门时间。也可在 **微信公众号「创维服务」** 自助报修，或登录 [skyworth.com](https://www.skyworth.com) 售后入口预约。",
+      "links": [
+        {
+          "label": "创维售后服务",
+          "url": "https://www.skyworth.com/service.php"
+        }
+      ]
+    },
+    {
+      "id": "service_appointment",
+      "keywords": [
+        "报修",
+        "预约",
+        "上门",
+        "维修",
+        "appointment",
+        "repair",
+        "微信"
+      ],
+      "answer": "**报修 3 种方式**：\n1️⃣ **电话**：拨 **400-866-5555**（24 h）\n2️⃣ **微信**：关注公众号「**创维服务**」→ 服务 → 安装维修\n3️⃣ **官网**：[skyworth.com](https://www.skyworth.com) → 售后服务 → 安装维修预约\n\n📍 **上门时效**：中心城区 **24 小时内**上门 · 其他地区电话沟通后预约上门时间",
+      "links": []
+    },
+    {
+      "id": "warranty_terms",
+      "keywords": [
+        "三包",
+        "保修",
+        "保修期",
+        "warranty",
+        "保修多久",
+        "几年"
+      ],
+      "answer": "**创维三包政策（全国联保）**：\n• **整机**：1 年保修\n• **显示屏（主要部件）**：**3 年保修**\n• 非人为故障享免费维修\n\n报修可拨 **400-866-5555** 或微信「创维服务」。京东等大平台另有商家延保选项，可叠加。",
+      "links": []
+    },
+    {
+      "id": "subsidy_national",
+      "keywords": [
+        "国补",
+        "以旧换新",
+        "补贴",
+        "国家补贴",
+        "国家以旧换新",
+        "subsidy",
+        "trade in",
+        "discount policy"
+      ],
+      "answer": "**国家「以旧换新」补贴 2025**（仍在持续）：\n• 一级能效补贴 **20%**\n• 二级能效补贴 **15%**\n• 单台**最高 ¥2,000**\n• 截止 **2025-12-31 24:00** · 额度用完即止 · 不设延期\n• 覆盖：空调 · 冰箱 · 洗衣机 · 电视\n\n💡 **领取入口**：京东 APP 搜「**家电 900**」即可领国补券，结算时自动核销。\n\n创维 A5F Pro 等在京东国补基础上再赠**免费安装 + 1 年延保至高 ¥1,299 大礼包**。",
+      "links": []
+    },
+    {
+      "id": "subsidy_stack",
+      "keywords": [
+        "三补叠加",
+        "国补 京补 厂补",
+        "京东双补",
+        "立减",
+        "省钱",
+        "实际到手"
+      ],
+      "answer": "**三补叠加**：创维在京东 / 天猫 / 苏宁活动期常可叠加 **国补 + 厂补（创维补贴）+ 平台补**（京补 / 天猫补 / 苏宁补），实际到手价可至 **5 折**：\n\n📊 真实案例：**创维 65\" Mini LED 曾在京东电视节出现 ¥3,799 含双补的成交价**（标准价高得多）\n\n建议在 618 / 双 11 / 春季家装节 / 京东电视节这几个节点比价。",
+      "links": []
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "联系",
+        "contact",
+        "support",
+        "官网",
+        "网址"
+      ],
+      "answer": "**联系创维**：\n• **24h 客服**：**400-866-5555**（免费长途）\n• **官网**：[skyworth.com](https://www.skyworth.com)\n• **电视专属**：[skyworth.net](http://www.skyworth.net)\n• **微信公众号**：创维服务\n• **京东 / 天猫**：搜「创维」找官方旗舰店",
+      "links": [
+        {
+          "label": "创维官网",
+          "url": "https://www.skyworth.com"
+        }
+      ]
+    },
+    {
+      "id": "greeting",
+      "keywords": [
+        "你好",
+        "您好",
+        "hi",
+        "hello",
+        "hey",
+        "嗨"
+      ],
+      "answer": "您好！我可以介绍 **创维** 的壁纸电视、Mini LED、智能家电（冰箱 / 洗衣机 / 空调）以及 AI + 绿电生态战略。您想了解哪一块呢？",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "keywords": [
+        "thanks",
+        "thank you",
+        "谢谢",
+        "感谢"
+      ],
+      "answer": "不客气！😊 还有其他关于创维的问题吗？",
+      "links": []
+    }
+  ],
+  "fallback": "我是 **创维 SKYWORTH** 演示助手，可回答**壁纸电视**、**Mini LED**、**智能家电（冰洗空）**、**AI + 绿电生态**、**品牌历史与业务结构**等问题。其它内容请访问 [skyworth.com](https://www.skyworth.com)。(I can also reply in English.)",
+  "suggestions": [
+    "什么是壁纸电视？",
+    "A7E Pro 65 寸多少钱？",
+    "国补怎么领？",
+    "售后电话是多少？"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "ui": {
+    "title": "GWM Assistant",
+    "subtitle": "ออนไลน์ · เดโม",
+    "avatar": "GW",
+    "greeting": "สวัสดีค่ะ! 🚗 ฉันคือผู้ช่วยอัจฉริยะของ **GWM Thailand** (เดโม) ถามได้เลยเรื่องรุ่นรถ (ORA, TANK, HAVAL, POER, WEY), ราคา, การทดลองขับ, โชว์รูม หรือบริการต่าง ๆ — พิมพ์ภาษาไทยหรืออังกฤษก็ได้ค่ะ",
+    "placeholder": "ถามเรื่องรุ่นรถ ราคา ทดลองขับ..."
+  },
+  "company": {
+    "name": "GWM Thailand (Great Wall Motor / เกรท วอลล์ มอเตอร์)",
+    "tagline": "GWM — ผู้นำ xEV",
+    "phone": "02-668-8888",
+    "sub_brands": ["TANK", "ORA", "HAVAL", "POER", "WEY"],
+    "hi4": "Hi4 คือเทคโนโลยีระบบขับเคลื่อนพลังงานใหม่ (new-energy 4WD/hybrid) ของ GWM",
+    "used_cars": "https://usedcar.gwm.co.th",
+    "app": "My GWM (iOS / Android)",
+    "social": {
+      "facebook": "https://www.facebook.com/GWMThailand",
+      "instagram": "https://www.instagram.com/gwm.thailand",
+      "youtube": "https://www.youtube.com/@GWMThailand",
+      "x": "https://x.com/gwm_thailand",
+      "line": "LINE Official: @gwmthailand"
+    }
+  },
+  "models": [
+    { "name": "ORA 5 EV",  "type": "รถยนต์ไฟฟ้า (BEV)", "price_thb": 649000, "url": "https://www.gwm.co.th/th/models/ora-5-ev" },
+    { "name": "ORA 5 HEV", "type": "ไฮบริด (HEV)",       "price_thb": 709000, "url": "https://www.gwm.co.th/th/models/ora-5-hev" },
+    { "name": "GWM TANK 300 LIMITED", "type": "SUV ออฟโรด", "price_thb": 1349000, "url": "https://www.gwm.co.th/th/models/tank-300-limited-lb" },
+    { "name": "GWM TANK 300 DIESEL",  "type": "SUV ออฟโรด ดีเซล", "url": "https://www.gwm.co.th/th/models/tank-300-diesel" },
+    { "name": "GWM TANK 500",         "type": "SUV ขนาดใหญ่",      "url": "https://www.gwm.co.th/th/models/tank-500" },
+    { "name": "GWM TANK 500 DIESEL",  "type": "SUV ขนาดใหญ่ ดีเซล", "url": "https://www.gwm.co.th/th/models/tank-500-diesel" },
+    { "name": "HAVAL H6",      "type": "SUV (HEV/PHEV)", "url": "https://www.gwm.co.th/th/models/haval-h6" },
+    { "name": "HAVAL JOLION",  "type": "คอมแพกต์ SUV",   "url": "https://www.gwm.co.th/th/models/haval-jolion" },
+    { "name": "POER SAHAR",    "type": "กระบะ (pickup)",  "url": "https://www.gwm.co.th/th/models/sahar" },
+    { "name": "WEY G9",        "type": "MPV หรู (PHEV)",  "price_thb": 2349000, "url": "https://www.gwm.co.th/th/models/wey-g9" }
+  ],
+  "qa": [
+    {
+      "id": "models_overview",
+      "keywords": ["models", "lineup", "cars", "รุ่น", "รถ", "มีรถอะไร", "all models", "ทุกรุ่น"],
+      "answer": "GWM Thailand offers 5 sub-brands: **TANK** (rugged SUVs), **ORA** (EV/hybrid city cars), **HAVAL** (family SUVs), **POER** (pickups) and **WEY** (luxury). Popular models: **ORA 5 EV** (฿649,000), **ORA 5 HEV** (฿709,000), **TANK 300 LIMITED** (฿1,349,000), **TANK 500**, **HAVAL H6**, **POER SAHAR**, **WEY G9** (฿2,349,000). Want details on any model?",
+      "links": [{ "label": "ดูรถทุกรุ่น / All models", "url": "https://www.gwm.co.th/th/models" }]
+    },
+    {
+      "id": "ora5",
+      "keywords": ["ora 5", "ora5", "ora", "ev", "electric", "ไฟฟ้า", "โอร่า"],
+      "answer": "**ORA 5** is GWM's stylish city car, available as **ORA 5 EV** (full electric, from **฿649,000**) and **ORA 5 HEV** (hybrid, from **฿709,000**). Great for urban driving with modern tech.",
+      "links": [
+        { "label": "ORA 5 EV", "url": "https://www.gwm.co.th/th/models/ora-5-ev" },
+        { "label": "ORA 5 HEV", "url": "https://www.gwm.co.th/th/models/ora-5-hev" }
+      ]
+    },
+    {
+      "id": "tank",
+      "keywords": ["tank", "tank 300", "tank 500", "แทงค์", "ออฟโรด", "offroad", "suv"],
+      "answer": "The **TANK** series are rugged off-road SUVs: **TANK 300** (incl. DIESEL and the **LIMITED** at ฿1,349,000) and the larger **TANK 500** (petrol & diesel). Built for adventure with serious 4WD capability.",
+      "links": [
+        { "label": "TANK 300", "url": "https://www.gwm.co.th/th/models/tank-300" },
+        { "label": "TANK 500", "url": "https://www.gwm.co.th/th/models/tank-500" }
+      ]
+    },
+    {
+      "id": "haval",
+      "keywords": ["haval", "h6", "jolion", "ฮาวาล", "family suv"],
+      "answer": "**HAVAL** family SUVs: the **HAVAL H6** (available HEV/PHEV) and the compact **HAVAL JOLION**. Comfortable, tech-rich SUVs for everyday family use.",
+      "links": [
+        { "label": "HAVAL H6", "url": "https://www.gwm.co.th/th/models/haval-h6" },
+        { "label": "HAVAL JOLION", "url": "https://www.gwm.co.th/th/models/haval-jolion" }
+      ]
+    },
+    {
+      "id": "poer",
+      "keywords": ["poer", "sahar", "pickup", "กระบะ", "ปิคอัพ"],
+      "answer": "**POER SAHAR** is GWM's pickup truck — capable for both work and lifestyle, available in single/double cab and diesel options.",
+      "links": [{ "label": "POER SAHAR", "url": "https://www.gwm.co.th/th/models/sahar" }]
+    },
+    {
+      "id": "wey",
+      "keywords": ["wey", "g9", "mpv", "luxury", "หรู", "เวย์"],
+      "answer": "**WEY G9** is GWM's premium PHEV MPV — a spacious luxury people-mover, priced from **฿2,349,000**.",
+      "links": [{ "label": "WEY G9", "url": "https://www.gwm.co.th/th/models/wey-g9" }]
+    },
+    {
+      "id": "price",
+      "keywords": ["price", "cost", "how much", "ราคา", "เท่าไหร่", "กี่บาท"],
+      "answer": "Starting prices: **ORA 5 EV ฿649,000**, **ORA 5 HEV ฿709,000**, **TANK 300 LIMITED ฿1,349,000**, **WEY G9 ฿2,349,000**. TANK 500, HAVAL H6 and POER SAHAR prices vary by trim — please check the model page or a GWM Store for the latest on-road price.",
+      "links": [{ "label": "ดูราคารถทุกรุ่น", "url": "https://www.gwm.co.th/th/models" }]
+    },
+    {
+      "id": "test_drive",
+      "keywords": ["test drive", "ทดลองขับ", "ลองขับ", "book", "จอง", "นัด"],
+      "answer": "You can book a **test drive (ทดลองขับ)** online — pick your model and preferred GWM Store, and a representative will confirm. Tell me which model you're interested in and I can point you to the booking page.",
+      "links": [{ "label": "จองทดลองขับ / Test drive", "url": "https://www.gwm.co.th/th/models" }]
+    },
+    {
+      "id": "dealer",
+      "keywords": ["dealer", "showroom", "store", "โชว์รูม", "ตัวแทน", "ที่ไหน", "สาขา", "near me"],
+      "answer": "GWM has **GWM Stores / showrooms (โชว์รูม)** across Thailand. Use the store locator on the website to find the nearest one, or call **02-668-8888** for help.",
+      "links": [{ "label": "ค้นหาโชว์รูม / Find a store", "url": "https://www.gwm.co.th/th" }]
+    },
+    {
+      "id": "finance",
+      "keywords": ["finance", "installment", "loan", "ผ่อน", "การเงิน", "ดาวน์", "งวด"],
+      "answer": "GWM offers **financing / installment plans (การเงิน/ผ่อน)** with an online calculator to estimate monthly payments. Final terms are confirmed at a GWM Store. Want me to point you to the calculator?",
+      "links": [{ "label": "คำนวณค่างวด", "url": "https://www.gwm.co.th/th" }]
+    },
+    {
+      "id": "hi4",
+      "keywords": ["hi4", "hi-4", "new energy", "xev", "phev", "hybrid", "พลังงานใหม่"],
+      "answer": "**Hi4** is GWM's new-energy intelligent 4WD hybrid technology, used across its xEV (HEV/PHEV/EV) lineup for better efficiency and performance.",
+      "links": []
+    },
+    {
+      "id": "app",
+      "keywords": ["app", "my gwm", "application", "แอป", "แอพ"],
+      "answer": "The **My GWM** app (iOS & Android) lets owners manage their vehicle, book service, join the community and more. Download it from the App Store or Google Play.",
+      "links": []
+    },
+    {
+      "id": "used_cars",
+      "keywords": ["used", "second hand", "มือสอง", "used car"],
+      "answer": "GWM has a certified **used-car (รถมือสอง)** platform with inspected vehicles. Browse at usedcar.gwm.co.th.",
+      "links": [{ "label": "รถมือสอง GWM", "url": "https://usedcar.gwm.co.th" }]
+    },
+    {
+      "id": "corporate",
+      "keywords": ["corporate", "fleet", "company", "องค์กร", "ฟลีต", "บริษัท"],
+      "answer": "GWM offers **corporate / fleet (ลูกค้าองค์กร)** programs for businesses. Contact **02-668-8888** to discuss fleet pricing and support.",
+      "links": []
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "phone", "call", "ติดต่อ", "เบอร์", "โทร", "สอบถาม"],
+      "answer": "You can reach **GWM Thailand** at **02-668-8888**, via the **My GWM** app, or follow us on Facebook, Instagram, YouTube, X and **LINE (@gwmthailand)**.",
+      "links": []
+    },
+    {
+      "id": "greeting",
+      "keywords": ["hi", "hello", "hey", "สวัสดี", "หวัดดี", "ดีครับ", "ดีค่ะ"],
+      "answer": "สวัสดีค่ะ! ฉันช่วยเรื่องรุ่นรถ GWM (ORA, TANK, HAVAL, POER, WEY), ราคา, การทดลองขับ และโชว์รูมได้ค่ะ อยากทราบเรื่องอะไรดีคะ?",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "keywords": ["thanks", "thank you", "ขอบคุณ", "ขอบใจ"],
+      "answer": "ยินดีค่ะ! 😊 มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+      "links": []
+    }
+  ],
+  "fallback": "ขออภัยค่ะ ฉันเป็นผู้ช่วยเดโมของ GWM Thailand ตอบได้เรื่อง **รุ่นรถ** (ORA, TANK, HAVAL, POER, WEY), **ราคา**, **ทดลองขับ**, **โชว์รูม**, **การเงิน** และ **การติดต่อ** สำหรับเรื่องอื่น ๆ โทร **02-668-8888** ได้เลยค่ะ (I can also help in English.)",
+  "suggestions": [
+    "ORA 5 EV ราคาเท่าไหร่?",
+    "อยากทดลองขับ TANK 300",
+    "โชว์รูมใกล้ฉันอยู่ที่ไหน?",
+    "ดูรถยนต์ทุกรุ่น"
+  ]
+}

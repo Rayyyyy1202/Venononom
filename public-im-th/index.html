@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#101828">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>IM Assistant · IM Motors Thailand</title>
+<link rel="stylesheet" href="chatbot/chatbot.css">
+<style>
+  /* Brand override — higher specificity than .gwm-chatbot defaults */
+  .gwm-chatbot {
+    --gwm-primary: #101828;
+    --gwm-primary-dark: #0a0f1a;
+    --gwm-user-bubble: #101828;
+  }
+</style>
+<style>
+  *,*::before,*::after { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: radial-gradient(120% 80% at 50% 0%, #1a2740 0%, #050810 70%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Sarabun", "Noto Sans Thai", "PingFang SC",
+      "Microsoft YaHei", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    width: 100vw; height: 100vh; height: 100dvh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+            env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  /* The "phone frame" container — full-bleed on mobile, framed on desktop */
+  .gwm-h5-frame {
+    width: 100%; height: 100%;
+    max-width: 480px; max-height: 100dvh;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  @media (min-width: 600px) {
+    body { padding: 28px; }
+    .gwm-h5-frame {
+      max-height: 880px;
+      border-radius: 32px;
+      box-shadow:
+        0 24px 80px rgba(0, 0, 0, 0.55),
+        0 0 0 8px rgba(255, 255, 255, 0.04),
+        0 0 0 9px rgba(120, 160, 220, 0.18);
+    }
+  }
+  /* Tiny brand strip above the frame on desktop, for "demo" feel */
+  .gwm-h5-tag {
+    position: absolute;
+    top: 18px;
+    left: 50%; transform: translateX(-50%);
+    color: rgba(255,255,255,0.55);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    pointer-events: none;
+    display: none;
+  }
+  @media (min-width: 600px) {
+    .gwm-h5-tag { display: block; }
+  }
+</style>
+</head>
+<body>
+<div class="gwm-h5-tag">IM MOTORS THAILAND · AI DEMO</div>
+<div class="gwm-h5-frame"></div>
+<script>
+  window.GWM_CHATBOT_FULLSCREEN = true;
+  window.GWM_CHATBOT_MOUNT = '.gwm-h5-frame';
+</script>
+<script src="chatbot/chatbot.js"></script>
+</body>
+</html>
