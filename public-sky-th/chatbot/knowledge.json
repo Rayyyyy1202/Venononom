@@ -1,486 +1,334 @@
 {
+  "default_locale": "zh",
   "ui": {
-    "title": "SKYWORTH Assistant",
-    "subtitle": "ออนไลน์ · เดโม",
-    "avatar": "SW",
-    "greeting": "สวัสดีค่ะ! 📺 ฉันคือผู้ช่วยอัจฉริยะของ **SKYWORTH Thailand** (เดโม) ถามได้เลยเรื่องทีวี Skyworth — **รุ่น/ซีรีส์** (QD-Mini LED, QLED, FHD), **ขนาด/ราคา**, **ฟีเจอร์เกม/HDR/Dolby Atmos**, **รับประกัน 3 ปี**, หรือเรื่องอื่นๆ — พิมพ์ภาษาไทย/อังกฤษ/中文 ก็ได้ค่ะ",
-    "placeholder": "ถามเรื่องรุ่น Skyworth, ขนาด, ราคา, เกม..."
+    "title": "创维智能助手",
+    "subtitle": "在线 · 演示",
+    "avatar": "创维",
+    "greeting": "您好！👋 我是 **创维 SKYWORTH** 的智能助手（演示版）。可以帮您介绍**壁纸电视**（A7F Pro / A7E Pro 等）、Mini LED、智能家电（冰箱/洗衣机/空调）、AI+绿电生态、品牌信息等等。中文或英文提问都可以。",
+    "placeholder": "问壁纸电视、冰箱、洗衣机、价格…"
+  },
+  "localizations": {
+    "en": {
+      "ui": {
+        "subtitle": "Online · Demo",
+        "greeting": "Hi there! 👋 I'm the **SKYWORTH (创维)** demo assistant. I can walk you through **Wallpaper TVs** (A7F Pro / A7E Pro etc.), Mini LED line-up, smart appliances (refrigerator / washer / AC), the AI + Green-Energy ecosystem, brand background and more. Reply in English or 中文 either way.",
+        "placeholder": "Ask about Wallpaper TVs, appliances, price…"
+      },
+      "suggestions": [
+        "What is a Wallpaper TV?",
+        "How much is the A7E Pro 65\"?",
+        "Mini LED vs OLED — which to pick?",
+        "What appliances does Skyworth make?"
+      ],
+      "fallback": "I'm the SKYWORTH demo assistant. I can cover **TVs** (Wallpaper / Mini LED / GLED), **appliances** (fridge, washer, AC), brand & ecosystem info. For anything else, please visit skyworth.com. (我也可以用中文回答。)"
+    }
   },
   "company": {
-    "name": "SKYWORTH Thailand (创维)",
-    "tagline": "LEAD THE FUTURE",
-    "founded": "1988 (เซินเจิ้น ประเทศจีน)",
-    "global_presence": "พนักงาน 40,000+ คน · ผู้ผลิตทีวีและอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะระดับชั้นนำของโลก",
-    "website": "https://www.skyworth-thailand.com",
-    "hotline_thailand": "02-248-1615",
-    "warranty_registration": "https://www.skyworth-thailand.com/service/register-warranty"
-  },
-  "products": {
-    "available_now": [
-      "ทีวี (TV)"
+    "name_cn": "创维集团 (SKYWORTH Group)",
+    "tagline_cn": "技术创维，敢创敢为",
+    "tagline_en": "Lead the Future",
+    "founded": "1988 年，深圳",
+    "global_rank": "全球电视品牌前 5 名，年销量 1,700 万台 +",
+    "listed_companies": [
+      "创维集团（HK 00751）— 港股",
+      "创维数字（SZ 000810）— 深市"
     ],
-    "coming_soon": [
-      "ตู้เย็น (Refrigerator)",
-      "เครื่องซักผ้า (Washing Machine)"
-    ]
+    "business_segments": [
+      "多媒体（智能电视 + 内容运营）",
+      "智能电器（冰箱 / 洗衣机 / 空调 / 厨电 / 净化）",
+      "智能系统技术",
+      "现代服务业",
+      "光伏（创维光伏）",
+      "新能源汽车（创维汽车）",
+      "XR（创维 XR）"
+    ],
+    "website": "https://www.skyworth.com",
+    "tv_official": "http://www.skyworth.net"
   },
   "tv_series": [
     {
-      "model": "V75",
-      "tier": "เรือธง 2026 NEW",
+      "model": "A7F Pro",
+      "category": "壁纸电视旗舰（Wallpaper TV Flagship）",
       "tech": "QD-Mini LED",
-      "sizes": "55\", 65\", 75\"",
-      "os": "Google TV",
-      "highlights": "Local Dimming · 120Hz MEMC (ยกเว้น 55\") · Eye Care 5.0 · Dolby Vision + HDR10+ · Dolby Atmos + TotalSonic · HDMI 2.1 · Game Hub",
-      "page": "https://www.skyworth-thailand.com/product/699547f891e429b73005a38a"
+      "sizes": "65 / 75 / 85 英寸",
+      "highlights_cn": "85 英寸 3,840 个独立调光分区 · 峰值亮度 5,500 nits · Matte Display Pro 类纸屏（AG25 抗眩 + LR 低反 + STW 全视角补偿）· AI 原画显示 · 超薄贴墙",
+      "highlights_en": "85\" with 3,840 independent dimming zones · 5,500 nits peak · Matte Display Pro anti-glare paper-like screen · AI Original Image mode · ultra-thin wall-hug design"
     },
     {
-      "model": "X66H",
-      "tier": "เรือธง QD-Mini LED",
-      "tech": "QD-Mini LED",
-      "sizes": "55\", 65\", 75\"",
-      "price_known": "55\" ฿16,990",
-      "os": "Google TV",
-      "highlights": "Local Dimming · 120Hz MEMC (ยกเว้น 55\") · Eye Care 5.0 · Dolby Vision + HDR10+ · Dolby Atmos + dbx-TV · HDMI 2.1 · Game Hub",
-      "page": "https://www.skyworth-thailand.com/product/690075cf67383a2b8832fdf3"
+      "model": "A7E Pro",
+      "category": "MiniLED 壁纸电视",
+      "tech": "4K 288Hz Mini LED",
+      "sizes": "65 / 75 / 85 英寸",
+      "launch_prices_cn": "65\" 首发 ¥6,799（标准价 ¥7,499）· 75\" 首发 ¥8,799（标准价 ¥10,999）· 85\" 首发 ¥12,799（标准价 ¥13,999）",
+      "launch_date": "2024 年 8 月 14 日开售",
+      "highlights_cn": "壁纸电视形态 · 4K 288Hz 刷新率（电竞级）· Mini LED 全功率背光",
+      "highlights_en": "Wallpaper TV form-factor · 4K 288Hz refresh (e-sport grade) · Full-power Mini LED backlight"
     },
     {
-      "model": "SUE9500",
-      "tier": "QLED 4K UHD ระดับสูง",
-      "tech": "QLED 4K",
-      "sizes": "55\"",
-      "os": "Google TV",
-      "highlights": "Dual Picture Quality Enhancer · Chameleon Extreme 2.0 · Dolby Vision + HDR10+ · Dolby Atmos"
+      "model": "A7E",
+      "category": "Mini LED 主流款",
+      "tech": "Mini LED",
+      "sizes": "65 / 75 英寸",
+      "current_price_cn": "65\" 日常 ¥4,999 · 75\" 日常 ¥5,999（实际成交价随平台补贴 / 活动而定）"
     },
     {
-      "model": "SUE8000",
-      "tier": "QLED+ Eye Care Series",
-      "tech": "QLED 4K",
-      "sizes": "50\", 55\", 65\"",
-      "os": "Google TV",
-      "highlights": "Eye Care Mode · QLED Quantum Dot · Google TV ใช้งานง่าย"
+      "model": "A7D / A7D Pro",
+      "category": "百英寸壁纸电视",
+      "tech": "Wallpaper LCD",
+      "sizes": "75 / 85 / 100 英寸",
+      "highlights_cn": "主打 100 寸 · 超薄无缝贴墙设计 · A7D Pro 首发 ¥6,399 起"
     },
     {
-      "model": "Q6500A",
-      "tier": "QLED+ 4K UHD คุ้มค่า",
-      "tech": "QLED 4K",
-      "sizes": "50\", 55\", 65\"",
-      "os": "Google TV"
+      "model": "A5D / A5F Pro",
+      "category": "GLED 高端音画电视",
+      "tech": "GLED + 数百分区背光",
+      "highlights_cn": "像素级精准控光 · 4×15W 扬声器 · Dolby Atmos · 影音兼顾的高端定位"
     },
     {
-      "model": "E5000G",
-      "tier": "Coolita ระดับเริ่มต้น",
-      "tech": "FHD (1920×1080)",
-      "sizes": "32\", 40\", 43\"",
-      "os": "Coolita TV (ระบบของ Skyworth)",
-      "highlights": "Dolby Audio · Flicker-Free · HDR10 · **Karaoke Boomer** (เครื่องร้องคาราโอเกะในตัว) · Coolink App · ดีไซน์เมทัลบาง"
+      "model": "A6E",
+      "category": "Mini LED 性价比款",
+      "tech": "Mini LED",
+      "highlights_cn": "面向 618 / 双 11 主力档位 · 价格亲民 · Mini LED 入门"
     }
   ],
-  "tv_lineup": {
-    "display_technologies": [
-      {
-        "tech": "QD-Mini LED",
-        "note": "เรือธง — Mini-LED + Quantum Dot คอนทราสต์/ความสว่างระดับสูง เหมาะดู HDR/เกม"
-      },
-      {
-        "tech": "4K QLED",
-        "note": "Quantum Dot สีกว้างอิ่ม คมชัด คุ้มค่า"
-      },
-      {
-        "tech": "4K UHD",
-        "note": "3840×2160 ภาพคมระดับ 4K มาตรฐาน"
-      },
-      {
-        "tech": "FULL HD",
-        "note": "1920×1080 — รุ่นคุ้มค่าสำหรับห้องนอน/ห้องครัว"
-      },
-      {
-        "tech": "HD",
-        "note": "1366×768 — รุ่นเริ่มต้น ขนาดเล็ก เน้นราคา"
-      }
-    ],
-    "smart_os": [
-      {
-        "os": "Google TV",
-        "note": "ระบบของ Google ล่าสุด — รวมแอป, Google Assistant, Cast, อัปเดตยาว"
-      },
-      {
-        "os": "Android TV",
-        "note": "รุ่นก่อน Google TV — รองรับ Play Store"
-      },
-      {
-        "os": "Coolita TV",
-        "note": "OS ของ Skyworth — รุ่นเริ่มต้น, ใช้งานง่าย"
-      }
-    ],
-    "sizes_available_inches": [
-      24,
-      32,
-      40,
-      42,
-      43,
-      50,
-      55,
-      65,
-      70,
-      75,
-      85,
-      86,
-      100
-    ]
+  "appliances": {
+    "refrigerator_cn": {
+      "tagline": "60cm 超薄平嵌",
+      "features": [
+        "底部散热技术 → 两侧仅 5mm 微缝嵌入，完美适配定制橱柜",
+        "ACE 动态粒子净味",
+        "−32℃ 深冷速冻",
+        "全空间杀菌"
+      ]
+    },
+    "washing_machine_cn": {
+      "highlights": [
+        "「超净洗」超薄全嵌滚筒洗衣机 — 一体式前门板 · DD 直驱变频电机 · 洗净比 1.18（艾普兰创新奖）",
+        "双驱分舱洗衣机 — 独立双 DD 直驱电机 · 同步分区洗护"
+      ]
+    },
+    "air_conditioner_cn": {
+      "flagship": "微风感 3.0 ultra",
+      "features": [
+        "紊流导风系统：冷风上行 / 暖风下行 → 告别直吹",
+        "离线语音智控",
+        "UVC 深紫外杀菌"
+      ]
+    },
+    "category_2025_goal": "白电 2025 年冲击 1,000 万台年销量"
   },
-  "size_guide": {
-    "bedroom": "24 - 43 นิ้ว — เหมาะกับห้องนอนหรือห้องครัว (ระยะมอง 1-2 ม.) แนะนำ E5000G",
-    "living_small": "43 - 55 นิ้ว — ห้องนั่งเล่นเล็ก-กลาง (ระยะ 2-3 ม.) แนะนำ Q6500A หรือ SUE8000",
-    "living_large": "55 - 75 นิ้ว — ห้องนั่งเล่นใหญ่ (ระยะ 3-4 ม.) **ช่วงนิยมที่สุด** แนะนำ X66H, V75, SUE9500",
-    "home_theater": "75 - 100 นิ้ว — โฮมเธียเตอร์/ห้องโถง (ระยะ 4 ม. ขึ้นไป) แนะนำ V75 75\""
-  },
-  "warranty": {
-    "duration_years": 3,
-    "effective_from": "1 กุมภาพันธ์ 2568 (2025) เป็นต้นไป",
-    "scope": "ครอบคลุมข้อบกพร่องจากการผลิตและฝีมือการผลิต (วัสดุ + workmanship)",
-    "exclusions": [
-      "ความเสียหายจากอุบัติเหตุ/ใช้งานผิดวิธี",
-      "หน้าจอแตก/ร้าว/ขึ้นรา/สนิม",
-      "รีโมท, อะแดปเตอร์",
-      "ความเสียหายจากสัตว์/แมลง",
-      "การซ่อมที่ทำโดยช่างที่ไม่ได้รับอนุญาต"
+  "ecosystem": {
+    "dual_core_cn": "AI + 绿电（光伏）双核心生态",
+    "key_themes": [
+      "AI 智能：AI 原画、AI 助手、智能家居协同",
+      "绿电：创维光伏屋顶电站 · 与家电结合的能源自循环",
+      "全屋互联：电视 + 白电 + 光伏的家庭场景闭环"
     ],
-    "claim_process": "ลงทะเบียนรับประกันออนไลน์ → ติดต่อศูนย์บริการอย่างเป็นทางการพร้อมใบรับประกัน + หลักฐานการซื้อ"
+    "expo": "AWE 2026 展现双核心生态突围"
   },
   "qa": [
     {
-      "id": "lineup_overview",
+      "id": "what_is_wallpaper_tv",
       "keywords": [
-        "lineup",
-        "models",
-        "all tv",
-        "รุ่น",
-        "ทีวี",
-        "มีอะไรบ้าง",
-        "all",
-        "ซีรีส์",
-        "电视",
-        "型号",
-        "有哪些"
+        "壁纸电视",
+        "wallpaper tv",
+        "什么是壁纸",
+        "什么叫壁纸",
+        "wall paper",
+        "贴墙"
       ],
-      "answer": "Skyworth Thailand มี TV หลายซีรีส์ ตั้งแต่เรือธงถึงเริ่มต้น:\n\n**เรือธง (QD-Mini LED)**\n• **V75** (2026 NEW) — 55/65/75\" Google TV\n• **X66H** — 55/65/75\", **55\" ฿16,990**\n\n**QLED 4K (กลาง-สูง)**\n• **SUE9500** 55\"\n• **SUE8000** Eye Care 50/55/65\"\n• **Q6500A** 50/55/65\"\n\n**เริ่มต้น FHD**\n• **E5000G** Coolita 32/40/43\" (มี Karaoke Boomer)\n\nดูทั้งหมดที่ [skyworth-thailand.com/tv](https://www.skyworth-thailand.com/tv)",
-      "links": [
-        {
-          "label": "ทีวี Skyworth ทั้งหมด",
-          "url": "https://www.skyworth-thailand.com/tv"
-        }
-      ]
-    },
-    {
-      "id": "x66h",
-      "keywords": [
-        "x66h",
-        "55 ราคา",
-        "16990",
-        "qd mini led ราคา",
-        "เรือธง ราคา"
-      ],
-      "answer": "**X66H** เป็นทีวีเรือธง QD-Mini LED ของ Skyworth Thailand:\n• ขนาด 55\", 65\", 75\"\n• **55\" ราคา ฿16,990** (ราคาเปิดตัว)\n• **Google TV**, Local Dimming, Eye Care 5.0\n• **Dolby Vision + HDR10+**, **Dolby Atmos + dbx-TV**\n• **HDMI 2.1** + **Game Hub** + **120Hz MEMC** (ยกเว้น 55\")\n\nสอบถามราคา 65\"/75\" ที่ฮอตไลน์ **02-248-1615**",
-      "links": [
-        {
-          "label": "หน้ารุ่น X66H",
-          "url": "https://www.skyworth-thailand.com/product/690075cf67383a2b8832fdf3"
-        }
-      ]
-    },
-    {
-      "id": "v75",
-      "keywords": [
-        "v75",
-        "2026 new",
-        "ใหม่ล่าสุด",
-        "totalsonic"
-      ],
-      "answer": "**V75** เป็นรุ่นใหม่ปี **2026** ของ Skyworth — **QD-Mini LED** เรือธงล่าสุด:\n• 55\", 65\", 75\" · Google TV\n• Local Dimming + **120Hz MEMC** (ยกเว้น 55\") + **Eye Care 5.0**\n• **Dolby Vision + HDR10+**\n• **Dolby Atmos + TotalSonic** (ระบบเสียงพรีเมียม)\n• **HDMI 2.1** + **Game Hub**\n\nสอบถามราคาที่ **02-248-1615**",
-      "links": [
-        {
-          "label": "หน้ารุ่น V75",
-          "url": "https://www.skyworth-thailand.com/product/699547f891e429b73005a38a"
-        }
-      ]
-    },
-    {
-      "id": "qled_vs_minled",
-      "keywords": [
-        "qled",
-        "mini led",
-        "mini-led",
-        "oled",
-        "ต่างกัน",
-        "เลือก",
-        "compare",
-        "区别",
-        "对比"
-      ],
-      "answer": "**QD-Mini LED vs 4K QLED**:\n• **QD-Mini LED** (X66H, V75) — แบ็คไลท์ Mini-LED ควบคุมแสงเป็นโซน → คอนทราสต์/สีดำลึก/HDR ดีเยี่ยม เหมาะดูหนัง HDR ในห้องสว่าง\n• **4K QLED** (SUE9500, SUE8000, Q6500A) — Quantum Dot สีอิ่ม คุ้มค่ามากกว่า แต่คอนทราสต์/แบ็คไลท์เป็นรอง Mini-LED\n\nงบถึง+ดูหนัง HDR → **Mini-LED**, งบจำกัด แต่อยากได้สีอิ่ม → **QLED**",
+      "answer": "**壁纸电视（Wallpaper TV）** 是创维主打的电视品类 —— 机身**极致超薄**，可像画框一样**完全贴墙**安装，缝隙几乎为零。代表机型：\n• **A7F Pro**：Mini LED 旗舰壁纸 + 类纸屏（消反光）+ AI 原画模式，把电视当一幅会动的画\n• **A7E Pro**：4K 288Hz Mini LED 壁纸电视\n• **A7D / A7D Pro**：百英寸壁纸电视\n\n创维是壁纸电视品类的引领者，将科技与家居美学结合 → 不开机像挂画，开机像影院。",
       "links": []
     },
     {
-      "id": "gaming",
+      "id": "a7f_pro",
       "keywords": [
-        "gaming",
-        "เกม",
-        "ps5",
-        "xbox",
-        "vrr",
-        "allm",
-        "120hz",
-        "game hub",
-        "游戏"
+        "a7f pro",
+        "a7f",
+        "5500 nits",
+        "类纸屏",
+        "matte display",
+        "3840"
       ],
-      "answer": "ฟีเจอร์เกมในทีวี Skyworth เรือธง (X66H, V75):\n• **HDMI 2.1** รองรับ 4K@120Hz, **VRR**, **ALLM** เหมาะกับ PS5 / Xbox Series X / Gaming PC\n• **120Hz MEMC** (ยกเว้นขนาด 55\")\n• **Game Hub** — แดชบอร์ดรวมเกมและ cloud gaming\n• Low input lag mode\n\nรุ่น QLED ระดับกลาง รองรับ HDMI 2.1 บางพอร์ตและ 60Hz ตามรุ่น (สอบถามตัวแทน)",
+      "answer": "**A7F Pro 系列** —— 创维 2025 旗舰壁纸电视：\n• **QD-Mini LED** + 壁纸形态\n• **85 英寸 3,840 个独立调光分区**，峰值亮度 **5,500 nits**\n• **Matte Display Pro 类纸屏**：AG25 抗眩 + LR 低反 + STW 全视角补偿 → 0 反光 / 0 眩光 / 0 指纹\n• **AI 原画显示**：基于创维 AI 模型智能优化色彩层次、笔触质感、材质纹理 → 名画也能精准还原\n• 65 / 75 / 85 英寸\n\n定位：既要壁纸如画、又要旗舰画质。",
       "links": []
     },
     {
-      "id": "audio",
+      "id": "a7e_pro_price",
       "keywords": [
-        "audio",
-        "dolby atmos",
-        "เสียง",
-        "totalsonic",
-        "dbx",
-        "ลำโพง",
-        "音响",
-        "音质"
+        "a7e pro",
+        "a7e 价格",
+        "a7e pro 多少钱",
+        "a7e pro price",
+        "288hz"
       ],
-      "answer": "เสียงในทีวี Skyworth:\n• **V75**: **Dolby Atmos + TotalSonic** (ระบบเสียง premium ของ Skyworth)\n• **X66H**: **Dolby Atmos + dbx-TV**\n• **SUE9500 / SUE8000**: **Dolby Atmos**\n• **E5000G**: **Dolby Audio + Karaoke Boomer** (มีเครื่องร้องคาราโอเกะในตัว เหมาะปาร์ตี้ครอบครัว)",
+      "answer": "**A7E Pro 系列 MiniLED 壁纸电视**（2024 年 8 月 14 日开售）：\n\n| 尺寸 | 首发价 | 标准价 |\n|---|---|---|\n| 65 英寸 | **¥6,799** | ¥7,499 |\n| 75 英寸 | **¥8,799** | ¥10,999 |\n| 85 英寸 | **¥12,799** | ¥13,999 |\n\n核心规格：**4K 288Hz Mini LED** + 壁纸形态。\n注：以上是发布价，实际成交价请以京东 / 天猫等平台当时活动 + 国家补贴为准。",
       "links": []
     },
     {
-      "id": "eye_care",
+      "id": "a7e",
       "keywords": [
-        "eye care",
-        "ถนอมสายตา",
-        "เด็ก",
-        "อ่าน",
-        "ปวดตา",
-        "ตา",
-        "护眼"
+        "a7e 多少钱",
+        "a7e 价格",
+        "a7e price"
       ],
-      "answer": "Skyworth มี **Eye Care 5.0** ในรุ่นเรือธง (X66H, V75, SUE8000):\n• ลดแสงสีฟ้า (Low Blue Light)\n• Flicker-Free (ไม่กระพริบ)\n• ปรับสีอัตโนมัติตามแสงห้อง\n• เหมาะกับครอบครัวที่มีเด็กหรือดูทีวีนานๆ\n\nรุ่นเริ่มต้น E5000G ก็มี **Flicker-Free** มาตรฐานเช่นกัน",
+      "answer": "**A7E 系列 Mini LED 电视**（A7E Pro 的标准款）：\n• **65 英寸**：日常 **¥4,999**\n• **75 英寸**：日常 **¥5,999**\n\n参加京东电视节、双 11、国家以旧换新补贴时还可叠加优惠（创维 65\" Mini LED 曾出现 ¥3,799 含双补的成交价）。",
       "links": []
     },
     {
-      "id": "google_vs_android_vs_coolita",
+      "id": "mini_led_vs_oled",
       "keywords": [
-        "google tv",
-        "android tv",
-        "coolita",
-        "smart tv",
-        "ระบบ",
-        "os",
-        "ระบบ ปฏิบัติการ",
-        "系统"
+        "mini led vs oled",
+        "miniled 对比 oled",
+        "miniled 还是 oled",
+        "mini led oled difference",
+        "选哪个"
       ],
-      "answer": "ระบบสมาร์ททีวี Skyworth:\n• **Google TV** (V75, X66H, SUE9500, SUE8000, Q6500A) — ล่าสุด รวมแอป, Google Assistant, Cast, อัปเดตยาว\n• **Android TV** — รุ่นก่อนหน้า รองรับ Play Store\n• **Coolita TV** (E5000G) — OS ของ Skyworth ใช้งานง่าย แอปน้อยกว่า แต่เริ่มต้นรวดเร็ว\n\nซื้อใหม่ตอนนี้แนะนำ **Google TV** หากงบถึง",
+      "answer": "**Mini LED vs OLED**：\n• **Mini LED**（创维 A7F Pro / A7E Pro / A6E）：高亮度（A7F Pro 85\" 达 **5,500 nits**），抗烧屏，价格更友好，亮室 HDR 体验好\n• **OLED**：自发光、对比度无限、超薄，色彩自然，但峰值亮度偏低、长期同画面有烧屏风险\n\n如果客厅光线强 / 用电视看比赛 / 玩 HDR 游戏 → **Mini LED 更稳**；如果是暗室影音房 + 追求极致黑位 → **OLED**。创维的旗舰策略偏 Mini LED（且做成壁纸形态）。",
       "links": []
     },
     {
-      "id": "karaoke",
+      "id": "appliances_overview",
       "keywords": [
-        "karaoke",
-        "คาราโอเกะ",
-        "ร้องเพลง",
-        "ปาร์ตี้",
-        "boomer",
-        "ร้อง",
-        "卡拉ok"
-      ],
-      "answer": "Skyworth **E5000G** (32/40/43\") มาพร้อม **Karaoke Boomer** — เครื่องร้องคาราโอเกะในตัว เหมาะปาร์ตี้ครอบครัวหรือใช้ทดแทนเครื่องเสียง ไม่ต้องซื้อ DVD/เครื่องร้องเพลงแยก ฟีเจอร์นี้ยังไม่แพร่หลายในทีวียี่ห้อหลักอื่นๆ",
-      "links": []
-    },
-    {
-      "id": "size_choice",
-      "keywords": [
-        "size",
-        "ขนาด",
-        "กี่นิ้ว",
-        "ห้องนอน",
-        "ห้องนั่งเล่น",
-        "เลือกขนาด",
-        "尺寸",
-        "几寸",
-        "几英寸"
-      ],
-      "answer": "เลือกขนาดตามระยะมอง:\n• **24-43\"** ห้องนอน/ครัว (1-2 ม.) → **E5000G** Coolita\n• **43-55\"** ห้องนั่งเล่นเล็ก (2-3 ม.) → **Q6500A / SUE8000**\n• **55-75\"** ห้องนั่งเล่นใหญ่ (3-4 ม.) **ช่วงนิยมที่สุด** → **X66H / V75 / SUE9500**\n• **75-100\"** โฮมเธียเตอร์ (4+ ม.) → **V75 75\"**\n\nSkyworth มีขนาด: 24, 32, 40, 42, 43, 50, 55, 65, 70, 75, 85, 86, **100\"**",
-      "links": []
-    },
-    {
-      "id": "price",
-      "keywords": [
-        "price",
-        "ราคา",
-        "เท่าไหร่",
-        "กี่บาท",
-        "cost",
-        "多少",
-        "价格"
-      ],
-      "answer": "ตัวอย่างราคาเปิดตัวที่ทราบ:\n• **X66H 55\" (QD-Mini LED)**: **฿16,990**\n• E5000G Coolita 32/40/43\": หลักพัน (รุ่นเริ่มต้น)\n• Q6500A QLED 50/55/65\": หลักหมื่น\n• V75 (2026 NEW QD-Mini LED): สอบถามราคาเปิดตัวที่ฮอตไลน์\n\nโปรโมชั่นล่าสุด: [skyworth-thailand.com/promotion](https://www.skyworth-thailand.com/promotion) | ฮอตไลน์ **02-248-1615**",
-      "links": [
-        {
-          "label": "โปรโมชั่น",
-          "url": "https://www.skyworth-thailand.com/promotion"
-        }
-      ]
-    },
-    {
-      "id": "warranty",
-      "keywords": [
-        "warranty",
-        "ประกัน",
-        "รับประกัน",
-        "ลงทะเบียน",
-        "保修"
-      ],
-      "answer": "**รับประกัน 3 ปี** สำหรับทีวี Skyworth Thailand (มีผล 1 กุมภาพันธ์ 2568 / 2025 เป็นต้นไป)\n\n✅ ครอบคลุม: ข้อบกพร่องจากการผลิต/วัสดุ/ฝีมือ\n❌ ไม่ครอบคลุม: หน้าจอแตก-ร้าว, รีโมท, อะแดปเตอร์, ความเสียหายจากอุบัติเหตุ, สัตว์/แมลง, การซ่อมโดยช่างไม่ได้รับอนุญาต\n\n📝 **ลงทะเบียน** ออนไลน์: [register-warranty](https://www.skyworth-thailand.com/service/register-warranty)\n📞 สอบถาม: **02-248-1615**",
-      "links": [
-        {
-          "label": "ลงทะเบียนรับประกัน",
-          "url": "https://www.skyworth-thailand.com/service/register-warranty"
-        }
-      ]
-    },
-    {
-      "id": "dealer",
-      "keywords": [
-        "dealer",
-        "showroom",
-        "ตัวแทน",
-        "ซื้อ",
-        "ที่ไหน",
-        "ร้าน",
-        "店铺",
-        "经销商"
-      ],
-      "answer": "Skyworth Thailand มี **ตัวแทนจำหน่าย** ทั่วประเทศ (ห้างค้าปลีกอิเล็กทรอนิกส์รายใหญ่ + ร้านค้าออนไลน์)\n\nค้นร้านใกล้บ้านที่ [skyworth-thailand.com](https://www.skyworth-thailand.com) หรือโทร **02-248-1615**",
-      "links": [
-        {
-          "label": "เว็บไซต์ Skyworth Thailand",
-          "url": "https://www.skyworth-thailand.com"
-        }
-      ]
-    },
-    {
-      "id": "promotion",
-      "keywords": [
-        "promotion",
-        "โปร",
-        "ส่วนลด",
-        "discount",
-        "sale",
-        "促销",
-        "优惠"
-      ],
-      "answer": "โปรโมชั่นปัจจุบันของ Skyworth Thailand ดูที่ [หน้าโปรโมชั่น](https://www.skyworth-thailand.com/promotion) อัปเดตเป็นระยะ (Mid-Year, 11.11, ปีใหม่)",
-      "links": [
-        {
-          "label": "โปรโมชั่น",
-          "url": "https://www.skyworth-thailand.com/promotion"
-        }
-      ]
-    },
-    {
-      "id": "refrigerator_washing",
-      "keywords": [
-        "refrigerator",
-        "fridge",
-        "ตู้เย็น",
-        "washing machine",
-        "เครื่องซักผ้า",
-        "เครื่องซัก",
+        "白电",
+        "家电",
+        "冰箱 洗衣机 空调",
         "appliance",
-        "เครื่องใช้ไฟฟ้า",
+        "fridge washing machine"
+      ],
+      "answer": "创维不仅做电视，**智能家电（白电）** 也是核心业务，2025 目标冲击 **1,000 万台** 年销量：\n\n• **冰箱** — 60cm 超薄平嵌（5mm 微缝嵌入定制橱柜）+ ACE 动态粒子净味 + −32℃ 深冷速冻 + 全空间杀菌\n• **洗衣机** — 超净洗超薄全嵌滚筒（DD 直驱，洗净比 1.18，艾普兰创新奖）；双驱分舱洗衣机（双 DD 电机同步分区洗）\n• **空调** — 微风感 3.0 ultra：紊流导风（冷风上行 / 暖风下行）+ 离线语音 + UVC 紫外杀菌",
+      "links": []
+    },
+    {
+      "id": "refrigerator",
+      "keywords": [
         "冰箱",
-        "洗衣机"
+        "fridge",
+        "refrigerator",
+        "60cm",
+        "平嵌",
+        "嵌入式"
       ],
-      "answer": "**ตู้เย็น** และ **เครื่องซักผ้า** ของ Skyworth ในประเทศไทยสถานะ **Coming Soon** ตามที่แสดงในเว็บไซต์ ติดตามวันเปิดตัวที่ [skyworth-thailand.com](https://www.skyworth-thailand.com) หรือฮอตไลน์ **02-248-1615**",
+      "answer": "创维冰箱主推 **60cm 超薄平嵌** 系列：\n• **底部散热** → 两侧仅留 **5mm 微缝** 即可嵌入定制橱柜，告别传统冰箱「凸出来一截」\n• **ACE 动态粒子净味** → 持续净化异味\n• **−32℃ 深冷速冻** → 食材新鲜度更好\n• **全空间杀菌** → 抑菌环境覆盖每个区间\n\n适合现代厨房 / 客餐厅整体定制需求。",
       "links": []
     },
     {
-      "id": "best_living_room",
+      "id": "washing_machine",
       "keywords": [
-        "best",
-        "แนะนำ",
-        "ห้องนั่งเล่น",
-        "ครอบครัว",
-        "เลือก",
-        "should buy",
-        "recommend",
-        "推荐",
-        "买什么"
+        "洗衣机",
+        "washing",
+        "washer",
+        "dd 直驱",
+        "分舱",
+        "超净洗"
       ],
-      "answer": "สำหรับ **ห้องนั่งเล่นครอบครัว** (ระยะมอง 2.5-3.5 ม.) แนะนำ:\n\n💰 **คุ้มที่สุด**: **X66H 55\" ฿16,990** — QD-Mini LED + Google TV + Dolby Vision/Atmos + HDMI 2.1\n🆕 **ใหม่ล่าสุด**: **V75 55-65\"** (2026 NEW) — เพิ่ม TotalSonic audio\n💵 **งบประหยัด**: **Q6500A QLED 55\"** หรือ **SUE8000** Eye Care\n\nรับประกัน **3 ปี** ทุกรุ่น สอบถาม **02-248-1615**",
+      "answer": "创维洗衣机主推两大型号：\n• **「超净洗」超薄全嵌滚筒** — 一体式前门板与橱柜近乎零缝隙贴合 · **DD 直驱变频电机** · 洗净比 **1.18**（艾普兰创新奖）\n• **双驱分舱洗衣机** — 独立 **双 DD 直驱电机**，可**同步分区**洗护（深浅色 / 大人小孩衣物分开同时洗）",
       "links": []
     },
     {
-      "id": "specs_compare",
+      "id": "ac",
       "keywords": [
-        "compare",
-        "x66h vs v75",
-        "เปรียบเทียบรุ่น",
-        "ต่างกัน",
-        "vs"
+        "空调",
+        "ac",
+        "air conditioner",
+        "微风感",
+        "uvc"
       ],
-      "answer": "**X66H vs V75** (ทั้งคู่ QD-Mini LED 55/65/75\" Google TV):\n\n| | X66H | V75 (2026 NEW) |\n|---|---|---|\n| ยุค | รุ่นเรือธง | รุ่นล่าสุด |\n| 55\" ราคา | **฿16,990** | สอบถาม |\n| HDR | Dolby Vision + HDR10+ | เหมือนกัน |\n| เสียง | Dolby Atmos + **dbx-TV** | Dolby Atmos + **TotalSonic** |\n| Eye Care | 5.0 | 5.0 |\n| HDMI 2.1 + Game Hub | ✓ | ✓ |\n\nงบคุ้มเลือก **X66H**, ใหม่ล่าสุด/เสียงดีกว่าเลือก **V75**",
+      "answer": "创维空调旗舰 **微风感 3.0 ultra**：\n• **紊流导风系统** → 冷风上行、暖风下行 → 不直吹身体，更舒适\n• **离线语音智控** → 不联网也能语音操控\n• **UVC 深紫外线杀菌** → 内部和送风路径同时除菌",
       "links": []
     },
     {
-      "id": "company",
+      "id": "ecosystem",
       "keywords": [
-        "company",
+        "生态",
+        "ai 绿电",
+        "ecosystem",
+        "ai green",
+        "光伏",
+        "ai+",
+        "智能家居"
+      ],
+      "answer": "创维 2026 年战略：**AI + 绿电 双核心生态**：\n• **AI 智能** —— AI 原画 / AI 助手 / 智能家居协同\n• **绿电** —— 创维光伏屋顶电站，自家用电自给自足，电器 + 太阳能形成家庭能源闭环\n• **全屋互联** —— 电视 + 白电 + 光伏 三位一体的家庭场景\n\nAWE 2026 上重点展示此战略。",
+      "links": []
+    },
+    {
+      "id": "company_overview",
+      "keywords": [
+        "创维",
         "skyworth",
-        "lead the future",
-        "เกี่ยวกับ",
-        "ก่อตั้ง",
         "公司",
-        "创维"
+        "哪个国家",
+        "company",
+        "background",
+        "历史"
       ],
-      "answer": "**Skyworth (创维)** ก่อตั้งปี **1988** ที่เซินเจิ้น ประเทศจีน เป็นผู้ผลิตทีวีและอุปกรณ์อัจฉริยะระดับโลก พนักงาน **40,000+ คน** สโลแกน **\"Lead the Future\"** ในไทยจำหน่ายภายใต้ **SKYWORTH Thailand** ครอบคลุมทีวี (อนาคต: ตู้เย็น, เครื่องซักผ้า)",
+      "answer": "**创维（SKYWORTH）** —— 1988 年创立于深圳的中国家电科技集团：\n• 全球电视前 **5 大** 品牌，年销 **1,700 万台 +**\n• 业务覆盖：**多媒体（电视）· 智能电器（白电）· 智能系统 · 现代服务 · 光伏 · 新能源汽车 · XR**\n• 旗下两家上市公司：**创维集团 (HK 00751)**、**创维数字 (SZ 000810)**\n• 品牌口号：**「技术创维，敢创敢为」**（英文：Lead the Future）\n\n官网：[skyworth.com](https://www.skyworth.com)",
       "links": [
         {
-          "label": "Skyworth Thailand",
-          "url": "https://www.skyworth-thailand.com"
+          "label": "创维集团官网",
+          "url": "https://www.skyworth.com"
+        },
+        {
+          "label": "创维电视",
+          "url": "http://www.skyworth.net"
         }
       ]
+    },
+    {
+      "id": "ev_or_other",
+      "keywords": [
+        "创维汽车",
+        "ev",
+        "光伏",
+        "xr",
+        "新能源",
+        "数字"
+      ],
+      "answer": "创维已不只是「电视厂」，多元布局：\n• **创维汽车** —— 新能源 SUV，主打「奋斗者的第三空间」（skyworthev.com）\n• **创维光伏** —— 户用屋顶光伏 / 工商业分布式（skyworthpv.com）\n• **创维 XR** —— 虚拟现实头显与生态（skyworthxr.com）\n• **创维数字** —— 智能终端 / 机顶盒 / 车载（skyworthdigital.com）\n\n这些与电视 / 白电 / AI / 绿电共同构成「创维大生态」。",
+      "links": []
+    },
+    {
+      "id": "buying_recommendation",
+      "keywords": [
+        "推荐",
+        "买哪个",
+        "选哪台",
+        "recommend",
+        "best tv",
+        "客厅"
+      ],
+      "answer": "按场景选型号：\n\n💎 **顶级影音房 / 装修讲究**：**A7F Pro**（QD-Mini LED 壁纸 + 类纸屏 + AI 原画）\n🏠 **客厅主力 + 性价比**：**A7E Pro 65\"（¥6,799 首发起）** 或 A7E 65\" 日常 ¥4,999\n🎮 **电竞 / 高刷新率**：**A7E Pro**（4K 288Hz）\n🏠 **百英寸宴会厅**：**A7D / A7D Pro** 100 寸壁纸\n🎵 **音画并重**：**A5D / A5F Pro** GLED + 4×15W + Dolby Atmos\n💰 **预算优先**：**A6E** Mini LED 入门款",
+      "links": []
     },
     {
       "id": "contact",
       "keywords": [
-        "contact",
-        "ติดต่อ",
-        "เบอร์",
-        "โทร",
-        "phone",
         "联系",
-        "电话"
+        "客服",
+        "电话",
+        "售后",
+        "contact",
+        "support"
       ],
-      "answer": "ติดต่อ Skyworth Thailand:\n• **ฮอตไลน์**: **02-248-1615**\n• **เว็บไซต์**: skyworth-thailand.com\n• **ลงทะเบียนรับประกัน**: ผ่านหน้า Service บนเว็บไซต์",
+      "answer": "**官网**：[skyworth.com](https://www.skyworth.com)\n**电视专属站**：[skyworth.net](http://www.skyworth.net)\n**售后服务**：通过官网售后入口 / 全国授权服务网点 / 京东天猫旗舰店在线客服\n\n具体本地服务电话请在官网「服务支持」按所在省份查询。",
       "links": [
         {
-          "label": "หน้าติดต่อ",
-          "url": "https://www.skyworth-thailand.com/contact"
+          "label": "创维官网",
+          "url": "https://www.skyworth.com"
         }
       ]
     },
     {
       "id": "greeting",
       "keywords": [
+        "你好",
+        "您好",
         "hi",
         "hello",
         "hey",
-        "สวัสดี",
-        "หวัดดี",
-        "你好",
-        "您好"
+        "嗨"
       ],
-      "answer": "สวัสดีค่ะ! ฉันช่วยให้ข้อมูลเรื่อง **ทีวี Skyworth** ในประเทศไทยได้ — รุ่น/ซีรีส์, ขนาด, ราคา, เกม, Dolby, ประกัน 3 ปี อยากทราบเรื่องอะไรดีคะ?",
+      "answer": "您好！我可以介绍 **创维** 的壁纸电视、Mini LED、智能家电（冰箱 / 洗衣机 / 空调）以及 AI + 绿电生态战略。您想了解哪一块呢？",
       "links": []
     },
     {
@@ -488,18 +336,18 @@
       "keywords": [
         "thanks",
         "thank you",
-        "ขอบคุณ",
-        "谢谢"
+        "谢谢",
+        "感谢"
       ],
-      "answer": "ยินดีค่ะ! 😊 มีคำถามอื่นเกี่ยวกับ Skyworth ไหมคะ?",
+      "answer": "不客气！😊 还有其他关于创维的问题吗？",
       "links": []
     }
   ],
-  "fallback": "ฉันเป็นผู้ช่วยเดโมของ **SKYWORTH Thailand** ตอบได้เรื่อง **ทีวี Skyworth** (รุ่น V75/X66H/SUE/E5000G), **ราคา**, **ฟีเจอร์เกม/HDR/Dolby Atmos**, **Eye Care**, **รับประกัน 3 ปี** สำหรับเรื่องอื่นๆ โทร **02-248-1615** หรือดู skyworth-thailand.com (I can also reply in English or 中文.)",
+  "fallback": "我是 **创维 SKYWORTH** 演示助手，可回答**壁纸电视**、**Mini LED**、**智能家电（冰洗空）**、**AI + 绿电生态**、**品牌历史与业务结构**等问题。其它内容请访问 [skyworth.com](https://www.skyworth.com)。(I can also reply in English.)",
   "suggestions": [
-    "X66H กับ V75 ต่างกันยังไง?",
-    "ห้องนั่งเล่นใหญ่ ควรซื้อกี่นิ้ว?",
-    "เล่นเกม PS5 รุ่นไหนเหมาะ?",
-    "รับประกันกี่ปี?"
+    "什么是壁纸电视？",
+    "A7E Pro 65 寸多少钱？",
+    "Mini LED 和 OLED 怎么选？",
+    "创维都有哪些家电？"
   ]
 }

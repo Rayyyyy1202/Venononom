@@ -113,28 +113,32 @@
   let locale = "en";
 
   function pickLocale() {
-    const supported = ["en"];
+    // Build set of locales the widget can speak: the KB's default
+    // language (whose strings live at kb.ui top-level) plus every
+    // localizations.<lang> override.
+    const defaultLocale = (kb && kb.default_locale) || "en";
+    const supported = new Set([defaultLocale]);
     if (kb && kb.localizations) {
-      for (const k of Object.keys(kb.localizations)) supported.push(k);
+      for (const k of Object.keys(kb.localizations)) supported.add(k);
     }
     // 1. URL ?lang= override (shareable links like /?lang=es)
     try {
       const q = new URLSearchParams(window.location.search).get("lang");
       if (q) {
         const code = q.slice(0, 2).toLowerCase();
-        if (supported.includes(code)) return code;
+        if (supported.has(code)) return code;
       }
     } catch (e) {}
     // 2. Static <html lang> (forces a locale for the whole page, e.g. /es/)
     const htmlLang = (document.documentElement.lang || "").slice(0, 2).toLowerCase();
-    if (htmlLang && supported.includes(htmlLang)) return htmlLang;
+    if (htmlLang && supported.has(htmlLang)) return htmlLang;
     // 3. Browser preference (navigator.languages is ordered)
-    const browser = navigator.languages || [navigator.language || "en"];
+    const browser = navigator.languages || [navigator.language || ""];
     for (const l of browser) {
       const code = (l || "").slice(0, 2).toLowerCase();
-      if (supported.includes(code)) return code;
+      if (supported.has(code)) return code;
     }
-    return "en";
+    return defaultLocale;
   }
 
   function applyLocale() {

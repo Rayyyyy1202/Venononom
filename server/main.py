@@ -124,15 +124,13 @@ _SITE_PROMPT = {
         ),
     },
     "sky-th": {
-        "brand": "SKYWORTH Thailand (创维 — Lead the Future)",
-        "home": "https://www.skyworth-thailand.com/",
-        "contact": "calling the Skyworth Thailand hotline 02-248-1615 or visiting an authorized dealer",
+        "brand": "SKYWORTH (创维) — Lead the Future",
+        "home": "https://www.skyworth.com/",
+        "contact": "visiting the official website skyworth.com or contacting an authorized Skyworth retailer",
         "language_rule": (
             "\nIMPORTANT: Reply in the SAME language the user writes in — "
-            "Thai (ภาษาไทย) if they write Thai, English if they write English. "
-            "Default to Thai if unsure. Use Thai Baht (฿) for prices. "
-            "Currently only TVs are sold in Thailand; refrigerators and washing "
-            "machines are listed as 'Coming Soon'."
+            "Chinese (中文) if they write Chinese, English if they write English. "
+            "Default to Chinese (中文) if unsure. Use RMB (¥/元) for prices."
         ),
     },
 }

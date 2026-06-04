@@ -115,15 +115,19 @@ SITES = {
             }
         ],
     },
+    # SKYWORTH Chinese mainland brand site (zh + en auto-detect). The H5 root
+    # ships with <html lang=""> so chatbot.js picks locale from
+    # navigator.languages and applies kb.localizations[lang] over the
+    # Chinese default UI.
     "sky-th": {
         "output": ROOT / "public-sky-th",
         "brand": SKY_BRAND,
         "locales": [
             {
                 "subpath": "",
-                "lang": "th",
-                "title": "SKYWORTH Assistant · ครีเอทีฟ ไลฟ์สไตล์",
-                "tag": "SKYWORTH THAILAND · AI DEMO",
+                "lang": "",
+                "title": "SKYWORTH Assistant · 创维",
+                "tag": "SKYWORTH · 创维 · AI DEMO",
                 "base_kb": "knowledge.sky-th.json",
                 "override_kb": None,
             }
